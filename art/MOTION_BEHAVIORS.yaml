@@ -1,0 +1,26 @@
+# Motion verbs the AI can use to animate/describe movement consistently
+
+GLOBAL_MOTION:
+  - "breathing oscillation"
+  - "slow parallax drift"
+  - "ghost-frame echo"
+  - "stutter-step jitter"
+  - "scanline crawl"
+  - "packet-loss pop"
+  - "datamosh smear"
+  - "holo shimmer"
+  - "reticle lock-on"
+  - "menu slide-in"
+  - "hard-cut mode switch"
+  - "seam peel reveal"
+  - "vortex pull acceleration"
+  - "subtitle burst shatter"
+
+BY_MOTIF:
+  THR_CARRIER_WAVE: ["rising tone visualization", "spectrogram tightening", "lock-in snap", "gentle tremolo"]
+  THR_POP: ["single-frame flash", "afterimage trail", "hard-cut transition", "UI window spawn"]
+  THR_ZIPPER: ["peel and reseal", "membrane unzip", "fold-through portal", "edge glow crawl"]
+  LOC_WAITING_ROOM: ["loading bar creep", "breathing symmetry", "soft pulse", "hover shimmer"]
+  LOC_TRASH_CACHE: ["corruption crawl", "macroblock flicker", "duplicate panel drift", "error stamp pop"]
+  ENT_HATMAN: ["peripheral jitter", "corner drift", "silhouette phase-in/out", "redaction swipe"]
+  ENT_MANTIS: ["scanner sweep", "tool-arm glide", "clinical UI blink", "patch applied stamp"]
