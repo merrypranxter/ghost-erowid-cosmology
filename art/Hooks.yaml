@@ -1,0 +1,312 @@
+art_hooks:
+  ENT_ELVES:
+    palette: ["jewel neon", "CRT phosphor bloom", "iridescent glitch"]
+    textures: ["fractal filigree", "clockwork shimmer", "glyph-noise"]
+    typography: ["ornate microtype", "system-dialog UI", "sigil captions"]
+    motion: ["staccato flicker", "UI pop-in", "impossible folding"]
+
+  ENT_MANTIS:
+    palette: ["surgical teal", "cold white", "chrome highlights"]
+    textures: ["sterile glass", "biotech sheen", "fine lattice"]
+    typography: ["clinical labels", "spec-sheet microtext", "warning triangles"]
+    motion: ["slow scanlines", "precision snaps", "tool-arm glides"]
+
+  ENT_JESTER:
+    palette: ["circus neon", "acid magenta", "electric lime"]
+    textures: ["harlequin tessellation", "confetti noise", "moire shimmer"]
+    typography: ["taunting captions", "handwritten margins", "glitch subtitles"]
+    motion: ["rubber-band warp", "smear-frame laughs", "jump cuts"]
+
+  ENT_HATMAN:
+    palette: ["near-black", "smoke gray", "dead neon edge"]
+    textures: ["shadow bleed", "compression artifacts", "vapor grain"]
+    typography: ["SECURITY ALERT banners", "redaction bars", "stamp marks"]
+    motion: ["peripheral jitter", "frame skipping", "corner drift"]
+
+  ENT_GAIA:
+    palette: ["warm gold", "opal white", "soft emerald"]
+    textures: ["radiant haze", "petal fractals", "liquid light"]
+    typography: ["gentle serif mantras", "haloed headings", "soft UI"]
+    motion: ["slow bloom", "breathing glow", "field pulse"]
+
+  ENT_ADMINS:
+    palette: ["authority blue", "laser white", "status green"]
+    textures: ["server-room sheen", "grid overlays", "clean UI chrome"]
+    typography: ["ADMIN CONSOLE", "permissions text", "audit log microtype"]
+    motion: ["cursor blinks", "window snapping", "status refresh ticks"]
+
+  ENT_JANITOR_VOID:
+    palette: ["ash black", "vacuum gray", "cold violet edge"]
+    textures: ["dust motes", "dead-space fog", "silhouette occlusion"]
+    typography: ["MAINTENANCE MODE", "cleanup notices", "system hush"]
+    motion: ["slow hover", "silent fade-in", "gravity-less drift"]
+
+  ENT_COLONEL_PANIC:
+    palette: ["warning red", "charcoal", "hazard yellow"]
+    textures: ["alarm grain", "hard banding", "tearing artifacts"]
+    typography: ["CRASH DETECTED", "OVERRIDE", "PANIC PROTOCOL"]
+    motion: ["strobe bursts", "panic jitter", "hard cuts"]
+
+  ENT_MICRODEMONS:
+    palette: ["sour green", "bruise purple", "dirty white"]
+    textures: ["pareidolia faces", "speckle noise", "micro-sigil scratches"]
+    typography: ["THREAT DETECT", "false-positive labels", "debug spam"]
+    motion: ["micro-twitch", "crawl jitter", "flicker swarm"]
+
+  ENT_SHADOW_SPIDERS:
+    palette: ["ink black", "sickly green", "moonlight gray"]
+    textures: ["hairline legs", "web-thread glints", "skin-crawl grain"]
+    typography: ["INFESTATION FLAGS", "itch-loop captions", "nervous UI"]
+    motion: ["creep crawl", "sudden skitter", "peripheral pops"]
+
+  LOC_WAITING_ROOM:
+    palette: ["pastel interference", "spectral prismatic", "soft neon"]
+    textures: ["chrysanthemum symmetry", "moire", "holographic noise"]
+    typography: ["LOADING...", "QUEUE", "PLEASE WAIT"]
+    motion: ["breathing oscillation", "hover shimmer", "slow pulse"]
+
+  LOC_PALACE_UI:
+    palette: ["stained-glass neon", "ultramarine", "magenta-gold"]
+    textures: ["cathedral filigree", "sacred geometry", "light shafts"]
+    typography: ["illuminated headings", "gilded UI frames", "micro-ornament"]
+    motion: ["slow parallax vaults", "ray sweeps", "ambient drift"]
+
+  LOC_VOID:
+    palette: ["whiteout", "faint spectral edge", "soft gray"]
+    textures: ["lens bloom fog", "minimal grain", "paper-burn halo"]
+    typography: ["single-line pronouncements", "quiet UI", "blank margins"]
+    motion: ["stillness", "slow dissolve", "fade-to-field"]
+
+  LOC_NURSERY:
+    palette: ["toy neon", "bubblegum pink", "candy cyan"]
+    textures: ["plastic gloss", "impossible object sheen", "sparkle noise"]
+    typography: ["PLAY MODE", "DEMO OBJECT", "SHOW & TELL labels"]
+    motion: ["floaty bounce", "pop-in props", "gentle wobble"]
+
+  LOC_LIBRARY_LIVES:
+    palette: ["parchment gold", "ink black", "deep midnight"]
+    textures: ["microtext walls", "index cards", "dusty light beams"]
+    typography: ["CATALOG", "TIMELINE INDEX", "FOOTNOTE stacks"]
+    motion: ["page flips", "scroll drift", "stack rearrange"]
+
+  LOC_DELIRIANT_BASEMENT:
+    palette: ["muddy green-black", "sodium yellow", "rust brown"]
+    textures: ["dirty plaster", "wet shadow", "rot grain"]
+    typography: ["FORBIDDEN ZONE", "DO NOT ENTER", "hazard stamps"]
+    motion: ["sticky smear", "lag drag", "slow crawl"]
+
+  LOC_TRASH_CACHE:
+    palette: ["smoke beige", "oil slick", "bruise gray"]
+    textures: ["discarded fragments", "torn UI scraps", "corruption blocks"]
+    typography: ["CACHE DUMP", "RECOVERED FRAGMENT", "corrupt labels"]
+    motion: ["glitch tumble", "fragment pop", "buffer stutter"]
+
+  LOC_BUFFER_VOID:
+    palette: ["industrial gray", "cold blue", "dim violet"]
+    textures: ["concrete fog", "scanline haze", "sterile emptiness"]
+    typography: ["BUFFERING", "I/O OFFLINE", "SUSPEND STATE"]
+    motion: ["slow drift", "heartbeat flicker", "soft stutter"]
+
+  LOC_K_HOLE_VOID:
+    palette: ["graphite", "cold steel", "void blue"]
+    textures: ["machine mist", "hard gradients", "low-res banding"]
+    typography: ["KERNEL SPACE", "BODY DISCONNECTED", "NO RETURN"]
+    motion: ["tunnel slide", "gravity drop", "silent zoom"]
+
+  LOC_BIOS_LAYER:
+    palette: ["pure white", "sun-glare gold", "spectral fringe"]
+    textures: ["overexposure bloom", "field wash", "thin rainbow edge"]
+    typography: ["BOOT", "RESET", "POWER LAYER"]
+    motion: ["hard flash", "blank hold", "reboot snap"]
+
+  LOC_DESKTOP_ENV:
+    palette: ["UI neon", "chrome white", "electric purple"]
+    textures: ["window frames", "icon grids", "HUD overlays"]
+    typography: ["APP LAUNCH", "DESKTOP", "MENU STATES"]
+    motion: ["window slide", "notification pop", "cursor blink"]
+
+  GEO_FRACTAL_UI:
+    palette: ["rainbow recursion", "blacklight neon"]
+    textures: ["infinite zoom", "self-similar lace", "feedback filigree"]
+    typography: ["recursive labels", "index marks", "coordinate ticks"]
+    motion: ["zoom cascade", "feedback loop", "recursive flicker"]
+
+  GEO_HONEYCOMB:
+    palette: ["amber hex glow", "cool teal shadow"]
+    textures: ["hex tiling", "lattice overlay", "cell seams"]
+    typography: ["tile IDs", "grid coordinates", "module stamps"]
+    motion: ["phase shift", "sliding tiles", "snap-to-grid"]
+
+  GEO_TUNNEL:
+    palette: ["hyper-saturated ring bands", "electric edges"]
+    textures: ["concentric ripples", "vortex ribbons", "radial blur"]
+    typography: ["TRANSIT HUD", "SPEED READOUT", "VECTOR arrows"]
+    motion: ["acceleration smear", "radial spin", "warp stretch"]
+
+  GEO_3D_LANGUAGE:
+    palette: ["iridescent letters", "neon ink", "opal glow"]
+    textures: ["floating glyphs", "vibrating text solids", "letter-foam"]
+    typography: ["3D typography", "extruded syllables", "caption shards"]
+    motion: ["phoneme pulses", "word wobble", "text materialize"]
+
+  GEO_SYNESTHETIC_SYNTAX:
+    palette: ["color-speech gradients", "singing neon"]
+    textures: ["tone ribbons", "syntax lattices", "music-geometry"]
+    typography: ["waveform captions", "harmonic labels", "syntax tags"]
+    motion: ["wave travel", "ribbon braid", "tempo flicker"]
+
+  GEO_RAW_DATA_TRANSFER:
+    palette: ["cool white", "signal blue", "violet trace"]
+    textures: ["packet lines", "node webs", "spectrogram scratches"]
+    typography: ["DATA PACKET", "PRE-TRANSLATION", "NODE IDs"]
+    motion: ["packet zips", "node blink", "handoff stutter"]
+
+  GEO_MACHINE_CODE_COGNITION:
+    palette: ["monochrome with neon highlights", "debug green"]
+    textures: ["code rain", "logic gates", "circuit glyphs"]
+    typography: ["monospace blocks", "stack traces", "hash stamps"]
+    motion: ["scrolling code", "compile flashes", "branch jumps"]
+
+  GEO_ARCHITECTURE_DARK:
+    palette: ["coal", "mold green", "rust red"]
+    textures: ["catacomb slabs", "tar shadows", "grit noise"]
+    typography: ["forbidden signage", "occult warnings", "scratch labels"]
+    motion: ["heavy sway", "dragging blur", "creeping shift"]
+
+  THR_POP:
+    palette: ["flash white", "afterimage neon"]
+    textures: ["spark fracture", "glitch click", "edge bloom"]
+    typography: ["EVENT: POP", "TIMESTAMP", "MODE SWITCH"]
+    motion: ["hard cut", "snap zoom", "instant invert"]
+
+  THR_CARRIER_WAVE:
+    palette: ["ultrasonic silver", "violet edge glow"]
+    textures: ["wave lattices", "audio spectrogram lines", "vibration grain"]
+    typography: ["FREQUENCY READOUT", "SIGNAL WARNING", "CARRIER LOCK"]
+    motion: ["rising sine", "amplitude swell", "tremor shimmer"]
+
+  THR_ZIPPER:
+    palette: ["torn neon seam", "shadow split", "electric fringe"]
+    textures: ["peel membrane", "stitched fold", "rip artifacts"]
+    typography: ["ACCESS SEAM", "BEHIND LAYER", "DO NOT LOOK AWAY"]
+    motion: ["unzip animation", "fold-through", "peel reveal"]
+
+  THR_GLOSSOLALIA:
+    palette: ["hot neon", "oral-cavity pinks", "electric blue"]
+    textures: ["phoneme sparks", "mouth-sigil trails", "subtitle static"]
+    typography: ["UNKNOWN LANGUAGE", "VOCAL BURST", "GLYPH STREAM"]
+    motion: ["syllable eruptions", "caption jitter", "rhythm cuts"]
+
+  THR_FORGOTTEN_TONGUE:
+    palette: ["teal click-glow", "silver chirp", "soft magenta"]
+    textures: ["click trails", "liquid telepathy haze", "sound-shape"]
+    typography: ["RECALL: LANGUAGE", "CLICK/CHIRP notes", "translation errors"]
+    motion: ["click pops", "chirp ripples", "fade-in fluency"]
+
+  THR_CHRONOS_COLLAPSE:
+    palette: ["frozen white", "deep midnight", "thin rainbow edge"]
+    textures: ["time-slice bands", "still grain", "clock debris"]
+    typography: ["TIME: STOPPED", "ETERNAL NOW", "CHRONOS ERROR"]
+    motion: ["sudden still", "slow resume", "loop echo"]
+
+  THR_LIFETIME_COMPRESSION:
+    palette: ["sepia-to-neon", "history gold", "future cyan"]
+    textures: ["timeline strata", "memory dust", "civilization montage"]
+    typography: ["LIFETIMES LOADED", "EONS IN MINUTES", "COMPRESSED LOG"]
+    motion: ["fast montage", "stutter zoom", "stacked dissolves"]
+
+  THR_HARD_REBOOT:
+    palette: ["electric white", "static blue", "hot pink spark"]
+    textures: ["zap crackle", "reboot noise", "handshake shimmer"]
+    typography: ["REBOOT", "HANDSHAKE", "BASELINE RESTORED"]
+    motion: ["electric jolt", "screen flicker", "hard refresh"]
+
+  THR_CACHE_OVERFLOW:
+    palette: ["dirty beige", "error red", "glitch green"]
+    textures: ["overflow blocks", "duplicate UI fragments", "stuck loops"]
+    typography: ["CACHE OVERFLOW", "LOOP DETECTED", "RECOVERY FAIL"]
+    motion: ["loop stutter", "repeat snap", "buffer chug"]
+
+  THR_PHANTOM_OBJECT:
+    palette: ["cigarette-ash gray", "sickly yellow", "dead neon"]
+    textures: ["empty-hand highlights", "false-shadow props", "hallucinated dust"]
+    typography: ["OBJECT NOT FOUND", "PHANTOM LOOP", "NULL PROP"]
+    motion: ["mime loop", "repeat grab", "desync jitter"]
+
+  THR_FOREIGN_OBJECT:
+    palette: ["implant chrome", "bio teal", "sterile white"]
+    textures: ["micro-scar glow", "suture lines", "tool sheen"]
+    typography: ["FOREIGN OBJECT", "INSTALL/REMOVE", "PATCH APPLIED"]
+    motion: ["precision insert", "scan sweep", "click-lock"]
+
+  MSG_ONE:
+    palette: ["calm white", "soft prismatic"]
+    textures: ["field gradient", "subtle halo"]
+    typography: ["centered mantra dialog", "minimal UI"]
+    motion: ["gentle pulse", "slow fade"]
+
+  MSG_REALER:
+    palette: ["HDR neon", "hyper-contrast bloom"]
+    textures: ["over-sharp detail", "high fidelity grain"]
+    typography: ["RENDER NOTICE", "RESOLUTION WARNING", "HDR labels"]
+    motion: ["detail ramp", "sharpen surge", "focus snap"]
+
+  MSG_NO_FEAR:
+    palette: ["warm white", "gold reassurance"]
+    textures: ["soft glow", "comfort haze"]
+    typography: ["SYSTEM REASSURANCE", "SAFE MODE banner"]
+    motion: ["stabilize fade-in", "warm bloom"]
+
+  MSG_LOOK:
+    palette: ["clean white", "signal cyan"]
+    textures: ["focus ring", "reticle overlay", "attention halo"]
+    typography: ["INSTRUCTION: LOOK", "cursor prompts"]
+    motion: ["focus zoom", "reticle lock"]
+
+  MSG_INFO_IS_MATTER:
+    palette: ["debug green", "ink black", "neon edge"]
+    textures: ["code-to-object morph", "data grains"]
+    typography: ["INFO=Matter theorem", "equation stamps"]
+    motion: ["compile-to-form", "materialize"]
+
+  MSG_COMM_IS_THE_THING:
+    palette: ["signal violet", "white noise", "teal glow"]
+    textures: ["wave ribbons", "message haze"]
+    typography: ["COMMUNICATION=OBJECT", "protocol labels"]
+    motion: ["packet flow", "ribbon speak"]
+
+  MSG_BRAIN_TERMINAL:
+    palette: ["terminal green", "screen black", "scanline gray"]
+    textures: ["CRT scanlines", "cursor blink"]
+    typography: ["TERMINAL MODE", "ACCESS GRANTED/DENIED", "prompt lines"]
+    motion: ["cursor blink", "line print", "screen refresh"]
+
+  MSG_MOLECULE_LOGIN:
+    palette: ["keycard blue", "status green", "warning amber"]
+    textures: ["credential stamps", "access badges"]
+    typography: ["LOGIN", "ACCESS LEVEL", "CREDENTIAL VERIFIED"]
+    motion: ["badge scan", "unlock flash"]
+
+  MSG_UNAUTHORIZED_INTRUDER:
+    palette: ["alert red", "white", "black"]
+    textures: ["redaction tape", "alarm grain"]
+    typography: ["UNAUTHORIZED", "INTRUDER DETECTED", "EJECT?"]
+    motion: ["alarm pulse", "strobe edge", "hard lock"]
+
+  EMO_NOSTALGIA:
+    palette: ["memory pastel", "sun-bleached neon"]
+    textures: ["VHS bleed", "polaroid haze", "warm dust"]
+    typography: ["soft handwritten marginalia", "gentle captions"]
+    motion: ["slow drift", "ghost frames", "loop echo"]
+
+  EMO_TERROR_EDGE:
+    palette: ["black/red pulse", "hard neon edge"]
+    textures: ["noise spikes", "tearing compression", "strobe grain"]
+    typography: ["ALERT banners", "panic captions", "error blocks"]
+    motion: ["panic jitter", "strobe cuts", "shake blur"]
+
+  EMO_BENEVOLENCE:
+    palette: ["warm gold", "pearl white", "soft rose"]
+    textures: ["halo bloom", "velvet haze", "gentle grain"]
+    typography: ["reassurance captions", "quiet UI"]
+    motion: ["slow bloom", "breathing pulse"]
