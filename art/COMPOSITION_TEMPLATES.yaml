@@ -1,0 +1,22 @@
+# Make the AI stop improvising composition.
+# Pick ONE template per piece.
+
+TEMPLATES:
+  CENTER_BADGE:
+    layout: "tight centered emblem, square-ish composition"
+    good_for: ["stickers", "thumbnails", "poster logos"]
+  FULLSCREEN_OVERLAY:
+    layout: "background loop fills frame, UI overlays float on top"
+    good_for: ["TikTok loops", "CapCut overlays"]
+  CORNER_THREAT:
+    layout: "mostly empty space, focal threat in corner/periphery"
+    good_for: ["Hat Man", "security vibes"]
+  SPLIT_BEFORE_AFTER:
+    layout: "left baseline / right underlayer"
+    good_for: ["more real than real", "mode switch explainers"]
+  METRO_MAP:
+    layout: "subway diagram of locations + highlighted current station"
+    good_for: ["explainer graphics"]
+  CARD_STACK:
+    layout: "entity card + 3 tags + one-line role + microtext log"
+    good_for: ["Entities as Processes series"]
