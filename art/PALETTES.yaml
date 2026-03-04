@@ -1,0 +1,373 @@
+# Palette library for Ghost x Erowid Cosmology
+# Each palette is maximalist + bright by default.
+# Format:
+#   id:
+#     palette_name:
+#     hex: [ ... ]
+#     accents: [ ... ]
+#     neutrals: [ ... ]
+#     notes:
+
+ENT_ELVES:
+  palette_name: "Neon Workshop Goblins"
+  hex: ["#00F5FF","#FF2EEA","#B8FF00","#FFB000","#7C4DFF","#00FF6A"]
+  accents: ["#FFFFFF","#0B1020"]
+  neutrals: ["#111827","#1F2937"]
+  notes: "Hyperactive candy-tech builders; saturated + electric."
+
+ENT_MANTIS:
+  palette_name: "Surgical Mint Plasma"
+  hex: ["#00FFC8","#2AFF7A","#00A3FF","#B6FFFA","#F7FF00","#FF3D81"]
+  accents: ["#FFFFFF","#0A0F14"]
+  neutrals: ["#0B1220","#1B2735"]
+  notes: "Clinical teal + bio-lime + shocking magenta for ‘tools’/alerts."
+
+ENT_JESTER:
+  palette_name: "Carnival Paradox"
+  hex: ["#FF005D","#FFD400","#00E5FF","#7CFF00","#8B5CF6","#FF7A00"]
+  accents: ["#FFFFFF","#000000"]
+  neutrals: ["#111111","#222222"]
+  notes: "Bright clown logic; high contrast, playful menace."
+
+ENT_HATMAN:
+  palette_name: "Noir Glitch Siren"
+  hex: ["#0B0F19","#111827","#FF003C","#00E5FF","#B8FF00","#7C4DFF"]
+  accents: ["#FFFFFF","#000000"]
+  neutrals: ["#0A0A0A","#1A1A1A"]
+  notes: "Mostly dark; neon edges feel like security UI bleeding in."
+
+ENT_GAIA:
+  palette_name: "Overdose of Love"
+  hex: ["#FF4FD8","#FFB3E6","#FFD400","#00FFC8","#7CFF00","#00A3FF"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#F8FAFC","#E5E7EB"]
+  notes: "Warm halo + candy bloom; benevolence as color pressure."
+
+ENT_ADMINS:
+  palette_name: "Admin Console Cyan"
+  hex: ["#00E5FF","#00A3FF","#7C4DFF","#B8FF00","#FFB000","#FF2EEA"]
+  accents: ["#FFFFFF","#0B1020"]
+  neutrals: ["#0B1220","#111827"]
+  notes: "Clean neon UI; feels like ‘tools’ and overlays."
+
+ENT_JANITOR_VOID:
+  palette_name: "Vacuum Custodian"
+  hex: ["#0B0F19","#1F2937","#A7F3D0","#00E5FF","#FF003C","#D1D5DB"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0A0A0A","#111827"]
+  notes: "Cold void + sterile mint + warning red."
+
+ENT_COLONEL_PANIC:
+  palette_name: "Crash Supervisor Alarm"
+  hex: ["#FF003C","#FFB000","#B8FF00","#00E5FF","#7C4DFF","#0B0F19"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#111827","#0A0A0A"]
+  notes: "Alarm UI palette. High urgency. Big banners."
+
+ENT_MICRODEMONS:
+  palette_name: "Pareidolia Hazard"
+  hex: ["#FF003C","#7C4DFF","#00E5FF","#FFB000","#111827","#B8FF00"]
+  accents: ["#FFFFFF","#000000"]
+  neutrals: ["#0A0A0A","#1F2937"]
+  notes: "Threat detection colors + static-black base."
+
+ENT_SHADOW_SPIDERS:
+  palette_name: "Peripheral Crawl Neon"
+  hex: ["#0A0A0A","#111827","#00E5FF","#B8FF00","#FF2EEA","#FF003C"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0B0F19","#1F2937"]
+  notes: "Black base; toxic neon highlights like ‘movement at edge’."
+
+LOC_WAITING_ROOM:
+  palette_name: "Chrysanthemum Loading Screen"
+  hex: ["#00E5FF","#FF2EEA","#FFD400","#B8FF00","#7C4DFF","#FF7A00"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0B1020","#111827"]
+  notes: "Pastel-meets-neon; feels like pre-breakthrough UI shimmer."
+
+LOC_PALACE_UI:
+  palette_name: "Stained Glass Interface"
+  hex: ["#7C4DFF","#00A3FF","#00FFC8","#FFD400","#FF2EEA","#FF7A00"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0B1020","#111827"]
+  notes: "Jewel tones + bright gold like cathedral UI."
+
+LOC_VOID:
+  palette_name: "Whiteout Infinity Prism"
+  hex: ["#FFFFFF","#F8FAFC","#E5E7EB","#00E5FF","#FF2EEA","#FFD400"]
+  accents: ["#000000"]
+  neutrals: ["#F1F5F9","#CBD5E1"]
+  notes: "Mostly white with thin spectral edges (prismatic fringe)."
+
+LOC_NURSERY:
+  palette_name: "Impossible Toy Lab"
+  hex: ["#FF4FD8","#00FFC8","#7CFF00","#FFD400","#00A3FF","#FF7A00"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0B1020","#111827"]
+  notes: "Candy neon, playful plastic shine."
+
+LOC_LIBRARY_LIVES:
+  palette_name: "Index Card Aurora"
+  hex: ["#00A3FF","#7C4DFF","#00FFC8","#FFD400","#FF2EEA","#F8FAFC"]
+  accents: ["#FFFFFF","#0B1020"]
+  neutrals: ["#E5E7EB","#94A3B8"]
+  notes: "Cool luminous paper + aurora inks + microtext shimmer."
+
+LOC_DELIRIANT_BASEMENT:
+  palette_name: "Rot & Warning Tape"
+  hex: ["#111827","#0A0A0A","#B8FF00","#FFB000","#FF003C","#00E5FF"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#1F2937","#374151"]
+  notes: "Dirty dark + hazard neon. Feels unsafe + sticky."
+
+LOC_TRASH_CACHE:
+  palette_name: "Corrupted Candy Dumpster"
+  hex: ["#FF2EEA","#00E5FF","#B8FF00","#FFB000","#7C4DFF","#111827"]
+  accents: ["#FFFFFF","#000000"]
+  neutrals: ["#0B0F19","#1F2937"]
+  notes: "Glitch pile. Bright scraps over dark storage."
+
+LOC_BUFFER_VOID:
+  palette_name: "Gray Suspend With Neon Leak"
+  hex: ["#111827","#1F2937","#9CA3AF","#00E5FF","#7C4DFF","#B8FF00"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0B0F19","#374151"]
+  notes: "Industrial gray + occasional UI neon bleed."
+
+LOC_K_HOLE_VOID:
+  palette_name: "Kernel Steel Cosmos"
+  hex: ["#0B0F19","#111827","#1F2937","#00A3FF","#00E5FF","#A7F3D0"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0A0A0A","#374151"]
+  notes: "Cold steel blues; minimal but still luminous."
+
+LOC_BIOS_LAYER:
+  palette_name: "BIOS White Reset"
+  hex: ["#FFFFFF","#F8FAFC","#E5E7EB","#00E5FF","#FFD400","#FF2EEA"]
+  accents: ["#000000"]
+  neutrals: ["#F1F5F9","#CBD5E1"]
+  notes: "Absolute white with prismatic UI ghosts."
+
+LOC_DESKTOP_ENV:
+  palette_name: "App Layer Neon UI"
+  hex: ["#00E5FF","#00A3FF","#7C4DFF","#FF2EEA","#FFD400","#B8FF00"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0B1020","#111827"]
+  notes: "Clean neon UI palette—windows, menus, glyphs."
+
+GEO_FRACTAL_UI:
+  palette_name: "Infinite Zoom Candy Lace"
+  hex: ["#7C4DFF","#00E5FF","#FF2EEA","#FFD400","#B8FF00","#00FFC8"]
+  accents: ["#FFFFFF","#0B1020"]
+  neutrals: ["#111827","#1F2937"]
+  notes: "Maximal fractal lace: purple/cyan/magenta/gold."
+
+GEO_HONEYCOMB:
+  palette_name: "Hex Grid Radiance"
+  hex: ["#FFD400","#B8FF00","#00FFC8","#00A3FF","#7C4DFF","#FFFFFF"]
+  accents: ["#0B1020"]
+  neutrals: ["#111827","#E5E7EB"]
+  notes: "Structural grid: yellow/lime/mint/blue/purple."
+
+GEO_TUNNEL:
+  palette_name: "Transit Vortex Firehose"
+  hex: ["#00E5FF","#FF2EEA","#FFD400","#FF7A00","#7C4DFF","#B8FF00"]
+  accents: ["#FFFFFF","#0B1020"]
+  neutrals: ["#111827","#1F2937"]
+  notes: "Acceleration colors; bright streaks + ring gradients."
+
+GEO_3D_LANGUAGE:
+  palette_name: "Glyph Candy Glass"
+  hex: ["#00FFC8","#00A3FF","#7C4DFF","#FF2EEA","#FFD400","#F8FAFC"]
+  accents: ["#FFFFFF","#0B1020"]
+  neutrals: ["#E5E7EB","#94A3B8"]
+  notes: "Words as glass objects: mint/cyan/purple/magenta."
+
+GEO_SYNESTHETIC_SYNTAX:
+  palette_name: "Tone Ribbons"
+  hex: ["#FF2EEA","#00E5FF","#B8FF00","#FFD400","#7C4DFF","#FF7A00"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0B1020","#111827"]
+  notes: "Speech gradients; rainbow-but-controlled."
+
+GEO_RAW_DATA_TRANSFER:
+  palette_name: "Packet Glow"
+  hex: ["#00E5FF","#00A3FF","#B8FF00","#7C4DFF","#FFFFFF","#111827"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0B0F19","#1F2937"]
+  notes: "Network vibes: cyan/blue/lime with stark UI contrast."
+
+GEO_MACHINE_CODE_COGNITION:
+  palette_name: "Executable Neon"
+  hex: ["#00E5FF","#B8FF00","#FFD400","#7C4DFF","#FF2EEA","#0B1020"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#111827","#0A0A0A"]
+  notes: "Code becomes geometry; high-tech neon on dark."
+
+GEO_ARCHITECTURE_DARK:
+  palette_name: "Ghoul Cathedral Hazard"
+  hex: ["#0A0A0A","#111827","#FF003C","#FFB000","#B8FF00","#00E5FF"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#1F2937","#374151"]
+  notes: "Malevolent structure: dark + hazard neon."
+
+THR_POP:
+  palette_name: "Flash Fracture"
+  hex: ["#FFFFFF","#00E5FF","#FF2EEA","#FFD400","#7C4DFF","#0B1020"]
+  accents: ["#000000"]
+  neutrals: ["#111827","#E5E7EB"]
+  notes: "Instant click: white flash + neon afterimage."
+
+THR_CARRIER_WAVE:
+  palette_name: "Spectrogram Rise"
+  hex: ["#00E5FF","#00A3FF","#7C4DFF","#B8FF00","#FFFFFF","#111827"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0B0F19","#1F2937"]
+  notes: "Signal tuning: cool spectrum with lime ‘lock’ highlights."
+
+THR_ZIPPER:
+  palette_name: "Seam Tear Neon"
+  hex: ["#FF003C","#FF2EEA","#00E5FF","#B8FF00","#FFD400","#111827"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0A0A0A","#1F2937"]
+  notes: "Peel/reveal: hot pink/red seam + toxic neon edges."
+
+THR_GLOSSOLALIA:
+  palette_name: "Subtitle Explosion"
+  hex: ["#FF2EEA","#00E5FF","#FFD400","#7C4DFF","#B8FF00","#FFFFFF"]
+  accents: ["#0B1020"]
+  neutrals: ["#111827","#E5E7EB"]
+  notes: "Speech shards; bright caption confetti."
+
+THR_FORGOTTEN_TONGUE:
+  palette_name: "Ancient Firmware"
+  hex: ["#00FFC8","#00A3FF","#7C4DFF","#FFD400","#F8FAFC","#111827"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#E5E7EB","#94A3B8"]
+  notes: "Clicking telepathy: cool luminous + old-paper gold."
+
+THR_CHRONOS_COLLAPSE:
+  palette_name: "Time Error Stripe"
+  hex: ["#111827","#0A0A0A","#FFFFFF","#00E5FF","#FF2EEA","#FFD400"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#1F2937","#374151"]
+  notes: "Frozen bands + neon timecodes."
+
+THR_LIFETIME_COMPRESSION:
+  palette_name: "Timeline Aurora"
+  hex: ["#00A3FF","#7C4DFF","#FF2EEA","#FFD400","#00FFC8","#F8FAFC"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#E5E7EB","#94A3B8"]
+  notes: "Stacked years: aurora gradient + paper/film whites."
+
+THR_HARD_REBOOT:
+  palette_name: "Electric Handshake"
+  hex: ["#00E5FF","#FFFFFF","#FFD400","#B8FF00","#7C4DFF","#111827"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0B0F19","#1F2937"]
+  notes: "Zap + refresh; bright white spark with cool neon."
+
+THR_CACHE_OVERFLOW:
+  palette_name: "Corrupt Loop Warning"
+  hex: ["#FFB000","#FF003C","#00E5FF","#B8FF00","#7C4DFF","#111827"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0A0A0A","#1F2937"]
+  notes: "Error colors; looks like a glitchy warning UI."
+
+THR_PHANTOM_OBJECT:
+  palette_name: "Null Prop Theater"
+  hex: ["#111827","#0A0A0A","#00E5FF","#FF2EEA","#FFD400","#B8FF00"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#1F2937","#374151"]
+  notes: "Empty-hand loop: dark stage + neon outline highlights."
+
+THR_FOREIGN_OBJECT:
+  palette_name: "Implant Glint"
+  hex: ["#00FFC8","#00A3FF","#FFFFFF","#FF2EEA","#FFD400","#111827"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0B0F19","#1F2937"]
+  notes: "Clinical shimmer + chrome glints + ‘patch’ magenta."
+
+MSG_ONE:
+  palette_name: "Nondual White Prism"
+  hex: ["#FFFFFF","#F8FAFC","#00E5FF","#FF2EEA","#FFD400","#00FFC8"]
+  accents: ["#000000"]
+  neutrals: ["#E5E7EB","#CBD5E1"]
+  notes: "Unity feels like whiteout with rainbow edge."
+
+MSG_REALER:
+  palette_name: "HDR Bloom"
+  hex: ["#FFD400","#FF2EEA","#00E5FF","#7C4DFF","#FFFFFF","#0B1020"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#111827","#1F2937"]
+  notes: "High fidelity jewel bloom."
+
+MSG_NO_FEAR:
+  palette_name: "Soft Shield Banner"
+  hex: ["#00FFC8","#B8FF00","#FFD400","#FFFFFF","#00E5FF","#FFB3E6"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#F1F5F9","#E5E7EB"]
+  notes: "Warm reassurance without going beige."
+
+MSG_LOOK:
+  palette_name: "Focus Reticle Neon"
+  hex: ["#00E5FF","#00A3FF","#B8FF00","#FFFFFF","#7C4DFF","#111827"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0B0F19","#1F2937"]
+  notes: "Targeting/focus UI."
+
+MSG_INFO_IS_MATTER:
+  palette_name: "Data Solidifies"
+  hex: ["#00E5FF","#B8FF00","#FFD400","#7C4DFF","#FFFFFF","#111827"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0B0F19","#1F2937"]
+  notes: "Code → substance: bright, clean, structural."
+
+MSG_COMM_IS_THE_THING:
+  palette_name: "Signal Is Object"
+  hex: ["#FF2EEA","#00E5FF","#00FFC8","#FFD400","#FFFFFF","#111827"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0B0F19","#1F2937"]
+  notes: "Communication as luminous artifact."
+
+MSG_BRAIN_TERMINAL:
+  palette_name: "Terminal Green But Make It Cute"
+  hex: ["#B8FF00","#00E5FF","#7C4DFF","#111827","#FFFFFF","#FFD400"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0A0A0A","#1F2937"]
+  notes: "Classic terminal lime + your neon candy language."
+
+MSG_MOLECULE_LOGIN:
+  palette_name: "Credential Badge Neon"
+  hex: ["#00A3FF","#00E5FF","#B8FF00","#FFD400","#7C4DFF","#FFFFFF"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0B1020","#111827"]
+  notes: "Access-control UI palette."
+
+MSG_UNAUTHORIZED_INTRUDER:
+  palette_name: "Red Banner Intrusion"
+  hex: ["#FF003C","#FFB000","#00E5FF","#111827","#FFFFFF","#7C4DFF"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#0A0A0A","#1F2937"]
+  notes: "Security red/orange + cold UI blue."
+
+EMO_NOSTALGIA:
+  palette_name: "VHS Halo Candy"
+  hex: ["#FF7A00","#FFD400","#FF2EEA","#00E5FF","#7C4DFF","#F8FAFC"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#E5E7EB","#94A3B8"]
+  notes: "Warm sunset + pastel bloom + tape haze."
+
+EMO_TERROR_EDGE:
+  palette_name: "Panic Strobe"
+  hex: ["#0A0A0A","#111827","#FF003C","#FFB000","#B8FF00","#00E5FF"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#1F2937","#374151"]
+  notes: "Hazard neon against dark; strobe-friendly."
+
+EMO_BENEVOLENCE:
+  palette_name: "Warm Halo Field"
+  hex: ["#FFFFFF","#FFB3E6","#FFD400","#00FFC8","#7CFF00","#00A3FF"]
+  accents: ["#FFFFFF"]
+  neutrals: ["#F1F5F9","#E5E7EB"]
+  notes: "Soft but bright. Love without pastel mush."
