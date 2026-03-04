@@ -1,1 +1,241 @@
+meta:
+  title: "Ghost x Erowid Cosmology (Fictional Model)"
+  version: "0.1.0"
+  last_updated: "2026-03-04"
+  status: "draft"
+  source_pdf: "canon/Purple ghost erowid.pdf"
+  note: "Narrative fiction built from recurring psychedelic phenomenology motifs."
 
+axes:
+  motif_type: [entity, location, geometry, threshold, message, emotion]
+  tier: [common, uncommon, rare, singular]
+  valence: [benign, neutral, ominous, mixed]
+  intensity: [low, medium, high, extreme]
+  compound_family: [psychedelic, dissociative, deliriant, empathogen, other, unknown]
+
+motifs:
+  # --- ENTITIES ---
+  - id: ENT_ELVES
+    type: entity
+    name: "Machine Elves"
+    tier: common
+    valence: mixed
+    intensity: high
+    compound_family: psychedelic
+    tags: [builder, hyperactive, language-like, procedural, dmt-adjacent]
+    notes: "Recurring archetype: small/fast entities that 'construct' or manipulate reality."
+
+  - id: ENT_MANTIS
+    type: entity
+    name: "Mantis / Insectoid Clinicians"
+    tier: common
+    valence: mixed
+    intensity: high
+    compound_family: psychedelic
+    tags: [surgery, clinical, technician, body-work, detached]
+    notes: "Recurring archetype: tall insectoid beings performing 'adjustments' or examinations."
+
+  - id: ENT_JESTER
+    type: entity
+    name: "Jester / Trickster"
+    tier: common
+    valence: mixed
+    intensity: medium
+    compound_family: unknown
+    tags: [gatekeeper, mockery, paradox, humor, ego-check]
+    notes: "Recurring archetype: comedic/taunting presence that destabilizes certainty."
+
+  - id: ENT_HATMAN
+    type: entity
+    name: "Hat Man / Shadow Watcher"
+    tier: common
+    valence: ominous
+    intensity: high
+    compound_family: deliriant
+    tags: [shadow-people, peripheral, watcher, sleep-paralysis-adjacent]
+    notes: "Recurring archetype: dark silhouette watcher; also appears in non-drug sleep-paralysis folklore."
+
+  - id: ENT_GAIA
+    type: entity
+    name: "Mother Gaia"
+    tier: rare
+    valence: benign
+    intensity: extreme
+    compound_family: psychedelic
+    tags: [mother, unconditional-love, nurture, overwhelming-benevolence]
+    notes: "Singular-feeling nurturing presence, often described as total compassion."
+
+  # --- LOCATIONS ---
+  - id: LOC_WAITING_ROOM
+    type: location
+    name: "The Waiting Room / Antechamber"
+    tier: common
+    valence: neutral
+    intensity: medium
+    compound_family: psychedelic
+    tags: [threshold, chrysanthemum, pre-breakthrough, liminal]
+    notes: "Transitional 'staging' space before breakthrough."
+
+  - id: LOC_PALACE_UI
+    type: location
+    name: "Palace / Cathedral UI"
+    tier: common
+    valence: mixed
+    intensity: high
+    compound_family: psychedelic
+    tags: [cathedral, vast-architecture, jewel-light, sacred-geometry]
+    notes: "Vast ornate non-euclidean architecture; awe-heavy."
+
+  - id: LOC_VOID
+    type: location
+    name: "The Void / White Light"
+    tier: common
+    valence: mixed
+    intensity: extreme
+    compound_family: unknown
+    tags: [whiteout, nothingness, total-field, ego-dissolution]
+    notes: "Objectless state: pure being / blank infinity / whiteout."
+
+  - id: LOC_NURSERY
+    type: location
+    name: "The Nursery"
+    tier: uncommon
+    valence: mixed
+    intensity: high
+    compound_family: psychedelic
+    tags: [toys, impossible-objects, playful, dmt-adjacent]
+    notes: "Playful room with impossible objects; often described as 'shown' to the traveler."
+
+  # --- GEOMETRIES ---
+  - id: GEO_FRACTAL_UI
+    type: geometry
+    name: "Fractal UI / Infinite Recursion"
+    tier: common
+    valence: neutral
+    intensity: high
+    compound_family: psychedelic
+    tags: [mandelbrot, recursion, infinite-zoom, self-similar]
+    notes: "The repeating visual substrate; 'code-like' recursive structure."
+
+  - id: GEO_HONEYCOMB
+    type: geometry
+    name: "Honeycomb / Hex Grid Overlay"
+    tier: common
+    valence: neutral
+    intensity: medium
+    compound_family: psychedelic
+    tags: [hexagons, lattice, tiling, grid]
+    notes: "Hexagonal tiling overlay perceived as structural layer."
+
+  - id: GEO_TUNNEL
+    type: geometry
+    name: "Tunnel Vortex"
+    tier: common
+    valence: mixed
+    intensity: extreme
+    compound_family: psychedelic
+    tags: [vortex, transit, acceleration, breakthrough]
+    notes: "High-speed transition geometry; 'travel' effect."
+
+  # --- THRESHOLDS ---
+  - id: THR_POP
+    type: threshold
+    name: "The Pop / Snap"
+    tier: common
+    valence: neutral
+    intensity: high
+    compound_family: psychedelic
+    tags: [breakthrough, click, transition, threshold-event]
+    notes: "Sudden sensory/mental click that marks a mode switch."
+
+  - id: THR_CARRIER_WAVE
+    type: threshold
+    name: "Carrier Wave (Audio Rise)"
+    tier: common
+    valence: mixed
+    intensity: high
+    compound_family: psychedelic
+    tags: [tone, vibration, rising-frequency, pre-breakthrough]
+    notes: "Rising tone/vibration that precedes transition; Round 2 will test correlations."
+
+  - id: THR_ZIPPER
+    type: threshold
+    name: "Zipper / Fold / Peel"
+    tier: uncommon
+    valence: mixed
+    intensity: extreme
+    compound_family: psychedelic
+    tags: [unzip, fold, peel, behind-the-wall]
+    notes: "Reality appears to unzip/peel; Round 2 will categorize what's 'behind' it."
+
+  # --- MESSAGES ---
+  - id: MSG_ONE
+    type: message
+    name: "It is all one"
+    tier: common
+    valence: neutral
+    intensity: high
+    compound_family: unknown
+    tags: [unity, nonduality, collapse]
+    notes: "Nondual framing: subject/object collapse."
+
+  - id: MSG_REALER
+    type: message
+    name: "More real than real"
+    tier: common
+    valence: mixed
+    intensity: high
+    compound_family: unknown
+    tags: [hyperreality, higher-resolution, ontological-shock]
+    notes: "Perception that the underlayer has higher fidelity than baseline life."
+
+  - id: MSG_NO_FEAR
+    type: message
+    name: "Do not be afraid"
+    tier: common
+    valence: benign
+    intensity: high
+    compound_family: unknown
+    tags: [reassurance, instruction, threshold]
+    notes: "Often heard/felt at the gate."
+
+  - id: MSG_LOOK
+    type: message
+    name: "Just look"
+    tier: uncommon
+    valence: neutral
+    intensity: medium
+    compound_family: unknown
+    tags: [attention, instruction, gate]
+    notes: "Instruction that attention itself is the key."
+
+  # --- EMOTIONS ---
+  - id: EMO_NOSTALGIA
+    type: emotion
+    name: "Cosmic Nostalgia"
+    tier: common
+    valence: mixed
+    intensity: medium
+    compound_family: unknown
+    tags: [homecoming, remembering, longing]
+    notes: "Felt sense of recognition / returning."
+
+  - id: EMO_TERROR_EDGE
+    type: emotion
+    name: "Ego Dissolution Terror"
+    tier: common
+    valence: ominous
+    intensity: extreme
+    compound_family: unknown
+    tags: [panic, threshold-fear, dying-feeling]
+    notes: "Fear spike at boundary crossings."
+
+  - id: EMO_BENEVOLENCE
+    type: emotion
+    name: "Unconditional Benevolence"
+    tier: uncommon
+    valence: benign
+    intensity: high
+    compound_family: psychedelic
+    tags: [love-field, compassion, embrace]
+    notes: "Perceived love as an ambient field."
