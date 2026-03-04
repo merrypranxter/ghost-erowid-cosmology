@@ -1,0 +1,49 @@
+# Texture + material library keyed to motif families
+# Use: pick 1–3 textures per render. Stack them.
+
+GLOBAL:
+  scanline_crt:
+    keywords: ["CRT scanlines", "phosphor glow", "bloom", "tube distortion", "VHS bleed", "tracking noise"]
+  analog_film:
+    keywords: ["film grain", "halation", "light leaks", "dust specks", "gate weave", "soft focus"]
+  compression_glitch:
+    keywords: ["macroblock artifacts", "datamosh smears", "packet loss", "banding", "JPEG ghosts", "corrupt frames"]
+  holographic_iridescence:
+    keywords: ["holofoil shimmer", "thin-film interference", "oil-slick iridescence", "prismatic fringe", "diffraction sparkle"]
+  candy_plastic:
+    keywords: ["glossy plastic", "gelatin shine", "bubble wrap specular", "toy vinyl", "smooth candy shell"]
+  wet_bio_slime:
+    keywords: ["mucus sheen", "gelatinous slime", "biofilm glaze", "wet translucency", "dripping resin"]
+  matte_void:
+    keywords: ["velvet black", "light-eating matte", "soot fog", "shadow bleed", "ink wash"]
+  hazard_industrial:
+    keywords: ["caution tape", "rust speckle", "dirty concrete", "oil stains", "industrial grime", "warning decals"]
+  paper_index:
+    keywords: ["newsprint texture", "index card fibers", "book page grain", "library card patina", "pencil smudges"]
+  stained_glass:
+    keywords: ["lead came lines", "cathedral glass", "jewel refraction", "colored caustics", "mosaic shards"]
+  chrome_ui:
+    keywords: ["chromed edges", "glass UI panels", "HUD glass", "specular highlights", "metallic gradients"]
+  neon_gas:
+    keywords: ["neon tube glow", "plasma filaments", "ionized haze", "electric fog", "aurora mist"]
+
+ENTITY_TEXTURE_MAP:
+  ENT_ELVES: ["holographic_iridescence", "compression_glitch", "candy_plastic", "chrome_ui"]
+  ENT_MANTIS: ["chrome_ui", "wet_bio_slime", "scanline_crt", "sterile_glass_panels"]
+  ENT_JESTER: ["candy_plastic", "analog_film", "compression_glitch", "neon_gas"]
+  ENT_HATMAN: ["matte_void", "compression_glitch", "scanline_crt"]
+  ENT_GAIA: ["holographic_iridescence", "neon_gas", "analog_film"]
+  ENT_ADMINS: ["chrome_ui", "scanline_crt", "compression_glitch"]
+  ENT_SHADOW_SPIDERS: ["matte_void", "compression_glitch", "hazard_industrial"]
+
+LOCATION_TEXTURE_MAP:
+  LOC_WAITING_ROOM: ["scanline_crt", "holographic_iridescence", "neon_gas"]
+  LOC_PALACE_UI: ["stained_glass", "chrome_ui", "analog_film"]
+  LOC_VOID: ["matte_void", "analog_film", "holographic_iridescence"]
+  LOC_NURSERY: ["candy_plastic", "gelatin_gloss", "neon_gas"]
+  LOC_LIBRARY_LIVES: ["paper_index", "analog_film", "chrome_ui"]
+  LOC_TRASH_CACHE: ["compression_glitch", "hazard_industrial", "paper_index"]
+  LOC_DELIRIANT_BASEMENT: ["hazard_industrial", "matte_void", "compression_glitch"]
+  LOC_BUFFER_VOID: ["scanline_crt", "industrial_haze", "compression_glitch"]
+  LOC_K_HOLE_VOID: ["chrome_ui", "matte_void", "neon_gas"]
+  LOC_BIOS_LAYER: ["analog_film", "holographic_iridescence", "clean_white_bloom"]
