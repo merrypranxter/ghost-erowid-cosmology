@@ -1,4 +1,4 @@
-id,type,name,tier,valence,intensity,compound_family,tags,notes
+id,type,name,tier,valence,intensity,compound_family,tags,notes,art_palette,art_textures,art_typography,art_motion
 ENT_ELVES,entity,Machine Elves,common,mixed,high,psychedelic,"builder;hyperactive;language-like;procedural;dmt-adjacent","Small/fast entities that 'construct' or manipulate reality."
 ENT_MANTIS,entity,Mantis / Insectoid Clinicians,common,mixed,high,psychedelic,"surgery;clinical;technician;body-work;detached","Insectoid beings performing 'adjustments' or examinations."
 ENT_JESTER,entity,Jester / Trickster,common,mixed,medium,unknown,"gatekeeper;mockery;paradox;humor;ego-check","Comedic/taunting presence that destabilizes certainty."
