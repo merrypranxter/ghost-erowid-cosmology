@@ -1,0 +1,50 @@
+# Geometry/pattern modules the AI can slap on ANY scene
+# Use: choose 1 base grid + 1 distortion + 1 micro-pattern.
+
+BASE_GRIDS:
+  HEX_HONEYCOMB:
+    keywords: ["hex grid overlay", "honeycomb lattice", "hex tiling", "coordinate ticks"]
+  TRIANGULATION:
+    keywords: ["Delaunay triangulation mesh", "triangular wireframe", "vector triangulation"]
+  VORONOI_CELLS:
+    keywords: ["Voronoi cells", "cracked cell membranes", "organic polygon map"]
+  ISOMETRIC_UI:
+    keywords: ["isometric grid", "game UI grid", "pixel-architecture scaffolding"]
+  POLAR_RING:
+    keywords: ["concentric rings", "polar grid", "radar sweep", "reticle circles"]
+
+DISTORTIONS:
+  MOEBIUS_WARP:
+    keywords: ["Möbius twist warp", "impossible ribbon fold", "non-orientable surface vibe"]
+  LENSING:
+    keywords: ["gravitational lens distortion", "chromatic aberration", "warped refraction"]
+  DATAMOSH_FLOW:
+    keywords: ["datamosh smear flow", "motion-vector tearing", "packet-loss trails"]
+  TOPOGRAPHIC_BEND:
+    keywords: ["topographic contour warp", "heightmap bend", "terrain-fold UI"]
+  KALEIDOSCOPE:
+    keywords: ["kaleidoscopic symmetry", "mirror tessellation", "radial tiling"]
+
+MICRO_PATTERNS:
+  FRACTAL_LACE:
+    keywords: ["Mandelbrot lace", "Julia set filigree", "recursive lace texture"]
+  TURING_SPOTS:
+    keywords: ["reaction-diffusion Turing pattern", "leopard spots", "bio-math skin"]
+  WAVE_INTERFERENCE:
+    keywords: ["interference fringes", "moiré ripples", "standing wave nodes"]
+  PHASE_NOISE:
+    keywords: ["phase noise shimmer", "speckle field", "random field grain"]
+  CIRCUIT_GLYPHS:
+    keywords: ["circuit trace glyphs", "microchip pathways", "PCB runes"]
+
+SIGNATURE_COMBOS:
+  WAITING_ROOM:
+    stack: ["POLAR_RING", "WAVE_INTERFERENCE", "FRACTAL_LACE"]
+  PALACE_UI:
+    stack: ["ISOMETRIC_UI", "LENSING", "CIRCUIT_GLYPHS"]
+  HATMAN_SECURITY:
+    stack: ["TRIANGULATION", "DATAMOSH_FLOW", "PHASE_NOISE"]
+  TRASH_CACHE:
+    stack: ["VORONOI_CELLS", "DATAMOSH_FLOW", "CIRCUIT_GLYPHS"]
+  SYNESTHETIC_LANGUAGE:
+    stack: ["POLAR_RING", "KALEIDOSCOPE", "WAVE_INTERFERENCE"]
