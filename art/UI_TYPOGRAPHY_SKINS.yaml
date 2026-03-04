@@ -1,0 +1,22 @@
+# Typography + UI skin presets (use like “Skin: SECURITY_NOIR”)
+
+SKINS:
+  SECURITY_NOIR:
+    headline: ["ALL CAPS", "condensed athletic", "tight tracking", "high contrast"]
+    microtext: ["monospace", "syslog style", "tiny timestamps", "module IDs"]
+    widgets: ["redaction bars", "alert banner", "warning triangles", "permission stamps"]
+
+  CANDY_OS:
+    headline: ["bubble bold", "retro arcade", "thick outlines", "drop shadow glow"]
+    microtext: ["rounded sans", "playful UI labels", "sticker captions"]
+    widgets: ["cute buttons", "loading bars", "sparkle cursors", "menu tabs"]
+
+  CATHEDRAL_UI:
+    headline: ["ornate display", "stained-glass title treatment", "gold foil effect"]
+    microtext: ["microprint filigree", "margin notes", "index labels"]
+    widgets: ["mosaic frames", "halo rings", "cathedral window panels"]
+
+  BIOS_MINIMAL:
+    headline: ["thin sans", "spaced letters", "clean white"]
+    microtext: ["tiny diagnostic text", "single-line status"]
+    widgets: ["boot bar", "single cursor", "quiet HUD"]
