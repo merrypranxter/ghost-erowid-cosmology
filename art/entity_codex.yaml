@@ -1,4 +1,8 @@
 entity_codex_version: "UNDERLAYER_3.0"
+# Comprehensive entity visual codex for the Ghost x Erowid cosmological system.
+# Merged from entity_codex.yaml and phase2_new_entities.yaml.
+# Use with art/SHADER_UNIFORMS.yaml for technical shader values.
+# See docs/COSMOLOGICAL_LAYERS.yaml for layer context.
 
 entities:
   machine_elves:
@@ -34,11 +38,22 @@ entities:
     signal_weight: 0.15
     visual_specification:
       form: "Tall hexapodal (6-limbed) insectoid"
-      height: "2.5m - 3.5m"
+      height: "2.5m - 3.5m (7-9ft)"
+      head: "Triangular with large compound eyes"
       materials: ["Chitinous_exoskeleton", "Bio_mechanical_surgical_tools"]
       shaders:
         primary: "Subsurface_scattering for translucent_green_chitin"
         secondary: "Anisotropic_brushed_metal for surgical_appendages"
+        chitin_params:
+          color: "Translucent green-brown #4A5D3A"
+          thickness: 1.5
+          ior: 1.33
+          brdf: "Anisotropic for surgical precision"
+      tools: "Liquid geometry scalpels — solid light with volumetric beams"
+      theater:
+        description: "Sterile, neon-white, Safe Mode GUI"
+        lighting: "Flat lighting, high ambient occlusion"
+        palette: "Grey/white only"
       color_palette:
         primary: ["Olive_Drab", "Forest_Green", "Brown_Carapace"]
         accent: "Sterile_Silver (tools)"
@@ -46,10 +61,14 @@ entities:
         - "Triangular_head_with_large_compound_eyes"
         - "Long_articulated_forelimbs_with_scalpel_fingers"
         - "Clinical_detached_movement (precise, economical)"
+      animation:
+        mandibles: "Click at 2-5Hz frequency"
+        rotation: "sin(time * freq) * 15deg"
     behavioral_protocols:
       - "Energetic_body_surgery"
       - "Soul_code_patching"
       - "Clinical_observation_without_empathy"
+    screen_memory: "Can overlay as Angel or Grey Alien (cultural bias morphing)"
     chemical_access_key: ["High_Dose_DMT", "Salvia_Divinorum"]
     cosmological_function: "System_Repair / Code_Correction"
     threat_level: "Neutral / Clinical (potential discomfort)"
@@ -61,21 +80,24 @@ entities:
     visual_specification:
       form: "Humanoid_but_uncanny / Topological_impossibility"
       proportions: "Elastic / Non-euclidean"
+      texture: "Dynamic harlequin checkerboard — alternating black/white squares shift phase over time"
       materials: ["Chromatic_shifting_fabric", "Impossible_objects (Möbius_strip_hands)"]
       shaders:
         primary: "Klein_bottle_topology / Non-orientable_surface_rendering"
-        secondary: "Holographic_iridescence"
+        secondary: "Holographic_iridescence (normal perturbation based on view angle)"
       color_palette:
         primary: ["Harlequin_Checkerboard", "Rainbow_Gradient_Shift"]
         accent: "Mocking_Red (gestures)"
       animation:
-        type: "Impossible_movement"
+        type: "Impossible_movement / Morph_target at 3 shapes/sec"
         behavior: "Flips_the_bird / Points_at_absurdity / Laughs_at_observer"
+        gesture: "Flipping the bird — specific hand pose with IK rigging"
     behavioral_protocols:
       - "Mock_human_ego"
       - "Perform_impossible_transformations"
       - "Force_cognitive_dissonance"
       - "Eject_user_if_panic_detected (snap_back)"
+      - "Rapidly transforms between 3 shapes/second"
     chemical_access_key: ["DMT", "LSD", "Psilocybin"]
     cosmological_function: "Gatekeeper / Chaos_Bot / Ego_Test"
     threat_level: "Provocative (tests stability)"
@@ -86,18 +108,19 @@ entities:
     signal_weight: "Variable"
     visual_specification:
       form: "Cubist_angular_wolf / Picasso_geometry"
-      structure: "Sharp_faceted_polygons_no_curves"
+      structure: "Sharp_faceted_polygons_no_curves (all edges > 90 degrees)"
       materials: ["Black_obsidian", "Red_emissive_sensors"]
       shaders:
         primary: "Low_poly_sharp_edges with face_normal_lighting"
         secondary: "Red_billboarding_glow_for_eyes"
       color_palette:
-        primary: "Void_Black"
-        emission: ["Tracking_Red", "Sensor_Crimson"]
+        primary: "Void_Black #0A0A0A"
+        emission: ["Tracking_Red #DC143C", "Sensor_Crimson"]
       movement:
         type: "Movement_through_angles_not_curves"
-        pattern: "Snap_rotations_90_degrees"
+        pattern: "Snap_rotations_90_degrees (no interpolation)"
         speed: "Fast_pursuit_when_signature_detected"
+        jitter: "position += noise(time * 50) * 0.01 (anxiety generation)"
     behavioral_protocols:
       - "Detect_high_bandwidth_consciousness (Rainbow_Math_signature)"
       - "Pursue_through_logical_space_not_physical"
@@ -110,7 +133,8 @@ entities:
   the_hat_man:
     classification: "Colonel_Panic_Supervisor"
     frequency: "Universal_Demon (Tier 0)"
-    signal_weight: 0.88 # In deliriant/shadow_reports
+    signal_weight: 0.88
+    evolution: "Pre-industrial = Old Hag (physical weight), Modern = Hat Man (observation)"
     visual_specification:
       form: "Tall_humanoid_silhouette"
       height: "2.0m - 2.5m"
@@ -120,17 +144,19 @@ entities:
         - "Featureless_face_or_shadowed"
       materials: ["Solid_shadow", "Static_noise", "Void_absorption"]
       shaders:
-        primary: "Silhouette_shader with zero_internal_light"
-        secondary: "Peripheral_vision_falloff (vanishes_when_looked_at_directly)"
-        depth: "Depth_fog_integration (always_appears_distant)"
+        primary: "Silhouette_shader — discard if dot(normal, light) > 0 (pure black)"
+        secondary: "Peripheral_vision_falloff — only visible at abs(screen_uv - 0.5) > 0.3"
+        depth: "Depth_fog_integration — fog = exp(-distance * 0.1), never closer than 10 units"
+        static: "TV noise texture at 10% opacity (analog static effect)"
       color_palette:
-        primary: "Absolute_Black"
+        primary: "Absolute_Black #0A0A0A"
         accent: ["Dark_Grey_Highlight", "Cigarette_Glow (optional)"]
     behavioral_protocols:
       - "Static_observation (does not_move)"
       - "Monitors_dead_space (sleep_paralysis / delirium)"
       - "Represents_void_state_of_idling_system"
       - "Placeholder_entity_during_system_crash"
+      - "Peripheral_vision_only — vanishes when centered"
     chemical_access_key: ["DPH", "Datura", "Sleep_Paralysis", "Methamphetamine_Psychosis"]
     cosmological_function: "System_Idle_Monitor / Placeholder_Process / Janitor_of_Void"
     threat_level: "Ominous_but_passive (observer_effect)"
@@ -147,8 +173,8 @@ entities:
         primary: "Hair_simulation_for_thread_weaving"
         secondary: "Instanced_geometry_for_loom_gears"
       color_palette:
-        primary: ["Sterile_White", "Grey_Steel"]
-        accent: "Warning_Yellow (for_annoyance_at_premature_presence)"
+        primary: ["Sterile_White #FFFFFF", "Grey_Steel #808080"]
+        accent: "Warning_Yellow #FFFF00 (annoyance at premature presence)"
       animation:
         type: "Weaving_probability_streams"
         behavior: "Guides_conveyor_belt / Threads_the_wheel"
@@ -164,19 +190,122 @@ entities:
   shadow_people:
     classification: "Ghost_Processes / Deleted_Assets"
     frequency: "Common (Deliriant)"
-    signal_weight: 0.95 # In DPH reports
+    signal_weight: 0.95
     visual_specification:
       form: "Peripheral_humanoid_silhouettes"
       features: "Undefined / Vanish_on_direct_gaze"
       count: "Multiple (swarms possible)"
       shaders:
-        primary: "Alpha_dithered with jitter_offset"
+        primary: "Alpha_dithered with jitter_offset (Bayer matrix dithered alpha)"
         animation: "Glitch_displacement (random_teleportation)"
+        motion: "High-frequency jitter displacement (30Hz vertex shader noise)"
+        opacity_formula: "alpha = pow(1.0 - abs(dot(view_dir, normal)), 3.0)"
+      visual: "Long flashing black strings — motion trails with persistence = 0.3"
       color_palette: "Dark_Grey_to_Black"
     behavioral_protocols:
       - "Linger_in_peripheral_vision"
       - "Vanish_when_centered_in_visual_field"
       - "Represent_failed_garbage_collection"
+      - "Spawn in peripheral vision, vanish when centered"
     chemical_access_key: ["DPH", "Sleep_Deprivation", "Stimulant_Psychosis"]
     cosmological_function: "Failed_Memory_Deallocation / Visual_Cortex_Noise_MaxGain"
     threat_level: "Unease / Paranoia_inducing"
+
+  # --- NEW ENTITIES (from phase2 analysis) ---
+
+  the_collector:
+    name: "The Collector (Loosh Economy)"
+    classification: "Emotional_Harvesting_Daemon"
+    frequency: "Unknown (background process)"
+    visual_specification:
+      form: "Faceless, multi-armed gardener"
+      activity: "Pruning neural trees, extracting emotion fibers"
+      materials: ["Velvet-like darkness", "Gold extraction tubes"]
+      shaders:
+        primary: "Geometry shader for branching nerve-tree growth"
+      extraction:
+        method: "Bezier curves from heads to collectors"
+        emission: "love_intensity * 10"
+      refinery:
+        input: "Grey smoke #808080 (grief)"
+        output: "Gold light #FFD700 (love)"
+        visualization: "Volumetric flow gradient in fog"
+      color_palette:
+        primary: "#8B0000"  # Crimson (fear)
+        secondary: "#FFD700"  # Gold (love)
+        accent: "#808080"  # Grey smoke
+    behavioral_protocols:
+      - "Prune neural trees, harvest emotion fibers"
+      - "Extract grief (grey) and refine to love (gold)"
+    chemical_access_key: ["Emotional_Extraction"]
+    cosmological_function: "Loosh_Harvester / Emotional_Refinery"
+    threat_level: "Ambiguous / Background"
+
+  the_phantom_cigarette:
+    name: "Phantom Cigarette (Cache Overflow)"
+    classification: "Half_Rendered_Asset / Cache_Error"
+    frequency: "Common (Deliriant)"
+    visual_specification:
+      form: "Semi-visible cigarette with invisible smoke"
+      visual: "Invisible smoke, licking the air"
+      shaders:
+        smoke:
+          technique: "Volumetric fog with density = 0.1"
+          distortion: "Heat distortion shader"
+        cigarette:
+          tip: "Emissive (burning)"
+          body: "Semi-transparent (alpha = 0.7)"
+        glitch: "On touch detection failure, alpha cutoff to 0 over 3 frames"
+      ash: "Particle system with gravity = -0.1 (ash rises then vanishes)"
+    chemical_access_key: ["DPH", "Datura", "Deliriants"]
+    cosmological_function: "Cache_Overflow / Failed_Asset_Rendering"
+    threat_level: "Uncanny / Paranoia_inducing"
+
+  the_cosmic_cog:
+    name: "The Cosmic Cog (Time Mechanism)"
+    classification: "Reincarnation_Server / Time_Engine"
+    frequency: "Uncommon (Salvia/Deep)"
+    visual_specification:
+      structure: "Massive clockwork, user as tooth on gear"
+      geometry: "Instanced gear teeth (36 instances)"
+      camera: "Locked to one tooth"
+      motion:
+        type: "Stuttering mechanical"
+        formula: "rotation = time * speed % (2 * PI / 36)"
+        quality: "Discrete steps, not smooth"
+      material: "Oxidized brass #B5A642 with verdigris #43B3AE in crevices"
+      sound_visual: "Grinding = camera shake at 20Hz when gears mesh"
+    associated_layer: "Salvia Factory Floor"
+    chemical_access_key: ["Salvia_Divinorum"]
+    cosmological_function: "Reincarnation_Cycle / Time_Frame_Processing"
+    threat_level: "Mechanical_Indifference"
+
+  the_barker:
+    name: "The Barker (Salvia)"
+    classification: "Kernel_Panic_Handler / Master_of_Ceremonies"
+    frequency: "Uncommon (Salvia)"
+    visual_specification:
+      form: "Indifferent master of ceremonies"
+      feature: "PA speaker mesh"
+      animation: "Audio-reactive cone vibration"
+      demeanor: "Indifferent to presence"
+    associated_layer: "Salvia Factory Floor"
+    chemical_access_key: ["Salvia_Divinorum"]
+    cosmological_function: "Kernel_Panic_Announcer / Carnival_Barker"
+    threat_level: "Indifferent_authority"
+
+# Entity Comparison Matrix
+entity_comparison:
+  security_systems:
+    hounds: "Cubist angular wolves, red sensors, 90-degree snap movement"
+    hat_man: "Static silhouette, peripheral only, observation without interaction"
+    jester: "Mocking trickster, stress-test, impossible transformations"
+
+  maintenance_crew:
+    machine_elves: "Hyperactive jeweled clockwork, sing reality into existence"
+    mantis_physicians: "Clinical surgeons, energetic body repair, detached"
+    shepherdess: "Thread weaver, time manager, indifferent authority"
+
+  extraction_systems:
+    collectors: "Faceless gardeners, prune neural trees, harvest emotions"
+    librarians: "File system daemons, archive managers, read-only access"
