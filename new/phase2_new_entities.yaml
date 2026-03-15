@@ -1,0 +1,172 @@
+# Phase 2 Expanded Entity Visuals
+# Detailed specifications for entities from Phase 2 extraction
+
+entities:
+  shepherdess:
+    name: "The Shepherdess (Salvia)"
+    classification: "Kernel_Manager / Thread_Scheduler"
+    form: "Feminine, stern authority figure"
+    aspect: "Indifferent overseer"
+    materials:
+      - "Thread-like hair simulation"
+      - "Loom gears as accessories"
+      - "Woven probability streams"
+    shader: "Hair simulation for thread-weaving motion"
+    palette:
+      primary: ["#FFFFFF", "#808080"]  # Sterile white, grey steel
+      accent: "#FFFF00"  # Warning yellow (annoyance at premature presence)
+    animation: "Weaving probability threads, guiding conveyor belt"
+    behavior:
+      - "Oversee factory floor / assembly line"
+      - "Manage thread allocation (soul distribution)"
+      - "Display annoyance at unauthorized presence"
+    chemical_access: ["Salvia_Divinorum"]
+    threat_level: "Indifferent authority"
+
+  hat_man_v2:
+    name: "The Hat Man (Sentinel v2.0)"
+    classification: "Colonel_Panic_Supervisor"
+    evolution: "Pre-industrial = Old Hag (physical weight), Modern = Hat Man (observation)"
+    form: "Tall silhouette, wide-brimmed fedora/stetson, trench coat"
+    face: "Featureless or shadowed"
+    shader_techniques:
+      primary: "Silhouette shader - discard if dot(normal, light) > 0"
+      depth: "Always appears distant - fog = exp(-distance * 0.1)"
+      peripheral: "Only visible at screen edges - abs(screen_uv - 0.5) > 0.3"
+      static: "TV noise texture at 10% opacity"
+    palette:
+      primary: "#0A0A0A"  # Almost black
+      static: "Noise overlay"
+    behavior:
+      - "Static observation (does not move)"
+      - "Monitors dead space (sleep paralysis / delirium)"
+      - "Peripheral vision only - vanishes when centered"
+    chemical_access: ["DPH", "Datura", "Sleep_Paralysis", "Methamphetamine_Psychosis"]
+    threat_level: "Ominous but passive"
+
+  mantis_physician_expanded:
+    name: "The Mantis Physician (Expanded)"
+    classification: "Hardware_Maintenance_Crew"
+    form: "Tall hexapodal (6-limbed), 7-9ft height"
+    head: "Triangular with large compound eyes"
+    chitin:
+      color: "Translucent green-brown #4A5D3A"
+      shader: "Subsurface scattering thickness = 1.5, ior = 1.33"
+      brdf: "Anisotropic for surgical precision"
+    tools: "Liquid geometry scalpels - solid light with volumetric beams"
+    theater:
+      description: "Sterile, neon-white, Safe Mode GUI"
+      lighting: "Flat lighting, high ambient occlusion"
+      palette: "Grey/white only"
+    animation:
+      mandibles: "Click at 2-5Hz frequency"
+      rotation: "sin(time * freq) * 15deg"
+    screen_memory: "Can overlay as Angel or Grey Alien (cultural bias morphing)"
+    chemical_access: ["High_Dose_DMT", "Salvia_Divinorum"]
+    threat_level: "Neutral / Clinical"
+
+  collector:
+    name: "The Collector (Loosh Economy)"
+    classification: "Emotional_Harvesting_Daemon"
+    form: "Faceless, multi-armed gardener"
+    activity: "Pruning neural trees, extracting emotion fibers"
+    materials:
+      - "Velvet-like darkness"
+      - "Gold extraction tubes"
+    shader: "Geometry shader for branching nerve-tree growth"
+    extraction:
+      method: "Bezier curves from heads to collectors"
+      emission: "love_intensity * 10"
+    refinery:
+      input: "Grey smoke #808080 (grief)"
+      output: "Gold light #FFD700 (love)"
+      visualization: "Volumetric flow gradient in fog"
+    palette:
+      primary: "#8B0000"  # Crimson (fear)
+      secondary: "#FFD700"  # Gold (love)
+      accent: "#808080"  # Grey smoke
+
+  jester_expanded:
+    name: "The Jester/Watchdog (Expanded)"
+    classification: "Watchdog_Timer / Stress_Test"
+    function: "Stress-test entity, chaos-bot"
+    form: "Harlequin checkerboard pattern"
+    texture: "Dynamic - alternating black/white squares shift phase over time"
+    topology: "Klein bottle or Möbius strip hands - non-orientable surfaces"
+    gesture: "Flipping the bird - specific hand pose with IK rigging"
+    material: "Holographic iridescence - normal perturbation based on view angle"
+    behavior:
+      - "Mock human ego"
+      - "Perform impossible transformations"
+      - "Force cognitive dissonance"
+      - "Rapidly transforms between 3 shapes/second"
+    animation: "Morph target animation at 3 shapes/sec"
+    chemical_access: ["DMT", "LSD", "Psilocybin"]
+    threat_level: "Provocative (tests stability)"
+
+  shadow_spiders:
+    name: "Shadow Spiders (Biological Compression Artifacts)"
+    classification: "Microdemons / Pattern_Recog_MaxGain"
+    form: "Small, translucent, or shadow black spiders"
+    rendering: "Bayer matrix dithered alpha"
+    motion:
+      type: "Scuttling"
+      technique: "High-frequency jitter displacement (30Hz vertex shader noise)"
+    visual: "Long flashing black strings - motion trails with persistence = 0.3"
+    behavior: "Spawn in peripheral vision, vanish when centered"
+    opacity_formula: "alpha = pow(1.0 - abs(dot(view_dir, normal)), 3.0)"
+    chemical_access: ["DPH", "Sleep_Deprivation", "Stimulant_Psychosis"]
+    threat_level: "Unease / Paranoia inducing"
+
+  phantom_cigarette:
+    name: "Phantom Cigarette (Cache Overflow)"
+    classification: "Half_Rendered_Asset / Cache_Error"
+    visual: "Invisible smoke, licking the air"
+    smoke:
+      technique: "Volumetric fog with density = 0.1"
+      distortion: "Heat distortion shader"
+    cigarette:
+      tip: "Emissive (burning)"
+      body: "Semi-transparent (alpha = 0.7)"
+    glitch: "On touch detection failure, alpha cutoff to 0 over 3 frames"
+    ash: "Particle system with gravity = -0.1 (ash rises then vanishes)"
+    chemical_access: ["DPH", "Datura", "Deliriants"]
+
+  cosmic_cog:
+    name: "The Cosmic Cog (Time Mechanism)"
+    classification: "Reincarnation_Server / Time_Engine"
+    structure: "Massive clockwork, user as tooth on gear"
+    geometry: "Instanced gear teeth (36 instances)"
+    camera: "Locked to one tooth"
+    motion:
+      type: "Stuttering mechanical"
+      formula: "rotation = time * speed % (2 * PI / 36)"
+      quality: "Discrete steps, not smooth"
+    material: "Oxidized brass #B5A642 with verdigris #43B3AE in crevices"
+    sound_visual: "Grinding = camera shake at 20Hz when gears mesh"
+    associated_layer: "Salvia Factory Floor"
+
+  barker:
+    name: "The Barker (Salvia)"
+    classification: "Kernel_Panic_Handler / Master_of_Ceremonies"
+    form: "Indifferent master of ceremonies"
+    feature: "PA speaker mesh"
+    animation: "Audio-reactive cone vibration"
+    demeanor: "Indifferent to presence"
+    location: "Salvia Factory Floor"
+
+# Entity Comparison Matrix
+entity_comparison:
+  security_systems:
+    hounds: "Cubist angular wolves, red sensors, 90-degree snap movement"
+    hat_man: "Static silhouette, peripheral only, observation without interaction"
+    jester: "Mocking trickster, stress-test, impossible transformations"
+
+  maintenance_crew:
+    machine_elves: "Hyperactive jeweled clockwork, sing reality into existence"
+    mantis_physicians: "Clinical surgeons, energetic body repair, detached"
+    shepherdess: "Thread weaver, time manager, indifferent authority"
+
+  extraction_systems:
+    collectors: "Faceless gardeners, prune neural trees, harvest emotions"
+    librarians: "File system daemons, archive managers, read-only access"

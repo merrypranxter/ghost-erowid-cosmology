@@ -1,0 +1,130 @@
+# Phase 2 Geometric Primitives
+# New geometries extracted from Phase 2 analysis
+
+geometric_primitives:
+  rhombic_dodecahedron:
+    name: "The Rhombic Dodecahedron (4D Maintenance Engine)"
+    vertices: 14
+    dimensionality: 4
+    rotation_planes: ["XW", "YZ"]
+    shader_technique: "Stereographic projection from 4D to 3D"
+    significance: "Maintenance and Memory Tiling Engine"
+    audio_visual: "33.3Hz pulse drives emissive intensity"
+    color: "Rainbow vertex colors, additive blending"
+
+  tesseract_bookcase:
+    name: "The Tesseract Bookcase"
+    type: "4D hypercube"
+    projection: "Stereographic projection of S3 to R3"
+    structure: "Nested recursive books - each page contains smaller books"
+    shader: "LOD fade system for infinite depth"
+    location: "Akashic Library / Hall of Records"
+
+  circular_buffer_wheel:
+    name: "The Circular Buffer (Wheel)"
+    teeth: 36
+    math: "Modular arithmetic displayed as rotation"
+    motion: "rotation = time * speed % (2.0 * PI / 36.0)"
+    effect: "Stuttering mechanical motion (discrete steps, not smooth)"
+    material: "Oxidized brass with verdigris in crevices"
+    associated_entity: "The Shepherdess"
+
+  frequency_fence:
+    name: "The Frequency Fence"
+    description: "Electric grid surrounding planet"
+    color: "Electric blue #00FFFF"
+    special_feature: "Tearable mesh with hole shader"
+    exit_mechanism: "The Grid Holes - discard pixels showing void beyond"
+
+  planck_pixel:
+    name: "The Planck Pixel"
+    description: "Smallest renderable unit"
+    visualization: "Glowing square at max zoom"
+    scale: "Planck scale granularity"
+    significance: "Each 'star' is a data bit"
+
+  silver_cord:
+    name: "The Silver Cord"
+    type: "Catmull-Rom spline"
+    tension: 0.5
+    animation: "Sine-wave pulse traveling from body to consciousness"
+    formula: "glow = sin(time*20 - distance*40)"
+    color: "Electric silver #C0C0C0 with chromatic dispersion"
+    panic_indicator: "Line width reduces, flicker increases when 'thin'"
+
+  conveyor_belt:
+    name: "The Conveyor Belt"
+    mapping: "Cylindrical UV mapping with time-offset scrolling"
+    speed: "2.0 units/sec"
+    topology: "Cylindrical tiling with unidirectional flow"
+    shader_function: "mod(uv.x + time * speed, 2.0 * PI / 36.0)"
+    associated_layer: "Salvia Mechanical Factory"
+
+  shadow_spider:
+    name: "The Shadow Spider"
+    rendering: "Bayer matrix dithered alpha"
+    motion: "High-frequency jitter displacement (30Hz)"
+    form: "Small translucent or shadow black"
+    behavior: "Spawn in peripheral vision, vanish when centered"
+    opacity_formula: "alpha = pow(1.0 - abs(dot(view_dir, normal)), 3.0)"
+
+  zipper_seam:
+    name: "The Zipper (Texture De-rendering)"
+    mechanism: "Alpha mask cascade along seam line"
+    displacement: "displacement = sin(zipper_position * PI) * fold_amount"
+    alpha_formula: "alpha = smoothstep(seam - 0.05, seam, uv.x) * (1.0 - fold_amount)"
+    behind_seam: "Industrial substrate - oxidized copper gears"
+    edge_glow: "Emissive bloom #FFD700 along zipper teeth"
+
+  water_wheel_5d:
+    name: "The 5th Dimensional Water Wheel"
+    structure: "Spinning wheel with arms/flaps protruding"
+    dimensionality: "5D projected to 4D to 3D"
+    rotation: "Double rotation matrix (XW and YZ simultaneously)"
+    flattening_effect: "normal.z *= 0.1, position.z = 0 (2D serialization)"
+    material: "Wet industrial - metal with water droplets"
+
+  chrysanthemum_gateway:
+    name: "The Chrysanthemum (Gateway Geometry)"
+    structure: "Rotating petal-layers, 3D linguistic objects"
+    symmetry: "12-fold radial rotation"
+    tiling: "Hyperbolic tiling of Poincaré disk model"
+    shader_math: "uv = polar_coords; distortion = sin(freq*theta) * exp(-radius)"
+    entry_protocol: "Tunnel vortex with chromatic aberration fringes at infinite depth"
+    colors:
+      primary: "#FF00FF"  # Electric magenta
+      secondary: "#00FF7F"  # Bio-luminescent jade
+
+  hippo_palace:
+    name: "The HIPPO Palace Cathedral"
+    geometry: "Hyperbolic paraboloid ceilings"
+    colors: ["#E0115F", "#0F52BA", "#9966CC"]  # Ruby, Sapphire, Amethyst
+    lighting: "Volumetric god-rays with Fresnel falloff"
+    material: "Iridescent shader with ior = 2.4 (diamond-level)"
+    scale_trick: "Walking forward increases perceived height (scale based on distance)"
+
+  neural_tree:
+    name: "Neural Trees (Loosh Garden)"
+    structure: "Branching nerve-tree growth"
+    shader: "Geometry shader for branching structures"
+    features: "Glowing synapses at branch points"
+    activity: "Pruned by Collectors, emotion fibers extracted"
+
+  holographic_screen:
+    name: "The 2D Holographic Boundary"
+    description: "Flat glowing screen at edge of universe (the 'Hard Drive')"
+    depth_simulation: "Parallax occlusion mapping on flat plane"
+    unzipping: "2D texture mapping error revealing wireframe substrate"
+    palette:
+      primary: "#FFFFFF"  # Prismatic white
+      accent: "#8F00FF"  # UV purple
+
+# Shader Uniform Reference for Geometries
+uniforms:
+  wheel_speed: "Time multiplier for conveyor rotation"
+  zipper_position: "0.0 to 1.0 along seam"
+  fold_amount: "0.0 flat to 1.0 fully peeled"
+  flattening_bias: "0.1 for normal Z compression"
+  cord_tension: "0.0 (thin/panic) to 1.0 (thick/safe)"
+  dither_threshold: "For phantom object alpha cutoff"
+  peripheral_fresnel: "For hat man/spiders visibility"

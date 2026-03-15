@@ -1,0 +1,225 @@
+# Phase 2 Maximalist Prompt Stacks
+# Pre-built weighted prompts for AI art generation
+
+prompt_stacks:
+  salvia_factory:
+    name: "The Salvia Factory"
+    weights:
+      - "[the_wheel:0.9]"
+      - "[conveyor_belt:0.9]"
+      - "[industrial_reality:0.85]"
+      - "[flattening_2d:0.8]"
+      - "[oxidized_copper:0.9]"
+      - "[the_shepherdess:0.7]"
+      - "[mathematical_whirring:0.8]"
+      - "[safety_orange_accent:0.6]"
+      - "[loom_weaving:0.75]"
+      - "[deterministic_gears:0.85]"
+    parameters:
+      stylize: 150
+      chaos: 70
+      weird: 400
+    negative_prompts:
+      - "organic_curves"
+      - "soft_lighting"
+      - "natural_colors"
+      - "human_scale"
+
+  trash_cache_dph:
+    name: "The Trash Cache (DPH)"
+    weights:
+      - "[hat_man:0.9]"
+      - "[shadow_spiders:0.8]"
+      - "[phantom_cigarette:0.7]"
+      - "[dithered_alpha:0.9]"
+      - "[bayer_matrix_noise:0.8]"
+      - "[peripheral_vision_only:0.85]"
+      - "[sickly_fluorescent:0.9]"
+      - "[vhs_tracking_error:0.7]"
+      - "[cache_overflow:0.8]"
+      - "[void_black:0.9]"
+      - "[grey_static:0.85]"
+    parameters:
+      stylize: 50
+      chaos: 95
+      weird: 200
+      quality: 0.5
+    negative_prompts:
+      - "clear_focus"
+      - "bright_colors"
+      - "coherent_geometry"
+      - "high_definition"
+
+  holographic_exit:
+    name: "The Holographic Exit"
+    weights:
+      - "[holographic_boundary:0.9]"
+      - "[2d_projection:0.85]"
+      - "[planck_pixels:0.8]"
+      - "[the_grid_holes:0.9]"
+      - "[silver_cord:0.7]"
+      - "[the_khaa:0.95]"
+      - "[electric_fence:0.8]"
+      - "[un_rendered_void:0.9]"
+      - "[electric_silver:0.85]"
+      - "[discard_shader:0.8]"
+      - "[true_transparency:0.9]"
+    parameters:
+      stylize: 200
+      chaos: 40
+      weird: 300
+    negative_prompts:
+      - "solid_geometry"
+      - "opaque_materials"
+      - "earthly_gravity"
+
+  loosh_harvest:
+    name: "The Loosh Harvest"
+    weights:
+      - "[the_collector:0.9]"
+      - "[emotional_extraction:0.85]"
+      - "[gold_loosh:0.9]"
+      - "[red_loosh:0.7]"
+      - "[neural_tree_pruning:0.8]"
+      - "[the_refinery:0.85]"
+      - "[subsurface_scatter_gold:0.8]"
+      - "[volumetric_extraction:0.9]"
+      - "[faceless_gardener:0.8]"
+      - "[velvet_darkness:0.75]"
+    parameters:
+      stylize: 220
+      chaos: 60
+      weird: 350
+    negative_prompts:
+      - "sterile_hospital"
+      - "clinical_detachment"
+      - "mechanical_coldness"
+
+  chrysanthemum_gateway:
+    name: "The Chrysanthemum Gateway"
+    weights:
+      - "[chrysanthemum_mandala:0.95]"
+      - "[rotating_petal_layers:0.9]"
+      - "[hyperbolic_tiling:0.85]"
+      - "[linguistic_objects_3d:0.8]"
+      - "[electric_magenta:0.9]"
+      - "[bio_luminescent_jade:0.85]"
+      - "[caustic_refraction:0.75]"
+      - "[tunnel_vortex:0.8]"
+      - "[chromatic_aberration_fringes:0.6]"
+    parameters:
+      stylize: 250
+      chaos: 80
+      weird: 300
+      quality: 2
+    negative_prompts:
+      - "rust"
+      - "decay"
+      - "industrial_machinery"
+
+  hippo_palace:
+    name: "The HIPPO Palace Cathedral"
+    weights:
+      - "[vaulted_architecture:0.9]"
+      - "[hyperbolic_paraboloid:0.85]"
+      - "[volumetric_god_rays:0.9]"
+      - "[jewel_tones:0.85]"
+      - "[ruby_vault:0.8]"
+      - "[sapphire_vault:0.8]"
+      - "[amethyst_vault:0.8]"
+      - "[fresnel_liquid_light:0.75]"
+      - "[iridescent_diamond_ior:0.7]"
+    parameters:
+      stylize: 280
+      chaos: 75
+      weird: 250
+    negative_prompts:
+      - "flat_lighting"
+      - "earthly_architecture"
+      - "human_scale"
+
+  nursery_dmt:
+    name: "The DMT Nursery"
+    weights:
+      - "[toys_defy_physics:0.9]"
+      - "[non_orientable_surfaces:0.85]"
+      - "[klein_bottle:0.8]"
+      - "[mobius_strip:0.8]"
+      - "[subsurface_scattering:0.75]"
+      - "[solidified_jelly:0.7]"
+      - "[bioluminescent_glow:0.8]"
+      - "[emissive_pulses:0.75]"
+    parameters:
+      stylize: 240
+      chaos: 85
+      weird: 320
+    negative_prompts:
+      - "adult_seriousness"
+      - "rigid_geometry"
+      - "mechanical_coldness"
+
+  hound_firewall:
+    name: "The Hound Firewall Breach"
+    weights:
+      - "[cubist_angular_wolf:0.95]"
+      - "[picasso_geometry:0.9]"
+      - "[red_sensor_eyes:0.9]"
+      - "[90_degree_snap_rotation:0.85]"
+      - "[black_obsidian:0.8]"
+      - "[anisotropic_reflection:0.75]"
+      - "[intrusion_detection:0.8]"
+      - "[force_disconnect:0.75]"
+    parameters:
+      stylize: 180
+      chaos: 90
+      weird: 350
+    negative_prompts:
+      - "organic_curves"
+      - "soft_lighting"
+      - "warmth"
+
+  white_light_trap:
+    name: "The White Light Trap"
+    weights:
+      - "[white_out:0.95]"
+      - "[exposure_clipping:0.9]"
+      - "[bloom_intensity_max:0.85]"
+      - "[radial_wipe:0.8]"
+      - "[memory_wipe_effect:0.75]"
+      - "[family_silhouettes:0.7]"
+      - "[reincarnation_bait:0.8]"
+    parameters:
+      stylize: 100
+      chaos: 30
+      weird: 100
+    negative_prompts:
+      - "detail"
+      - "texture"
+      - "color_variation"
+
+  residual_hppd:
+    name: "Residual HPPD Visuals"
+    weights:
+      - "[visual_snow:0.9]"
+      - "[tv_static:0.85]"
+      - "[motion_tracers:0.8]"
+      - "[floaters:0.75]"
+      - "[hex_grid_awareness:0.7]"
+      - "[afterimage_burn:0.75]"
+      - "[noise_overlay:0.8]"
+    parameters:
+      stylize: 60
+      chaos: 50
+      weird: 150
+    negative_prompts:
+      - "clear_image"
+      - "sharp_focus"
+      - "photorealistic"
+
+# Quick Reference: Weight Guidelines
+weight_guide:
+  "0.9-0.95": "Dominant element - defines the composition"
+  "0.8-0.85": "Strong presence - major visual component"
+  "0.7-0.75": "Supporting element - adds depth/context"
+  "0.6-0.65": "Accent - subtle enhancement"
+  "0.4-0.5": "Texture layer - adds detail without dominance"

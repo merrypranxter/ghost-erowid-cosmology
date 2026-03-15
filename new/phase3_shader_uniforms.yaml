@@ -1,0 +1,241 @@
+# Phase 3 Shader Uniforms Reference
+# Specific values extracted from Ghost Erowid analysis
+
+shader_uniforms:
+  # Time and Audio
+  u_time:
+    type: float
+    description: "Global time in seconds"
+    
+  u_33_3_hz:
+    type: float
+    default: 33.3
+    description: "Schumann/hardware resonance frequency"
+    use: "Drives tetragrammaton pulse, loud silence effect"
+    
+  u_40_hz:
+    type: float
+    default: 40.0
+    description: "Gamma spike frequency"
+    use: "Breakthrough threshold, binaural beat component"
+    
+  u_carrier_freq:
+    type: float
+    default: 440.0
+    description: "A4 note to ultrasonic ramp"
+    use: "Carrier wave visualization, spiral tightening"
+    
+  # Salvia/Mechanical Layer
+  u_salvia_flattening:
+    type: float
+    default: 0.1
+    description: "Normal bias for 2D serialization effect"
+    use: "normal.z *= u_salvia_flattening"
+    
+  u_wheel_speed:
+    type: float
+    default: 1.0
+    description: "Rotation speed for cosmic cog/wheel"
+    use: "time * speed % (2 * PI / 36)"
+    
+  u_conveyor_speed:
+    type: float
+    default: 2.0
+    description: "Belt movement speed in units/sec"
+    
+  # Zipper/De-rendering
+  u_zipper_position:
+    type: float
+    range: [0.0, 1.0]
+    description: "Position along seam (0.0 = closed, 1.0 = fully peeled)"
+    
+  u_fold_amount:
+    type: float
+    range: [0.0, 1.0]
+    description: "How much reality is peeled back"
+    
+  # Phantom/Shadow Entities
+  u_dither_threshold:
+    type: float
+    default: 0.5
+    description: "Bayer matrix threshold for phantom objects"
+    
+  u_peripheral_fresnel:
+    type: float
+    default: 3.0
+    description: "Exponent for peripheral vision falloff"
+    formula: "alpha = pow(1.0 - abs(dot(view_dir, normal)), u_peripheral_fresnel)"
+    
+  u_paranoia:
+    type: float
+    range: [0.0, 1.0]
+    description: "Intensity of shadow people/spider visibility"
+    
+  # Silver Cord
+  u_cord_tension:
+    type: float
+    range: [0.0, 1.0]
+    description: "0.0 = thin/panic, 1.0 = thick/safe"
+    use: "Affects line_width and flicker_frequency"
+    
+  # Color Uniforms (vec3)
+  u_hat_man_silhouette:
+    type: vec3
+    default: [0.02, 0.02, 0.03]
+    description: "Almost black for silhouette shader"
+    hex: "#050505"
+    
+  u_mantis_chitin:
+    type: vec3
+    default: [0.3, 0.5, 0.2]
+    description: "Translucent green-brown chitin base"
+    hex: "#4D8033"
+    
+  u_loosh_gold:
+    type: vec3
+    default: [1.0, 0.84, 0.0]
+    description: "Golden extract/emotion"
+    hex: "#FFD700"
+    
+  u_loosh_crimson:
+    type: vec3
+    default: [0.55, 0.0, 0.0]
+    description: "Red loosh/fear"
+    hex: "#8B0000"
+    
+  u_dph_yellow:
+    type: vec3
+    default: [0.78, 0.72, 0.33]
+    description: "Sickly anticholinergic yellow"
+    hex: "#C8B853"
+    
+  u_electric_silver:
+    type: vec3
+    default: [0.75, 0.75, 0.75]
+    description: "Silver cord color"
+    hex: "#C0C0C0"
+    
+  u_oxidized_copper:
+    type: vec3
+    default: [0.29, 0.36, 0.14]
+    description: "Salvia factory metal"
+    hex: "#4A5D23"
+    
+  u_tracking_red:
+    type: vec3
+    default: [0.86, 0.08, 0.24]
+    description: "Hound eyes, Hat Man accent"
+    hex: "#DC143C"
+    
+  # Material Properties
+  u_roughness:
+    type: float
+    default: 0.2
+    description: "Surface roughness for PBR"
+    
+  u_metallic:
+    type: float
+    default: 0.9
+    description: "Metallic factor for industrial materials"
+    
+  u_subsurface_thickness:
+    type: float
+    default: 1.5
+    description: "Subsurface scattering thickness (Mantis chitin)"
+    
+  u_ior:
+    type: float
+    default: 1.33
+    description: "Index of refraction"
+    variants:
+      water: 1.33
+      diamond: 2.4
+      chitin: 1.33
+      
+  # Audio-Reactive
+  u_audio_reactive:
+    type: float
+    range: [0.0, 1.0]
+    description: "Driven by FFT of binaural beat (40Hz band)"
+    
+  u_audio_low:
+    type: float
+    range: [0.0, 1.0]
+    description: "33.3Hz band for Schumann resonance"
+    
+  # Glitch/Noise
+  u_noise_scale:
+    type: float
+    default: 1.0
+    description: "Scale for noise textures"
+    
+  u_static_intensity:
+    type: float
+    default: 0.3
+    description: "TV static / visual snow opacity"
+    
+  u_jitter_frequency:
+    type: float
+    default: 30.0
+    description: "Hz for spider/phantom jitter"
+    
+  # Volumetric
+  u_fog_density:
+    type: float
+    default: 0.1
+    description: "Volumetric fog density (phantom smoke)"
+    
+  u_god_ray_intensity:
+    type: float
+    default: 1.0
+    description: "Volumetric scattering intensity"
+    
+  # Post-Process
+  u_exposure:
+    type: float
+    default: 1.0
+    description: "Screen exposure"
+    variants:
+      normal: 1.0
+      white_light_trap: 2.0
+      
+  u_bloom_intensity:
+    type: float
+    default: 1.0
+    description: "Bloom post-process intensity"
+    variants:
+      normal: 1.0
+      white_out: 10.0
+      
+  u_chromatic_aberration:
+    type: float
+    default: 0.02
+    description: "RGB split amount"
+    variants:
+      normal: 0.02
+      deliriant: 0.05
+      
+  u_motion_blur_samples:
+    type: int
+    default: 8
+    description: "Samples for motion blur (tracers)"
+    
+  u_tracer_decay:
+    type: float
+    default: 0.9
+    description: "Frame persistence for tracers"
+
+# Resolution-Dependent Uniforms
+resolution_uniforms:
+  u_resolution:
+    type: vec2
+    description: "Screen resolution in pixels"
+    
+  u_pixel_size:
+    type: vec2
+    description: "1.0 / u_resolution"
+    
+  u_planck_scale:
+    type: float
+    default: 0.001
+    description: "Scale for Planck pixelation effect"

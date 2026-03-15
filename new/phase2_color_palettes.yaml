@@ -1,0 +1,76 @@
+# Phase 2 Color Palettes by Domain
+# Extracted from Ghost Erowid Analysis - New Visual Domains
+
+color_palettes:
+  mechanical_salvia:
+    name: "The Mechanical Layer (Salvia Guts)"
+    primary: "#4A5D23"  # Oxidized Copper
+    secondary: "#2F2F2F"  # Machine Grey
+    accent: "#FF4500"  # Safety Orange (industrial warning)
+    shader_notes: "Metal roughness high, oxidized edges"
+    substances: ["Salvia_Divinorum"]
+
+  trash_cache_dph:
+    name: "The Trash Cache / Sewer (Deliriant)"
+    primary: "#0A0A0A"  # Void Black
+    secondary: "#C8B853"  # Sickly Yellow
+    accent: "#DC143C"  # Red Tracking Reticle (Hat Man's eyes)
+    shader_notes: "Dithered alpha, scan lines, VHS tracking error"
+    substances: ["DPH", "Datura", "Amanita"]
+
+  akashic_grid:
+    name: "The Grid / Akashic Database"
+    primary: "#00FFFF"  # Electric Blue
+    secondary: "#FFBF00"  # Database Amber
+    accent: "#B0C4DE"  # Cold Steel
+    shader_notes: "Emissive lines, instanced nodes, fog-based LOD"
+    substances: ["High_Dose_Psilocybin", "Ketamine_Hole"]
+
+  holographic_boundary:
+    name: "The Holographic Boundary (2D Hard Drive)"
+    primary: "#FFFFFF"  # Prismatic White (overexposed)
+    secondary: "#8F00FF"  # Ultraviolet
+    accent: "#00FFFF"  # Projection Beam Cyan
+    shader_notes: "Additive blending, screen space, parallax occlusion"
+    substances: ["DMT_Breakthrough", "Astral_Projection"]
+
+  loosh_refinery:
+    name: "The Loosh Refinery (Emotional Harvesting)"
+    primary: "#8B0000"  # Crimson (Red Loosh - fear)
+    secondary: "#FFD700"  # Gold (Golden Loosh - love)
+    accent: "#808080"  # Grey Smoke
+    shader_notes: "Subsurface scattering, volumetric flow shaders"
+    substances: ["Emotional_Extraction"]
+
+  exit_khaa:
+    name: "The Khaa / Void Navigation"
+    primary: "clear"  # Alpha 0 - True void
+    secondary: "#C0C0C0"  # Electric Silver
+    accent: "null"  # Absence not darkness
+    shader_notes: "Discard pixels, show desktop behind window"
+    substances: ["Astral_Exit", "Near_Death_Experience"]
+
+  residual_hppd:
+    name: "Residual Code / HPPD (Buffer Leaks)"
+    primary: "#808080"  # Noise Grey
+    secondary: "#9932CC"  # Tracer Purple
+    accent: "#FFFAFA"  # Snow White
+    shader_notes: "Noise overlay at 30%, motion blur, frame persistence"
+    substances: ["HPPD", "Visual_Snow"]
+
+# Additional Phase 3 Micro-Colors
+micro_colors:
+  chrysanthemum_magenta: "#FF00FF"
+  bio_luminescent_jade: "#00FF7F"
+  ruby_vault: "#E0115F"
+  sapphire_vault: "#0F52BA"
+  amethyst_vault: "#9966CC"
+  verdigris_brass: "#43B3AE"
+  oxidized_brass: "#B5A642"
+  black_obsidian: "#0A0A0A"
+  mantis_chitin_base: "#3D5C3D"
+  translucent_green_brown: "#4A5D3A"
+  electric_cyan: "#00FFFF"
+  grid_grey_dormant: "#808080"
+  reincarnation_white: "#FFFFFF"
+  void_clear: "alpha_0"

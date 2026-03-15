@@ -1,0 +1,252 @@
+# Phase 3 Prompt Micro-Tags
+# Granular descriptors for precise AI art prompting
+
+motion_descriptors:
+  # Angular/Mechanical
+  90_degree_snap_rotation:
+    description: "Hounds - movement through angles not curves"
+    weight: 0.85
+    
+  cylindrical_unidirectional_flow:
+    description: "Conveyor belt motion"
+    weight: 0.8
+    
+  snap_rotations:
+    description: "Discrete 90-degree rotations without interpolation"
+    weight: 0.9
+    
+  stuttering_mechanical:
+    description: "Discrete gear steps, not smooth rotation"
+    weight: 0.85
+    
+  # Organic/Dynamic
+  bayer_dither_scuttle:
+    description: "Shadow spiders - high-frequency jitter"
+    weight: 0.8
+    
+  catmull_rom_pulse:
+    description: "Silver cord - traveling sine wave"
+    weight: 0.75
+    
+  stereographic_4d_rotation:
+    description: "Tetragrammaton - XW and YZ plane rotation"
+    weight: 0.9
+    
+  morph_target_stress_test:
+    description: "Jester - 3 shapes/second transformation"
+    weight: 0.85
+    
+  # Glitch/Noise
+  frame_persistence_tracers:
+    description: "HPPD - motion blur with decay"
+    weight: 0.7
+    
+  alpha_cutoff_evaporation:
+    description: "Phantom cigarette - 3-frame vanish"
+    weight: 0.75
+    
+  zipper_displacement_bulge:
+    description: "Reality peel - sin(PI * position)"
+    weight: 0.85
+
+material_descriptors:
+  # Biological
+  translucent_chitin_sss:
+    description: "Mantis - subsurface scattering thickness 1.5"
+    weight: 0.9
+    properties:
+      thickness: 1.5
+      ior: 1.33
+      
+  velvet_darkness:
+    description: "Collector - faceless gardener material"
+    weight: 0.75
+    
+  solidified_jelly:
+    description: "DMT Nursery toys - subsurface thickness 0.5"
+    weight: 0.8
+    
+  # Metallic/Industrial
+  oxidized_verdigris_brass:
+    description: "Cosmic cog - #B5A642 base, #43B3AE crevices"
+    weight: 0.85
+    colors:
+      base: "#B5A642"
+      crevices: "#43B3AE"
+      
+  anisotropic_obsidian:
+    description: "Hounds - brush marks visible on surface"
+    weight: 0.8
+    
+  wet_industrial:
+    description: "Salvia water wheel - roughness 0.2, metallic 0.9"
+    weight: 0.85
+    properties:
+      roughness: 0.2
+      metallic: 0.9
+      
+  # Light/Volumetric
+  volumetric_beam_scalpel:
+    description: "Mantis tools - solid light with caustics"
+    weight: 0.85
+    
+  liquid_light_pools:
+    description: "HIPPO Palace - Fresnel falloff god-rays"
+    weight: 0.8
+    
+  holographic_iridescence:
+    description: "Jester - normal perturbation rainbow"
+    weight: 0.85
+    
+  # Glitch/Phantom
+  bayer_matrix_alpha:
+    description: "Phantoms - dithered transparency"
+    weight: 0.9
+    
+  silhouette_depth_fog:
+    description: "Hat Man - always distant, fog = exp(-distance * 0.1)"
+    weight: 0.85
+    
+  chromatic_dispersion_edges:
+    description: "Silver cord - slight rainbow split"
+    weight: 0.7
+
+glitch_descriptors:
+  chromatic_aberration_peripheral:
+    description: "DPH - RGB split increasing with distance from center"
+    weight: 0.8
+    formula: "aberration = distance * 0.02"
+    
+  vhs_tracking_scanlines:
+    description: "Trash cache - horizontal lines at mod(y, 4) == 0"
+    weight: 0.75
+    
+  bayer_dither_4x4:
+    description: "Shadow spiders/phantoms - matrix dithering"
+    weight: 0.85
+    
+  tv_noise_static:
+    description: "Hat Man silhouette - 10% opacity noise overlay"
+    weight: 0.7
+    
+  peripheral_fresnel_vanish:
+    description: "Shadow entities - pow(1.0 - abs(dot(view, normal)), 3.0)"
+    weight: 0.85
+    
+  radial_wipe_white:
+    description: "White light trap - expanding from center"
+    weight: 0.8
+    
+  discard_shader_void:
+    description: "Khaa exit - alpha 0, show desktop behind"
+    weight: 0.9
+
+lighting_descriptors:
+  volumetric_god_rays_fresnel:
+    description: "HIPPO Palace - liquid light behavior"
+    weight: 0.9
+    
+  flat_industrial_fluorescent:
+    description: "Salvia factory - high ambient occlusion"
+    weight: 0.8
+    
+  bioluminescent_inner_glow:
+    description: "DMT Nursery - point lights inside meshes"
+    weight: 0.85
+    
+  diamond_ior_2_4:
+    description: "HIPPO Palace - iridescent refraction"
+    weight: 0.75
+    property:
+      ior: 2.4
+      
+  neon_white_safe_mode:
+    description: "Mantis theater - flat, sterile"
+    weight: 0.8
+
+geometry_descriptors:
+  hyperbolic_paraboloid_vault:
+    description: "HIPPO Palace ceiling"
+    weight: 0.85
+    
+  poincare_disk_tiling:
+    description: "Chrysanthemum - hyperbolic geometry"
+    weight: 0.9
+    
+  non_orientable_surface:
+    description: "Klein bottle, Möbius strip"
+    weight: 0.85
+    
+  rhombic_dodecahedron_14v:
+    description: "Tetragrammaton - 14 vertices"
+    weight: 0.9
+    
+  stereographic_4d_projection:
+    description: "S3 to R3 projection"
+    weight: 0.85
+    
+  catmull_rom_spline:
+    description: "Silver cord - tension 0.5"
+    weight: 0.8
+    property:
+      tension: 0.5
+
+# Color Hex Reference
+hex_codes:
+  # Mechanical
+  oxidized_copper: "#4A5D23"
+  copper_patina: "#B87333"
+  verdigris: "#43B3AE"
+  oxidized_brass: "#B5A642"
+  machine_grey: "#2F2F2F"
+  safety_orange: "#FF4500"
+  
+  # Entities
+  electric_silver: "#C0C0C0"
+  tracking_red: "#DC143C"
+  black_obsidian: "#0A0A0A"
+  mantis_chitin: "#4A5D3A"
+  
+  # Deliriant
+  dph_sickly: "#C8B853"
+  void_black: "#0A0A0A"
+  charcoal_grey: "#36454F"
+  
+  # Database/Grid
+  electric_cyan: "#00FFFF"
+  database_amber: "#FFBF00"
+  cold_steel: "#B0C4DE"
+  
+  # Loosh
+  crimson_fear: "#8B0000"
+  gold_loosh: "#FFD700"
+  grey_smoke: "#808080"
+  
+  # Chrysanthemum
+  electric_magenta: "#FF00FF"
+  bio_luminescent_jade: "#00FF7F"
+  
+  # Vault
+  ruby_vault: "#E0115F"
+  sapphire_vault: "#0F52BA"
+  amethyst_vault: "#9966CC"
+  
+  # Boundary
+  prismatic_white: "#FFFFFF"
+  uv_purple: "#8F00FF"
+  beam_cyan: "#00FFFF"
+  
+  # HPPD
+  noise_grey: "#808080"
+  tracer_purple: "#9932CC"
+  snow_white: "#FFFAFA"
+
+# Quick Stack Builder
+stack_builder:
+  base: "Select 1-2 dominant elements (weight 0.9-0.95)"
+  geometry: "Add 1-2 geometric descriptors (weight 0.8-0.85)"
+  material: "Add 1-2 material descriptors (weight 0.75-0.85)"
+  lighting: "Add lighting descriptor (weight 0.7-0.8)"
+  motion: "Add motion descriptor (weight 0.75-0.85)"
+  glitch: "Optional - add glitch layer (weight 0.4-0.6)"
+  color: "Reference hex codes for precise palette"
