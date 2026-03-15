@@ -1,0 +1,34 @@
+category,term,type,semantic_valence,intensity_0-10,shader_mapping,combine_with,notes
+entity,machine_elf,noun,neutral-curious,8,voronoi_dynamic_tessellation,jeweled_clockwork_linguistic,Rendering engine UI
+entity,mantis_physician,noun,clinical-sterile,9,exoskeleton_chitin_subsurface,insectoid_surgical_energetic,Hardware maintenance daemon
+entity,hat_man,noun,ominous-static,7,silhouette_depth_fog,fedora_trench_coat_observer,Kernel panic handler
+entity,the_jester,noun,mocking-chaotic,8,non_euclidean_transform,impossible_object_trickster,Watchdog timer stress-test
+entity,shepherdess,noun,stern-indifferent,6,thread_weaving_visualization,loom_factory_matriarch,Kernel manager
+entity,shadow_person,noun,unsettling-fleeting,5,dithered_alpha_jitter,peripheral_darkness,Deleted asset ghost process
+entity,picasso_hound,noun,threatening-angular,9,sharp_faceted_red_emissive,cubist_security_demon,Intrusion detection system
+geometry,chrysanthemum,noun,beautiful-gateway,9,hyperbolic_radial_tiling,rotating_petals_language,Entry portal pattern
+geometry,honeycomb_grid,noun,structural-pixellated,7,hexagonal_uv_tiling,vibrating_substrate_overlay,Standard UI base
+geometry,mandelbrot,noun,infinite-recursive,10,fractal_zoom_iteration,jewel_tone_cyclic_color,Universal psychedelic pattern
+geometry,tunnel_vortex,noun,transit-velocity,8,ray_march_warped_cylinder,concentric_spinning_threshold,Threshold mechanic
+geometry,tetragrammaton,noun,mathematical-static,9,rhombic_dodecahedron_4d_rot,rainbow_math_wireframe,Maintenance engine
+geometry,the_wheel,noun,mechanical-cyclical,8,circular_buffer_gear,conveyor_belt_salvia,Reincarnation server
+geometry,zipper,noun,transitional-peeling,8,seam_displacement_alpha,texture_de_rendering,Reality unmapping
+location,waiting_room,noun,transitional-vibrating,7,geometric_wallpaper_4d,chrysanthemum_antechamber,Loading screen buffer
+location,the_dome,noun,sacred-infinite,9,volumetric_god_rays,jewel_vaulted_architecture,Mainframe interface
+location,factory_floor,noun,industrial-oppressive,8,conveyor_cylindrical_uv,mechanical_carnival_salvia,Physics engine room
+location,infinite_library,noun,archival-cold,8,tesseract_bookcase_instanced,akashic_records_files,Database layer
+location,the_void,noun,absolute-null,10,null_pointer_black,zero_noise_exposure,Root shell / BIOS
+texture,jeweled_clockwork,adj,precise-intricate,9,pbr_gemstone_faceted,self_transforming_morphing,Machine elf aesthetic
+texture,oxidized_copper,adj,industrial-aged,6,metal_roughness_oxidized,salvia_mechanical_gear,Factory floor material
+texture,chromatic_aberration,adj,high_bandwidth,7,post_process_rgb_split,more_real_than_real,Reality resolution artifact
+texture,bio_luminescent,adj,organic-glowing,8,emissive_fresnel_falloff,liquid_jade_electric_azure,Cathedral lighting
+texture,dithered_phantom,adj,glitchy-incomplete,4,alpha_jitter_bayer,shadow_static_cigarette,Deliriant corruption
+motion,self_transforming,verb,hyperactive,9,mesh_morphing_noise_spline,linguistic_syntax_singing,Dynamic entity behavior
+motion,zipping,verb,transitional-jarring,8,uv_seam_unfolding,reality_peeling_back,Reality transition
+motion,flattening,verb,compressive,7,normal_bias_z_zero,2d_serialization_wheel,Salvia objectification
+emotion,cosmic_nostalgia,qualia,longing-homecoming,9,color_warm_gradient,remembering_forgotten_state,Ego dissolution precursor
+emotion,ego_death_terror,qualia,panic-resistance,10,chaotic_noise_displacement,breaking_apart_fragmentation,Firewall resistance
+emotion,satori_snap,qualia,ironic-liberating,8,frame_glitch_laughter,everything_is_game_crank,Logic loop closure
+technical,carrier_wave,technical,rising-frequency,8,audio_reactive_fft,sine_ramp_ultrasonic,Breakthrough threshold
+technical,pop,technical,discontinuity,9,single_frame_white_flash,spatial_hard_reset,State transition event
+technical,download,technical,compressed-data,7,information_density_visual,compressed_centuries_seconds,Direct memory access

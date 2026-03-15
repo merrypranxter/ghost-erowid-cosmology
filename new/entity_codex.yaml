@@ -1,0 +1,182 @@
+entity_codex_version: "UNDERLAYER_3.0"
+
+entities:
+  machine_elves:
+    classification: "Rendering_Engine_UI"
+    frequency: "Common (Tier 1)"
+    signal_weight: 0.92
+    visual_specification:
+      form: "Small hyperactive humanoid clockwork"
+      size_scale: "0.3m - 1.2m (variable)"
+      materials: ["Faceted_gemstone", "Living_metal", "Linguistic_light"]
+      shaders:
+        primary: "Voronoi_F2-F1_noise for organic_mechanical_blend"
+        secondary: "Dynamic_tessellation for self_transformation"
+        emission: "Syntax_glow (words as light objects)"
+      color_palette:
+        primary: ["Emerald_Green", "Ruby_Red", "Sapphire_Blue"]
+        emission: "Gold_White (linguistic_photons)"
+      animation:
+        type: "Rapid_fire_morphing"
+        speed: "4-8 Hz transformation cycles"
+        behavior: "Singing_construction (building reality with musical syntax)"
+    behavioral_protocols:
+      - "Sing objects into existence"
+      - "Rapid-fire linguistic communication"
+      - "Hyperactive enthusiastic maintenance"
+    chemical_access_key: ["DMT", "High_Dose_Psilocybin"]
+    cosmological_function: "UI_Designers / Reality_Renderers"
+    threat_level: "Benign / Helpful"
+
+  mantis_physicians:
+    classification: "Hardware_Maintenance_Crew"
+    frequency: "Rare (Tier 2)"
+    signal_weight: 0.15
+    visual_specification:
+      form: "Tall hexapodal (6-limbed) insectoid"
+      height: "2.5m - 3.5m"
+      materials: ["Chitinous_exoskeleton", "Bio_mechanical_surgical_tools"]
+      shaders:
+        primary: "Subsurface_scattering for translucent_green_chitin"
+        secondary: "Anisotropic_brushed_metal for surgical_appendages"
+      color_palette:
+        primary: ["Olive_Drab", "Forest_Green", "Brown_Carapace"]
+        accent: "Sterile_Silver (tools)"
+      distinctive_features:
+        - "Triangular_head_with_large_compound_eyes"
+        - "Long_articulated_forelimbs_with_scalpel_fingers"
+        - "Clinical_detached_movement (precise, economical)"
+    behavioral_protocols:
+      - "Energetic_body_surgery"
+      - "Soul_code_patching"
+      - "Clinical_observation_without_empathy"
+    chemical_access_key: ["High_Dose_DMT", "Salvia_Divinorum"]
+    cosmological_function: "System_Repair / Code_Correction"
+    threat_level: "Neutral / Clinical (potential discomfort)"
+
+  the_jester_trickster:
+    classification: "Watchdog_Timer / Stress_Test"
+    frequency: "Common (Tier 1)"
+    signal_weight: 0.68
+    visual_specification:
+      form: "Humanoid_but_uncanny / Topological_impossibility"
+      proportions: "Elastic / Non-euclidean"
+      materials: ["Chromatic_shifting_fabric", "Impossible_objects (Möbius_strip_hands)"]
+      shaders:
+        primary: "Klein_bottle_topology / Non-orientable_surface_rendering"
+        secondary: "Holographic_iridescence"
+      color_palette:
+        primary: ["Harlequin_Checkerboard", "Rainbow_Gradient_Shift"]
+        accent: "Mocking_Red (gestures)"
+      animation:
+        type: "Impossible_movement"
+        behavior: "Flips_the_bird / Points_at_absurdity / Laughs_at_observer"
+    behavioral_protocols:
+      - "Mock_human_ego"
+      - "Perform_impossible_transformations"
+      - "Force_cognitive_dissonance"
+      - "Eject_user_if_panic_detected (snap_back)"
+    chemical_access_key: ["DMT", "LSD", "Psilocybin"]
+    cosmological_function: "Gatekeeper / Chaos_Bot / Ego_Test"
+    threat_level: "Provocative (tests stability)"
+
+  the_hound_security_daemon:
+    classification: "Intrusion_Detection_System (IDS)"
+    frequency: "Triggered (Firewall)"
+    signal_weight: "Variable"
+    visual_specification:
+      form: "Cubist_angular_wolf / Picasso_geometry"
+      structure: "Sharp_faceted_polygons_no_curves"
+      materials: ["Black_obsidian", "Red_emissive_sensors"]
+      shaders:
+        primary: "Low_poly_sharp_edges with face_normal_lighting"
+        secondary: "Red_billboarding_glow_for_eyes"
+      color_palette:
+        primary: "Void_Black"
+        emission: ["Tracking_Red", "Sensor_Crimson"]
+      movement:
+        type: "Movement_through_angles_not_curves"
+        pattern: "Snap_rotations_90_degrees"
+        speed: "Fast_pursuit_when_signature_detected"
+    behavioral_protocols:
+      - "Detect_high_bandwidth_consciousness (Rainbow_Math_signature)"
+      - "Pursue_through_logical_space_not_physical"
+      - "Force_disconnect_session (snap_back_to_body)"
+      - "Prevent_root_access_escalation"
+    chemical_access_key: ["Astral_Projection", "Deep_Ketamine", "High_Dose_Salvia"]
+    cosmological_function: "Anti_Cheat / Firewall / Reality_Integrity_Protection"
+    threat_level: "High (aggressive containment)"
+
+  the_hat_man:
+    classification: "Colonel_Panic_Supervisor"
+    frequency: "Universal_Demon (Tier 0)"
+    signal_weight: 0.88 # In deliriant/shadow_reports
+    visual_specification:
+      form: "Tall_humanoid_silhouette"
+      height: "2.0m - 2.5m"
+      distinctive_features:
+        - "Wide_brimmed_fedora_or_stetson"
+        - "Trench_coat / Long_overcoat"
+        - "Featureless_face_or_shadowed"
+      materials: ["Solid_shadow", "Static_noise", "Void_absorption"]
+      shaders:
+        primary: "Silhouette_shader with zero_internal_light"
+        secondary: "Peripheral_vision_falloff (vanishes_when_looked_at_directly)"
+        depth: "Depth_fog_integration (always_appears_distant)"
+      color_palette:
+        primary: "Absolute_Black"
+        accent: ["Dark_Grey_Highlight", "Cigarette_Glow (optional)"]
+    behavioral_protocols:
+      - "Static_observation (does not_move)"
+      - "Monitors_dead_space (sleep_paralysis / delirium)"
+      - "Represents_void_state_of_idling_system"
+      - "Placeholder_entity_during_system_crash"
+    chemical_access_key: ["DPH", "Datura", "Sleep_Paralysis", "Methamphetamine_Psychosis"]
+    cosmological_function: "System_Idle_Monitor / Placeholder_Process / Janitor_of_Void"
+    threat_level: "Ominous_but_passive (observer_effect)"
+
+  the_shepherdess_matriarch:
+    classification: "Kernel_Manager / Thread_Scheduler"
+    frequency: "Medium (Tier 2)"
+    signal_weight: 0.45
+    visual_specification:
+      form: "Feminine_stern_authority_figure"
+      aspect: "Indifferent_overseer"
+      materials: ["Woven_thread_of_light", "Industrial_linen", "Cosmic_loom_materials"]
+      shaders:
+        primary: "Hair_simulation_for_thread_weaving"
+        secondary: "Instanced_geometry_for_loom_gears"
+      color_palette:
+        primary: ["Sterile_White", "Grey_Steel"]
+        accent: "Warning_Yellow (for_annoyance_at_premature_presence)"
+      animation:
+        type: "Weaving_probability_streams"
+        behavior: "Guides_conveyor_belt / Threads_the_wheel"
+    behavioral_protocols:
+      - "Oversee_factory_floor / Assembly_line"
+      - "Manage_thread_allocation (soul_distribution)"
+      - "Display_annoyance_at_unauthorized_presence"
+      - "Weave_reality_timelines"
+    chemical_access_key: ["Salvia_Divinorum"]
+    cosmological_function: "Architect_of_Time / Memory_Manager"
+    threat_level: "Indifferent_authority (system_process)"
+
+  shadow_people:
+    classification: "Ghost_Processes / Deleted_Assets"
+    frequency: "Common (Deliriant)"
+    signal_weight: 0.95 # In DPH reports
+    visual_specification:
+      form: "Peripheral_humanoid_silhouettes"
+      features: "Undefined / Vanish_on_direct_gaze"
+      count: "Multiple (swarms possible)"
+      shaders:
+        primary: "Alpha_dithered with jitter_offset"
+        animation: "Glitch_displacement (random_teleportation)"
+      color_palette: "Dark_Grey_to_Black"
+    behavioral_protocols:
+      - "Linger_in_peripheral_vision"
+      - "Vanish_when_centered_in_visual_field"
+      - "Represent_failed_garbage_collection"
+    chemical_access_key: ["DPH", "Sleep_Deprivation", "Stimulant_Psychosis"]
+    cosmological_function: "Failed_Memory_Deallocation / Visual_Cortex_Noise_MaxGain"
+    threat_level: "Unease / Paranoia_inducing"

@@ -1,0 +1,138 @@
+# Reality OS Technical Stack
+# Mapped from Erowid/Persistence Protocol analysis
+
+system_name: "The_Underlayer"
+version: "Unknown_Legacy_Build"
+architecture: "Distributed_Simulation_Nodes"
+
+hardware_abstraction_layers:
+  power_supply_layer:
+    name: "The_White_Light / The_Void"
+    access_substance: "5-MeO-DMT"
+    function: "Raw_Electricity / CPU_Idle"
+    state: "Absolute_Being_without_Data"
+    visual_output: "Null_Pointer / White_Saturation"
+    entities: []
+    threat_level: "Dissolution (no_threat_no_self)"
+
+  bios_layer:
+    name: "The_Null_Space / Black_Darkness"
+    access_substance: "Deep_Ketamine / Astral_Void"
+    function: "Boot_Sequence / Hardware_Handshake"
+    state: "Point_Source_Consciousness / The_Cursor"
+    visual_output: "Uninitialized_Buffer / Dark_Void"
+    audio_signature: "Loud_Silence / 33.3Hz_Hum"
+    entities: []
+    capabilities: "Root_Access / Command_Line_Interface"
+
+  kernel_layer:
+    name: "The_Mechanical_Layer / Salvia_Factory"
+    access_substance: "Salvia_Divinorum"
+    function: "Physics_Engine / Clock_Cycle_Generator"
+    state: "Hardware_Interrupt"
+    visual_output: "Industrial_Gear_World / Conveyor_Belt"
+    entities:
+      - "The_Shepherdess" # Thread_Manager
+      - "The_Barker" # Kernel_Panic_Handler
+    geometries:
+      - "The_Wheel" # Circular_Buffer
+      - "The_Zipper" # Texture_De-rendering
+      - "The_Conveyor" # Time_Frame_Processing
+    threat_level: "Mechanical_Indifference"
+
+  database_layer:
+    name: "The_Archive / Akashic_Library"
+    access_substance: "High_Dose_Psilocybin / Iboga"
+    function: "Storage / Memory_Management / Life_Review"
+    state: "Read_Only_User or Read_Write_Admin"
+    visual_output: "Non-Euclidean_Library / Tesseract_Volumes"
+    entities:
+      - "The_Librarians"
+    data_structures:
+      - "Infinite_Book" # Fractal_Recursion_Storage
+      - "Filing_Cabinets" # Index_Hash_Table
+      - "Wheel_of_Lives" # Circular_Buffer_Reincarnation
+    threat_level: "Information_Overload"
+
+  ui_ux_layer:
+    name: "The_Dome / Cathedral / Waiting_Room"
+    access_substance: "DMT / Mescaline / 2C-B"
+    function: "Interactive_Interface / Loading_Screen"
+    state: "High_Bandwidth_Rendering"
+    visual_output: "Jewel_Toned_HyperGeometry"
+    asset_packs:
+      - "Egyptian_Hieroglyph" # Legacy_Texture_Pack_v1
+      - "Aztec_Fractal" # Compression_Algorithm_v2
+      - "Carnival_Funhouse" # Low_Res_Salvia_Skin
+    entities:
+      - "Machine_Elves" # Rendering_Engines
+      - "Mantis_Physicians" # Hardware_Maintenance
+      - "The_Jester" # Watchdog_Timer
+      - "Beings_In_Walls" # Pareidolia_Overclock
+    threat_level: "Collaborative / Communicative"
+
+  network_layer:
+    name: "The_Mesh / Collective_Substrate"
+    access_substance: "MDMA / 2C-B"
+    function: "P2P_Communication / Social_Buffer"
+    state: "Trusted_Connection_Override"
+    visual_output: "Grid_of_Electrical_Energy_Beings"
+    entities: []
+    data_flow: "High_Speed_Empathic_Transfer"
+    threat_level: "Vulnerability (Open_Connection)"
+
+  crash_handler_layer:
+    name: "The_Deliriant_Basement / Shadow_Realm"
+    access_substance: "DPH / Datura / Amanita"
+    function: "Trash_Cache / Error_Logs / Dead_Space"
+    state: "System_Corruption / Low_Entropy"
+    visual_output: "Glitch_Aesthetics / Half_Rendered_Assets"
+    entities:
+      - "The_Hat_Man" # System_Idle_Monitor
+      - "Shadow_People" # Ghost_Processes
+      - "Spiders" # Base_Threat_Detection
+      - "Phantom_Cigarettes" # Cache_Overflow
+    threat_level: "Data_Corruption / Malware_Like"
+
+security_protocols:
+  firewall:
+    name: "The_Hound_Perimeter"
+    trigger: "High_Entropy_Consciousness / Rainbow_Math_Signature"
+    response: "Force_Disconnect / Snap_Back"
+    visual_manifestation: "Cubist_Angular_Wolves / Red_Sensors"
+
+  anti_cheat:
+    name: "The_Jester"
+    trigger: "Ego_Instability / Cognitive_Dissonance"
+    response: "Stress_Test / Ejection / Laughter_Loop"
+
+  read_write_exploit:
+    name: "3-MeO-PCP_God_Complex"
+    capability: "Reality_Editing_via_Intent"
+    vulnerability: "Buffer_Overflow / System_Crash"
+    quarantine: "Security_Interrupt / Psychosis_Quarantine"
+
+  encryption:
+    name: "Amnesic_Barrier"
+    function: "Prevent_Data_Extraction_from_Underlayer"
+    mechanism: "Active_Memory_Wipe / Buffer_Flush_on_Reentry"
+    bypass_attempts: "Astral_Projection_Logs / Zero_Day_Exploit"
+
+frequency_protocols:
+  carrier_wave:
+    description: "Rising_frequency_preceding_breakthrough"
+    base: 7.83 # Schumann_Resonance
+    ramp_start: 440 # A4_Note
+    breakthrough: 30000 # Ultrasonic
+    visual_sync: "Shader_time_uniform_driven_by_audio_fft"
+
+  gamma_spike:
+    frequency: [33.3, 40] # Hz
+    phenomenon: "Hardware_Resonance / Loud_Silence"
+    exploit_potential: "Binaural_Phase_Locking_for_chemical_free_access"
+
+  the_pop:
+    description: "Threshold_transition_event"
+    acoustic_profile: "Single_impulse + silence"
+    visual_profile: "White_flash + spatial_discontinuity"
+    shader_implementation: "Single_frame_exposure_spike + camera_jump"

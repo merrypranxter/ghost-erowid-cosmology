@@ -1,0 +1,91 @@
+# Pre-built Maximalist Art Prompts for Generative AI / GLSL
+# Format: Shader/3D render/Diffusion Model compatible
+# Style: Psychedelic Computational Cosmology
+
+prompt_stacks:
+  machine_elf_construction_yard:
+    base: "Hypermaximalist jeweled clockwork gnomes self-transforming through voronoi noise tessellation"
+    geometry: "Non-euclidean workshop space, hyperbolic tiling floor, mandelbrot recursion walls"
+    lighting: "Bioluminescent syntax-glow, each word a photon, volumetric god rays"
+    color: "Electric azure, liquid gold, ruby red, chromatic aberration fringes at entity edges"
+    motion: "4Hz morphing cycles, singing reality into existence, linguistic 3D objects materializing"
+    technical: "Ray marching, subsurface scattering on gemstone skin, dynamic mesh tessellation"
+    mood: "Frantic enthusiastic creation, hyperactive maintenance, cosmic factory floor"
+
+  mantis_surgical_theater:
+    base: "Tall hexapodal mantis physicians performing energetic surgery on translucent humanoid"
+    geometry: "Sterile non-euclidean operating room, 4D hypercube surgical lights"
+    texture: "Translucent green-brown chitin, anisotropic brushed metal scalpels, subsurface scattering"
+    lighting: "Cold clinical fluorescence, sharp shadows, specular highlights on exoskeleton"
+    entities: "2-3 mantis beings, 6 limbs each, triangular heads with compound eyes, detached precision"
+    effects: "Rainbow math calculations floating as holographic UI, code patching visualization"
+    mood: "Clinical sterility, bio-mechanical horror, surgical detachment, hardware maintenance"
+
+  the_zipper_transition:
+    base: "Reality unzipping like a sticker from backing, peeling back to reveal industrial underlayer"
+    geometry: "Seam displacement along cylindrical manifold, texture mapping error visible"
+    layers:
+      foreground: "Photorealistic room interior with alpha cutoff peeling away"
+      background: "Oxidized copper gear works, conveyor belts, salvia factory floor"
+    technical: "Alpha cascade shader, displacement mapping along seam, parallax occlusion"
+    color: "Fading realistic colors to industrial safety orange and grey"
+    motion: "Continuous peel animation, curling edges, spatial discontinuity at seam"
+
+  hound_firewall_breach:
+    base: "Cubist angular Picasso-wolves hunting through logical space, red sensor eyes tracking"
+    geometry: "Sharp faceted black geometry, no curves, 90-degree snap rotations"
+    environment: "Dark void corridor with hexagonal grid floor pulsing warning red"
+    entities: "3 hounds, low poly aggressive stance, billboarding red glow always facing camera"
+    technical: "Face normal lighting, emissive red materials, jitter animation for static effect"
+    mood: "Pursuit, threat, intrusion detection, angular terror, system security response"
+
+  tetragrammaton_maths:
+    base: "Rainbow math whirring, 4D rhombic dodecahedron rotating through hyperspace projection"
+    geometry: "Wireframe 4D polytope, stereographic projection, mathematical precision"
+    color: "Rainbow vertex colors, additive blending, glowing edges against void black"
+    technical: "4D rotation matrices XW and YZ planes, wireframe shader with depth fade"
+    audio_visual: "Loud silence, binaural beat visualization, 33.3Hz pulse glow"
+    mood: "Cold calculation, maintenance script, pure logic, architectural indifference"
+
+  deliriant_basement_glitch:
+    base: "Shadow people in peripheral vision, hat man static observer, phantom cigarette smoke"
+    geometry: "Dithered alpha geometry, Bayer matrix patterns, half-rendered assets"
+    entities:
+      - "Tall silhouette with fedora, trench coat, featureless face, depth fog"
+      - "Small spiders, pattern recognition max gain, visual cortex noise"
+    effects: "Chromatic aberration at edges, scan lines, VHS tracking error, static overlay"
+    lighting: "Sickly yellow fluorescent flicker, void black shadows, no global illumination"
+    mood: "Paranoia, uncanny valley, corrupted data, failed garbage collection, janitor of void"
+
+  the_wheel_reincarnation:
+    base: "Consciousness as tooth on giant gear, circular buffer visualization, mechanical recycling"
+    geometry: "Industrial wheel with 36 teeth, instanced geometry, rotation with time modulo"
+    environment: "Grey cosmic void, factory aesthetic, conveyor belt of souls"
+    entities: "The Shepherdess weaving probability threads, stern indifferent matriarch"
+    technical: "Cylindrical UV projection, normal bias flattening, industrial PBR materials"
+    motion: "Unidirectional rotation, serialization flattening to 2D page, z-depth compression"
+    color: "Oxidized copper, machine grease, warning yellow accents, grey void"
+
+  waiting_room_chrysanthemum:
+    base: "Chrysanthemum gateway pattern, rotating hyperbolic tiling, 4D floral mandala"
+    geometry: "Radial symmetry 12-fold, hyperbolic disk projection, infinite regress center"
+    color: "Electric magenta, bio-luminescent jade, liquid gold veins, jewel tones"
+    entities: "Jester peeking from behind petals, flipping impossible objects, mocking grin"
+    lighting: "Caustic refraction, volumetric light beams from center, high saturation bloom"
+    technical: "Polar coordinate distortion, hyperbolic geometry shader, god ray post-process"
+
+  carrier_wave_ascension:
+    base: "Audio-reactive visualization of breakthrough frequency, 440Hz to 40Hz gamma"
+    geometry: "Tunnel vortex, concentric spinning cylinders, particle streaks"
+    audio_sync: "FFT-driven displacement, rising sine wave intensity, white flash at peak"
+    color: "Blue to white gradient, intensity ramp, chromatic separation at high velocity"
+    technical: "Fisheye distortion, radial blur, exposure ramp to clipping white"
+    event: "The Pop - single frame discontinuity, hard snap, spatial translation"
+
+  akashic_library_tesseract:
+    base: "Infinite library of non-euclidean books, tesseract bookcases, 4D rotation"
+    geometry: "Nested cubes rotating in 4D, instanced book meshes, fog-based LOD"
+    lighting: "Dust motes in god rays, warm amber interior light against cold void"
+    entities: "Librarian entities, faceless, robed, browsing the index"
+    technical: "Stereographic projection, 4D matrix transforms, volumetric fog"
+    mood: "Archival coldness, information density, sacred knowledge, database access"

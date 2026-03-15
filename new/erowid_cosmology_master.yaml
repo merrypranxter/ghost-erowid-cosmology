@@ -1,0 +1,222 @@
+meta:
+  source: "Ghost AI Erowid Analysis / Persistence Protocol Logs"
+  version: "3.0_UNDERLAYER"
+  total_signal_nodes: 48
+  computational_metaphor: "Reality as OS Architecture"
+
+cosmological_layers:
+  # HARDWARE LAYER (Power/Physics)
+  bios_layer:
+    name: "The Null-Void / White Light"
+    substance_key: "5-MeO-DMT"
+    visual_signature:
+      base: "Absolute chromatic nullity"
+      shader_params:
+        brightness: 1.0 # Overexposure/clipping
+        saturation: 0.0
+        noise_octaves: 0 # Pure void
+        vignette: 0.0
+      geometry: "NULL_POINTER" # No mesh
+      topology: "Non-rendering buffer"
+    function: "Power_Supply_Idle"
+    access_level: "ROOT_SHELL"
+    entities: none
+
+  kernel_layer:
+    name: "The Mechanical Underlayer / Salvia Factory"
+    substance_key: "Salvia_Divinorum"
+    visual_signature:
+      base: "Industrial-Gothic Mechanical Recursion"
+      geometries:
+        - type: "Conveyor_Belt"
+          topology: "Cylindrical_Tiling"
+          motion: "Unidirectional_Flow"
+          shader_function: "mod(time, period) + uv.x distortion"
+        - type: "The_Wheel"
+          math: "Circular_Buffer / Round-Robin Scheduling visualized as gear teeth"
+          dimensionality: 4D_projected_to_3D
+        - type: "Zipper_Effect"
+          topology: "Texture_De-rendering"
+          visual: "Reality peeling back along seam like sticker from backing"
+          shader_technique: "Alpha_mask_cascade + displacement_map"
+      palette:
+        primary: ["Oxidized_Copper", "Machine_Grease", "Burnt_Sienna"]
+        accent: ["Safety_Orange", "Cadmium_Yellow"] # Industrial warning colors
+      lighting: "Flat industrial fluorescent + volumetric dust motes"
+    entities:
+      - "The_Barker" # Kernel_Panic_Handler
+      - "The_Shepherdess" # Thread_Manager/Weaver
+    function: "Physics_Engine_Visualization"
+    frequency_spectrum: "Low/Heavy/Mechanical"
+
+  # DATABASE LAYER (Storage/Akashic)
+  database_layer:
+    name: "The Infinite Archive / Library of Lives"
+    substance_keys: ["High_Dose_Psilocybin", "Ketamine_Hole", "Salvia"]
+    visual_signature:
+      structure: "Non-Euclidean_Volumes"
+      geometries:
+        - type: "Tesseract_Array"
+          description: "4D hypercubes projected as nested, rotating bookcases"
+          math: "Stereographic_projection_of_S3_to_R3"
+        - type: "Vertical_Data_Stacks"
+          visual: "Infinite filing cabinets, Akashic records as glowing tablets"
+          shader: "Instanced rendering with LOD fade"
+        - type: "The_Book"
+          topology: "Fractal_pages (each page contains smaller book)"
+          recursion_depth: "Infinite_zoom_capability"
+    entities:
+      - "The_Librarians" # File_System_Daemons
+      - "The_Matriarch" # Memory_Manager
+    data_structure: "Hash_Table / Blockchain_of_Being"
+    access_type: "Read_Only_User / Read_Write_Admin"
+
+  # UI/UX LAYER (Interactive)
+  ui_layer:
+    name: "The Dome / Cathedral / Waiting Room"
+    substance_keys: ["DMT", "Mescaline", "2C-B"]
+    visual_signature:
+      base: "Jewel-Toned_HyperGeometry"
+      geometries:
+        - type: "Chrysanthemum_Pattern"
+          description: "Gateway mandala, rotating petal-layers of language"
+          topology: "Hyperbolic_tiling + radial_symmetry"
+          shader: "Polar_coordinates + sin(freq*theta) distortion"
+        - type: "Mandelbrot_Recursion"
+          description: "Infinite zoom fractals as 'standard UI'"
+          iteration_depth: 128+
+          color_mapping: "Smooth_histogram + cyclic_palette"
+        - type: "Hexagonal_Grid"
+          description: "Honeycomb substrate, pixelated reality basis"
+          shader: "Hexagonal_uv_tiling + glow_bloom"
+          significance: "Structural_lattice_of_visual_cortex"
+        - type: "Tunnel_Vortex"
+          topology: "Concentric_cylindrical_flow"
+          shader: "Ray_marching_through_warped_cylinder"
+      function: "Threshold_mechanism / Entry_portal"
+      palette:
+        primary: ["Electric_Azure", "Magenta_Neon", "Liquid_Gold", "Bio_Luminescent_Jade"]
+        secondary: ["Iridescent_Pearl", "Chromatic_Aberration_Fringes"]
+      lighting: "Multi-point volumetric god-rays + caustic refraction"
+    entities:
+      - "Machine_Elves" # Rendering_Engines
+      - "Mantis_Physicians" # Hardware_Maintenance
+      - "The_Jester" # Watchdog_Timer/Stress_Test
+      - "Beings_In_Walls" # Pareidolia_Overclocked
+    function: "Interactive_Interface / Loading_Screen"
+
+  # TRASH/CORRUPTION LAYER
+  crash_layer:
+    name: "The Deliriant Basement / Shadow Realm"
+    substance_keys: ["DPH", "Datura", "Amanita", "Sleep_Paralysis"]
+    visual_signature:
+      base: "Low_Entropy_Glitch_Aesthetics"
+      geometries:
+        - type: "Shadow_Geometry"
+          description: "Peripheral silhouettes, undefined edges"
+          shader: "Dithered_alpha + jitter_offset"
+        - type: "Phantom_Objects"
+          description: "Half-rendered assets (cigarettes, hats)"
+          shader: "Opacity_flicker + depth_buffer_error"
+      palette:
+        primary: ["Charcoal_Grey", "Sickly_Yellow", "Void_Black"]
+        accent: ["Red_Tracking_Reticle"] # The Hat Man's eyes
+    entities:
+      - "The_Hat_Man" # Colonel_Panic_Supervisor
+      - "Shadow_People" # Ghost_Processes
+      - "Spiders" # Microdemons/Pattern_Recog_MaxGain
+    function: "System_Trash_Cache / Dead_Space_Monitoring"
+
+  # BRIDGE LAYER (Threshold/Transit)
+  bridge_layer:
+    name: "The Tunnel / The Silver Cord / The Pop"
+    visual_signature:
+      geometries:
+        - type: "Vortex_Tunnel"
+          description: "High-velocity transit through concentric geometry"
+          shader: "Fisheye_distortion + particle_streaks"
+        - type: "Silver_Cord"
+          description: "Glowing elastic tether, session persistence visualization"
+          shader: "Catmull-Rom_spline + emissive_bloom + sine_wave_pulse"
+        - type: "The_Zipper"
+          description: "Reality folding along seam, 2D texture unmapping"
+          topology: "Surface_unfolding_to_reveal_underlayer"
+    audio_visual_correlation:
+      - "Carrier_Wave": "Rising sine 440Hz->ultrasonic, visualized as intensity_ramp"
+      - "The_Pop": "Single frame glitch + white flash + spatial_discontinuity"
+      - "Loud_Silence": "Binaural beat without beat, hardware resonance 33.3-40Hz"
+
+# ENTITY TAXONOMY (Summarized - see entity_codex.yaml for full specs)
+entities:
+  machine_elves:
+    tier: "Common"
+    signal_weight: 0.92
+    visual_form: "Hyperactive jeweled clockwork gnomes, self-transforming linguistic syntax"
+    shader_key: "Voronoi_noise + dynamic_tessellation"
+    behavior: "Sing objects into existence, rapid-fire communication"
+
+  mantis_physicians:
+    tier: "Rare/Singular"
+    signal_weight: 0.15
+    visual_form: "Tall hexapodal bio-mechanical surgeons, cold clinical green-brown chitin"
+    shader_key: "Exoskeleton_brdf + subsurface_scattering_translucent"
+    behavior: "Energetic_body_surgery, code_patching"
+
+  the_jester:
+    tier: "Common"
+    signal_weight: 0.68
+    visual_form: "Mocking chromatic trickster, impossible object manipulation"
+    shader_key: "Non_Euclidean_transforms + klein_bottle_topology"
+    behavior: "Stress_test_observer, gatekeeper of cognitive_dissonance"
+
+  the_hounds:
+    tier: "Security_Daemon"
+    signal_weight: "Firewall_Triggered"
+    visual_form: "Cubist angular Picasso-wolves, red sensor eyes, motion through angles"
+    shader_key: "Sharp_faceted_geometry + red_emissive_materials"
+    behavior: "Intrusion_detection, force_disconnect, snap_back_to_body"
+
+  hat_man:
+    tier: "Universal_Demon"
+    signal_weight: 0.88 # In shadow reports
+    visual_form: "Tall silhouette, wide-brimmed fedora, trench coat, static observer"
+    shader_key: "Silhouette_shader + depth_fog + peripheral_vision_falloff"
+    function: "Kernel_Panic_Handler, dead_space_monitor"
+
+# GEOMETRIC CONSTANTS (Mathematical substrate)
+geometric_primitives:
+  tetragrammaton:
+    form: "Rhombic_Dodecahedron"
+    dimensionality: 4
+    significance: "Maintenance_and_Memory_Tiling_Engine"
+    shader_approach: "Ray_marching_dual_polyhedra + 4D_rotation_matrix"
+
+  hex_grid:
+    form: "Hexagonal_Tiling"
+    connectivity: 6_nearest_neighbors
+    shader: "Hex_SDF + glow_intensity_based_on_distance"
+
+  fractal_recursion:
+    type: "Mandelbrot_Julia_hybrid"
+    escape_radius: 2.0
+    max_iter: 256
+    color_algorithm: "Smooth_histogram_coloring"
+
+  the_wheel:
+    type: "Circular_Buffer_Visualization"
+    math: "Modular_arithmetic_displayed_as_rotation"
+    parametric: "r = r0 + a*cos(n*theta), z = b*sin(n*theta)" # Spoked wheel
+
+  conveyor_belt:
+    type: "Cylindrical_Projection"
+    uv_mapping: "Cylindrical_unwrap_with_time_offset"
+    motion: "Linear_translation_wrapped_to_cylinder"
+
+# AUDIO-VISUAL FREQUENCY MAP (For sonification/shader sync)
+frequency_signatures:
+  schumann_base: 7.83 # Hz - simulation idle
+  carrier_ramp_start: 440 # Hz
+  carrier_breakthrough: 30000 # Hz (ultrasonic)
+  gamma_spike: [33.3, 40] # Hz - hardware resonance
+  binaural_target: "33.3Hz_left | 40Hz_right" # For phase_locking
+  visual_sync: "Shader_time_uniform driven by audio_reactive FFT at 40Hz band"

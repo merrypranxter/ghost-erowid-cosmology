@@ -1,0 +1,175 @@
+# Prompt Matrix: AI Art Generation
+# Weighted Syntax Structure for Midjourney/Stable Diffusion
+
+# Base Weight Syntax: [concept:weight]
+# Range: 0.0-1.0, default 0.5, boost to 0.9 for dominance
+
+substance_profiles:
+  dmt_breakthrough:
+    base_weights:
+      machine_elf: 0.9
+      chrysanthemum_mandala: 0.85
+      jewel_geometry: 0.8
+      chromatic_aberration: 0.4
+      more_real_than_real: 0.7
+    negative_prompts:
+      - "organic_decay"
+      - "rust"
+      - "low_resolution"
+      - "earthly_gravity"
+    parameters:
+      stylize: 250
+      chaos: 80
+      weird: 300
+      quality: 2
+      stop: 95 # Before over-processing
+
+  salvia_mechanical:
+    base_weights:
+      industrial_wheel: 0.9
+      conveyor_belt: 0.85
+      oxidized_copper: 0.7
+      zipper_reality: 0.8
+      flattening_2d: 0.6
+    negative_prompts:
+      - "organic_curves"
+      - "soft_lighting"
+      - "natural_colors"
+      - "human_scale"
+    parameters:
+      stylize: 150
+      chaos: 60
+      weird: 400 # High weird for salvia
+      quality: 1 # Lower quality = grittier
+
+  deliriant_shadows:
+    base_weights:
+      hat_man: 0.8
+      peripheral_shadows: 0.7
+      dithered_alpha: 0.6
+      phantom_cigarette: 0.4
+      static_noise: 0.5
+    negative_prompts:
+      - "clear_focus"
+      - "bright_colors"
+      - "coherent_geometry"
+      - "high_definition"
+    parameters:
+      stylize: 50
+      chaos: 95
+      weird: 200
+      quality: 0.5 # Degraded quality on purpose
+
+  dissociative_void:
+    base_weights:
+      grid_superstructure: 0.8
+      point_source_consciousness: 0.7
+      clinical_coldness: 0.6
+      neon_blue_grid: 0.75
+      tesseract_array: 0.65
+    negative_prompts:
+      - "warmth"
+      - "organic_noise"
+      - "human_emotion"
+      - "natural_light"
+    parameters:
+      stylize: 100
+      chaos: 40
+      weird: 150
+
+# Component Vocabulary Stacks
+# Combine 3-5 of these for full prompts
+
+geometry_components:
+  mandelbrot_recurse: "[infinite_fractal_zoom:0.9] [mandelbrot_julia_hybrid:0.8] [jewel_tone_cyclic:0.7] [smooth_histogram_coloring:0.6]"
+  hex_grid: "[hexagonal_tiling:0.8] [vibrating_substrate:0.7] [electric_cyan_glow:0.9] [pixelated_reality_basis:0.6]"
+  tunnel_vortex: "[concentric_cylindrical_flow:0.85] [fisheye_distortion:0.7] [particle_streaks:0.6] [high_velocity_transit:0.8]"
+  zipper_seam: "[reality_peeling:0.9] [texture_de_rendering:0.85] [displacement_mapping:0.6] [industrial_underlayer:0.7]"
+  tetragrammaton: "[rhombic_dodecahedron:0.9] [4d_rotation_matrix:0.8] [rainbow_wireframe:0.75] [mathematical_whirring:0.7]"
+  conveyor_belt: "[cylindrical_tiling:0.8] [unidirectional_flow:0.9] [industrial_mechanism:0.7] [time_frame_processing:0.6]"
+
+entity_components:
+  machine_elf: "[voronoi_tessellation:0.9] [self_transforming:0.9] [jeweled_clockwork:0.85] [linguistic_syntax_glow:0.7] [hyperactive_4hz:0.6]"
+  mantis_physician: "[hexapodal_insectoid:0.9] [translucent_chitin:0.8] [surgical_precision:0.7] [subsurface_scattering:0.6] [clinical_detached:0.8]"
+  hound: "[cubist_angular:0.95] [low_poly_sharp:0.9] [red_sensor_eyes:0.85] [black_obsidian:0.8] [90_degree_snap_rotation:0.7]"
+  hat_man: "[tall_silhouette:0.9] [fedora_trench_coat:0.8] [peripheral_vision:0.85] [featureless_face:0.7] [static_observer:0.75]"
+  jester: "[non_euclidean_topology:0.9] [klein_bottle_form:0.8] [mocking_gesture:0.7] [impossible_objects:0.85] [holographic_iridescence:0.6]"
+
+texture_components:
+  bio_luminescent: "[emissive_fresnel:0.9] [liquid_jade:0.8] [electric_azure:0.85] [inner_glow:0.7]"
+  oxidized_metal: "[pbr_roughness:0.8] [copper_patina:0.7] [machine_grease:0.6] [industrial_decay:0.5]"
+  chromatic_aberration: "[rgb_split:0.7] [high_bandwidth:0.6] [resolution_artifact:0.5] [more_real:0.8]"
+  dithered_phantom: "[bayer_dither:0.8] [alpha_jitter:0.7] [half_rendered:0.75] [ghost_process:0.6]"
+  crystalline_gem: "[faceted_geometry:0.9] [subsurface_scatter:0.8] [dispersion_chromatic:0.7] [high_roughness:0.6]"
+
+lighting_components:
+  god_rays: "[volumetric_scattering:0.9] [caustic_refraction:0.7] [multi_point_light:0.8] [jewel_toned:0.85]"
+  industrial_flat: "[fluorescent_hum:0.8] [flat_lighting:0.7] [volumetric_dust:0.6] [sickly_yellow:0.5]"
+  noir_shadow: "[hard_shadows:0.9] [silhouette_only:0.85] [red_edge_glow:0.7] [peripheral_fade:0.8]"
+  rainbow_math: "[additive_blending:0.9] [vertex_color_rainbow:0.8] [wireframe_glow:0.7] [4d_projection:0.6]"
+
+# Pre-Built Maximalist Stacks
+# Copy-paste ready, weighted for immediate use
+
+stacks:
+  elf_construction_yard: >
+    [machine_elf:0.95] [voronoi_dynamic_tessellation:0.9] [jeweled_clockwork:0.9]
+    [self_transforming_4hz:0.8] [hyperbolic_workshop:0.85] [mandelbrot_walls:0.7]
+    [linguistic_syntax_glow:0.75] [chromatic_aberration:0.4] [volumetric_god_rays:0.6]
+    [electric_azure:0.8] [liquid_gold:0.7] [bioluminescent_jade:0.75]
+    --stylize 250 --chaos 80 --weird 300 --quality 2 --ar 16:9
+
+  mantis_surgical_theater: >
+    [mantis_physician:0.95] [hexapodal_surgeon:0.9] [translucent_green_chitin:0.85]
+    [surgical_theater:0.8] [sterile_non_euclidean:0.75] [4d_hypercube_lights:0.7]
+    [anisotropic_metal_scalpels:0.8] [subsurface_scattering:0.75] [cold_fluorescent:0.9]
+    [energetic_surgery_visualization:0.7] [code_patching_hologram:0.6]
+    --stylize 200 --chaos 60 --weird 250 --quality 2 --ar 21:9
+
+  salvia_factory_floor: >
+    [industrial_wheel:0.9] [conveyor_belt_of_time:0.9] [oxidized_copper:0.85]
+    [mechanical_gear_works:0.8] [zipper_reality_peel:0.85] [shepherdess_matriarch:0.7]
+    [loom_weaving:0.75] [grey_cosmic_void:0.8] [safety_orange_accent:0.6]
+    [flattening_2d:0.7] [deterministic_gears:0.85]
+    --stylize 150 --chaos 70 --weird 400 --quality 1 --ar 16:9
+
+  hound_firewall_breach: >
+    [picasso_hound:0.95] [cubist_angular_wolf:0.9] [red_sensor_eyes:0.9]
+    [low_poly_security:0.85] [black_obsidian:0.8] [hexagonal_grid_floor:0.7]
+    [warning_red_pulse:0.8] [90_degree_snap_movement:0.75] [intrusion_detection:0.8]
+    [force_disconnect_imminent:0.7]
+    --stylize 180 --chaos 90 --weird 350 --quality 2 --ar 1:1
+
+  tetragrammaton_maintenance: >
+    [rhombic_dodecahedron:0.95] [4d_rotation_matrix:0.9] [rainbow_math_whirring:0.85]
+    [wireframe_additive:0.8] [stereographic_projection:0.75] [loud_silence:0.7]
+    [maintenance_script:0.8] [mathematical_precision:0.9] [cold_calculation:0.75]
+    [system_process:0.7]
+    --stylize 120 --chaos 40 --weird 200 --quality 2 --ar 1:1
+
+  deliriant_basement: >
+    [hat_man:0.9] [tall_silhouette_fedora:0.85] [shadow_people:0.8]
+    [peripheral_vision_only:0.85] [dithered_alpha:0.8] [phantom_cigarette:0.6]
+    [sickly_fluorescent:0.75] [static_noise:0.7] [vhs_tracking_error:0.65]
+    [cache_overflow:0.7] [janitor_of_void:0.6]
+    --stylize 50 --chaos 95 --weird 200 --quality 0.5 --ar 4:5
+
+# Negative Prompts by Layer
+# Use these subtractive terms to prevent bleed between cosmological layers
+
+negative_prompts:
+  dmt_waiting_room: >
+    rust, decay, industrial machinery, earth tones, organic rot, heavy gravity,
+    blurry, low resolution, flat lighting, human imperfections, mortality
+
+  salvia_mechanical: >
+    soft curves, warm colors, natural beauty, organic growth, fluid motion,
+    biological warmth, fuzzy edges, romantic lighting, human emotion, compassion
+
+  deliriant: >
+    clear focus, high definition, coherent geometry, bright cheerful colors,
+    symmetry, order, logic, clean lines, intentional composition, professional photography
+
+  dissociative_void: >
+    warmth, chaos, organic noise, human emotion, natural light, earth colors,
+    passion, randomness, biological forms, warmth of life
