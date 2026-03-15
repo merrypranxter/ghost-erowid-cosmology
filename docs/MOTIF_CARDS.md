@@ -1,7 +1,7 @@
 # Motif Cards — Ghost x Erowid Cosmology (Working Canon)
 
 This is the “single page” atlas: each motif gets a compact card you can use for prompts, zines, posters, or animation notes.
-Art styling for motifs lives in `art/Hooks.yaml` (rename to `art/hooks.yaml` later if you want).
+Art styling for motifs lives in [`art/hooks.yaml`](../art/hooks.yaml).
 
 ---
 

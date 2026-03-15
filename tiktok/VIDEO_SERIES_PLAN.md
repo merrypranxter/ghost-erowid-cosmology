@@ -28,4 +28,4 @@ Waiting Room, Palace UI, Void, Nursery, Library of Lives, Buffer, Kernel Void, D
 ## Visual workflow per video:
 - Background loop prompt from `prompts/PROMPT_PACKS.md`
 - Overlay notification text from `art/SYSTEM_NOTIFICATIONS.md`
-- Color grade from `art/Hooks.yaml` emotion presets
+- Color grade from `art/hooks.yaml` emotion presets

@@ -1,6 +1,6 @@
 # Prompt Packs — Ghost x Erowid (Production Prompts)
 
-Use `docs/MOTIF_CARDS.md` + `art/Hooks.yaml` as the style library.
+Use [`docs/MOTIF_CARDS.md`](../docs/MOTIF_CARDS.md) + [`art/hooks.yaml`](../art/hooks.yaml) as the style library.
 These prompts are designed to be modular: swap motifs in brackets.
 
 ---
