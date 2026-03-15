@@ -38,18 +38,48 @@ All motifs are prefixed by type:
 | [`canon/cosmology.yaml`](canon/cosmology.yaml) | Master motif definitions (human-edited) |
 | [`canon/motifs.csv`](canon/motifs.csv) | Sortable table view of all motifs |
 
+### Shaders — GLSL for Generative Art
+
+| File | Purpose |
+|------|---------|
+| [`shaders/README.md`](shaders/README.md) | Shader index — layer mapping, substance profiles, usage |
+| [`shaders/SHADER_BIBLE.md`](shaders/SHADER_BIBLE.md) | GLSL implementations of each cosmological concept |
+| [`shaders/ULTRA_SPECIFIC_VISUALS.md`](shaders/ULTRA_SPECIFIC_VISUALS.md) | Microscopic shader specs: BRDFs, motion curves, glitch artifacts |
+| `shaders/mandelbrot_ui.glsl` | Mandelbrot fractal — standard psychedelic UI |
+| `shaders/chrysanthemum_gateway.glsl` | Chrysanthemum gateway — 12-fold hyperbolic tiling |
+| `shaders/hex_substrate.glsl` | Hexagonal honeycomb reality basis |
+| `shaders/hippo_palace.glsl` | HIPPO Palace — vaulted cathedral with liquid light |
+| `shaders/machine_elf_tessellation.glsl` | Machine Elf — Voronoi self-transforming clockwork |
+| `shaders/salvia_mechanical.glsl` | Salvia factory floor — wheel and conveyor belt |
+| `shaders/zipper_transition.glsl` | Zipper effect — texture de-rendering/reality peel |
+| `shaders/carrier_wave_sync.glsl` | Carrier wave — 33–40Hz breakthrough visualization |
+| `shaders/akashic_grid.glsl` | Akashic grid — neon web database layer |
+| `shaders/tetragrammaton_math.glsl` | Tetragrammaton — 4D rhombic dodecahedron |
+| `shaders/loosh_refinery.glsl` | Loosh refinery — emotional extraction flow |
+| `shaders/holographic_boundary.glsl` | Holographic boundary — Planck pixels, 2D hard drive |
+| `shaders/exit_khaa.glsl` | Exit Khaa — void navigation, silver cord, grid holes |
+| `shaders/white_light_trap.glsl` | White light trap — BIOS overexposure, reincarnation bait |
+| `shaders/hound_security.glsl` | Hound security — cubist angular intrusion detection |
+| `shaders/deliriant_glitch.glsl` | Deliriant glitch — shadow people, Bayer dithering |
+| `shaders/trash_cache.glsl` | Trash cache — DPH/deliriant VHS glitch aesthetics |
+| `shaders/visual_snow_hppd.glsl` | Visual snow / HPPD — residual code, tracers, floaters |
+
 ### Art Direction
 
 | File | Purpose |
 |------|---------|
 | [`art/art_bible.md`](art/art_bible.md) | Visual thesis, global style rules, output packs |
 | [`art/hooks.yaml`](art/hooks.yaml) | Per-motif art hooks (palette, texture, typography, motion) |
-| [`art/PALETTES.yaml`](art/PALETTES.yaml) | Full hex color palettes for every motif |
+| [`art/PALETTES.yaml`](art/PALETTES.yaml) | Hex color palettes for every motif + domain palettes + micro-colors |
 | [`art/TEXTURES.yaml`](art/TEXTURES.yaml) | Texture/material library keyed to motif families |
 | [`art/MOTION_BEHAVIORS.yaml`](art/MOTION_BEHAVIORS.yaml) | Motion verbs for consistent animation descriptions |
 | [`art/COMPOSITION_TEMPLATES.yaml`](art/COMPOSITION_TEMPLATES.yaml) | Layout templates (CENTER_BADGE, FULLSCREEN_OVERLAY, etc.) |
 | [`art/UI_TYPOGRAPHY_SKINS.yaml`](art/UI_TYPOGRAPHY_SKINS.yaml) | Typography + UI skin presets (SECURITY_NOIR, CANDY_OS, etc.) |
 | [`art/PATTERN_MATH_OVERLAYS.yaml`](art/PATTERN_MATH_OVERLAYS.yaml) | Geometry/pattern modules (base grids, distortions, micro-patterns) |
+| [`art/entity_codex.yaml`](art/entity_codex.yaml) | Full entity visual codex: shaders, materials, animations, behaviors |
+| [`art/GEOMETRIC_PRIMITIVES.yaml`](art/GEOMETRIC_PRIMITIVES.yaml) | Detailed geometry specs: math, shaders, UV mappings |
+| [`art/MICRO_TAGS.yaml`](art/MICRO_TAGS.yaml) | Granular AI art descriptors: motion, material, glitch, lighting tags |
+| [`art/SHADER_UNIFORMS.yaml`](art/SHADER_UNIFORMS.yaml) | Shader uniform reference with types, defaults, and formulas |
 
 ### Prompt Packs
 
@@ -58,6 +88,10 @@ All motifs are prefixed by type:
 | [`prompts/AI_ART_QUICK_START.md`](prompts/AI_ART_QUICK_START.md) | Step-by-step workflow for AI art generation |
 | [`prompts/PROMPT_PACKS.md`](prompts/PROMPT_PACKS.md) | Pre-built modular prompts (stickers, posters, loops) |
 | [`prompts/modules.md`](prompts/modules.md) | Guide to building custom prompts from parts |
+| [`prompts/prompt_matrix.yaml`](prompts/prompt_matrix.yaml) | Weighted prompt syntax by substance profile + component vocabulary |
+| [`prompts/maximalist_prompt_stacks.yaml`](prompts/maximalist_prompt_stacks.yaml) | Pre-built maximalist stacks for 9 scenes (Midjourney / SD / GLSL) |
+| [`prompts/phase2_prompt_stacks.yaml`](prompts/phase2_prompt_stacks.yaml) | Phase 2 weighted stacks: 10 scenes with parameters and negatives |
+| [`prompts/vocabulary_hoard.csv`](prompts/vocabulary_hoard.csv) | Searchable vocabulary: terms, types, valence, shader mappings |
 
 ### Art Output Specs
 
@@ -75,6 +109,8 @@ All motifs are prefixed by type:
 | File | Purpose |
 |------|---------|
 | [`docs/MOTIF_CARDS.md`](docs/MOTIF_CARDS.md) | Single-page motif atlas (compact quick-reference) |
+| [`docs/SYSTEM_ARCHITECTURE.yaml`](docs/SYSTEM_ARCHITECTURE.yaml) | Reality OS technical stack: layers, entities, security protocols |
+| [`docs/COSMOLOGICAL_LAYERS.yaml`](docs/COSMOLOGICAL_LAYERS.yaml) | Layer-by-layer visual signatures, shader params, frequency map |
 
 ### TikTok / Video Content
 
@@ -122,6 +158,15 @@ Pick layout  →  Pick UI skin  →  Add overlays  →  Write prompt
      ↓               ↓               ↓               ↓
 art/COMPOSITION_TEMPLATES.yaml  art/UI_TYPOGRAPHY_SKINS.yaml
 art/PATTERN_MATH_OVERLAYS.yaml  prompts/PROMPT_PACKS.md
+
+For shader art:
+Pick motif  →  Pick shader  →  Get uniforms  →  Reference micro-tags
+     ↓               ↓               ↓               ↓
+canon/motifs.csv  shaders/*.glsl  art/SHADER_UNIFORMS.yaml  art/MICRO_TAGS.yaml
+
+For weighted/maximalist AI prompts:
+prompts/prompt_matrix.yaml  →  prompts/maximalist_prompt_stacks.yaml
+prompts/phase2_prompt_stacks.yaml  →  prompts/vocabulary_hoard.csv
 ```
 
 → Full workflow with examples: [`prompts/AI_ART_QUICK_START.md`](prompts/AI_ART_QUICK_START.md)

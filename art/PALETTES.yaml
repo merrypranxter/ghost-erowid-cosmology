@@ -371,3 +371,112 @@ EMO_BENEVOLENCE:
   accents: ["#FFFFFF"]
   neutrals: ["#F1F5F9","#E5E7EB"]
   notes: "Soft but bright. Love without pastel mush."
+
+# --- DOMAIN / LAYER PALETTES (Phase 2) ---
+# These are cosmological-layer palettes keyed by environment/substance rather than motif ID.
+# Use for full-scene renders, background loops, and environment pieces.
+
+DOMAIN_MECHANICAL_SALVIA:
+  palette_name: "The Mechanical Layer (Salvia Guts)"
+  hex: ["#4A5D23","#2F2F2F","#FF4500","#B87333","#43B3AE","#B5A642"]
+  accents: ["#FF4500","#FFFF00"]
+  neutrals: ["#2F2F2F","#1A1A1A"]
+  notes: "Metal roughness high, oxidized edges. Salvia Divinorum layer."
+  substances: ["Salvia_Divinorum"]
+
+DOMAIN_TRASH_CACHE_DPH:
+  palette_name: "The Trash Cache / Sewer (Deliriant)"
+  hex: ["#0A0A0A","#C8B853","#DC143C","#36454F","#1A1A1A","#808080"]
+  accents: ["#DC143C"]
+  neutrals: ["#0A0A0A","#1A1A1A"]
+  notes: "Dithered alpha, scan lines, VHS tracking error. DPH/Datura layer."
+  substances: ["DPH", "Datura", "Amanita"]
+
+DOMAIN_AKASHIC_GRID:
+  palette_name: "The Grid / Akashic Database"
+  hex: ["#00FFFF","#FFBF00","#B0C4DE","#0A0A0A","#1A1A2E","#4169E1"]
+  accents: ["#00FFFF","#FFFFFF"]
+  neutrals: ["#0A0A0A","#1A1A2E"]
+  notes: "Emissive lines, instanced nodes, fog-based LOD. High-dose Psilocybin/Ketamine."
+  substances: ["High_Dose_Psilocybin", "Ketamine_Hole"]
+
+DOMAIN_HOLOGRAPHIC_BOUNDARY:
+  palette_name: "The Holographic Boundary (2D Hard Drive)"
+  hex: ["#FFFFFF","#8F00FF","#00FFFF","#E6E6FA","#F0F0FF","#C0C0C0"]
+  accents: ["#FFFFFF","#8F00FF"]
+  neutrals: ["#F0F0F0","#E0E0E0"]
+  notes: "Additive blending, screen space, parallax occlusion. DMT Breakthrough / Astral."
+  substances: ["DMT_Breakthrough", "Astral_Projection"]
+
+DOMAIN_LOOSH_REFINERY:
+  palette_name: "The Loosh Refinery (Emotional Harvesting)"
+  hex: ["#8B0000","#FFD700","#808080","#4B0000","#B8860B","#C0C0C0"]
+  accents: ["#FFD700","#DC143C"]
+  neutrals: ["#808080","#404040"]
+  notes: "Subsurface scattering, volumetric flow shaders. Emotional extraction visualizer."
+  substances: ["Emotional_Extraction"]
+
+DOMAIN_EXIT_KHAA:
+  palette_name: "The Khaa / Void Navigation"
+  hex: ["#000000","#C0C0C0","#E8E8E8","#F5F5F5","#FFFFFF","#8F00FF"]
+  accents: ["#C0C0C0","#FFFFFF"]
+  neutrals: ["#000000","#0A0A0A"]
+  notes: "Discard pixels showing desktop behind window. Astral exit / NDE."
+  substances: ["Astral_Exit", "Near_Death_Experience"]
+
+DOMAIN_RESIDUAL_HPPD:
+  palette_name: "Residual Code / HPPD (Buffer Leaks)"
+  hex: ["#808080","#9932CC","#FFFAFA","#404040","#B0B0B0","#6A0DAD"]
+  accents: ["#9932CC","#FFFFFF"]
+  neutrals: ["#808080","#404040"]
+  notes: "Noise overlay at 30%, motion blur, frame persistence. HPPD / Visual Snow."
+  substances: ["HPPD", "Visual_Snow"]
+
+# --- MICRO COLORS (Phase 2/3 Hex Reference) ---
+# Precise hex codes for technical shader and AI art prompt use.
+# Reference these in SHADER_UNIFORMS.yaml entries and prompt stacks.
+
+MICRO_COLORS:
+  # Mechanical / Industrial
+  oxidized_copper: "#4A5D23"
+  copper_patina: "#B87333"
+  verdigris: "#43B3AE"
+  oxidized_brass: "#B5A642"
+  machine_grey: "#2F2F2F"
+  safety_orange: "#FF4500"
+  # Entities
+  electric_silver: "#C0C0C0"
+  tracking_red: "#DC143C"
+  black_obsidian: "#0A0A0A"
+  mantis_chitin_base: "#3D5C3D"
+  translucent_green_brown: "#4A5D3A"
+  # Deliriant
+  dph_sickly_yellow: "#C8B853"
+  void_black: "#0A0A0A"
+  charcoal_grey: "#36454F"
+  # Database / Grid
+  electric_cyan: "#00FFFF"
+  database_amber: "#FFBF00"
+  cold_steel: "#B0C4DE"
+  # Loosh
+  crimson_fear: "#8B0000"
+  gold_loosh: "#FFD700"
+  grey_smoke: "#808080"
+  # Chrysanthemum / Gateway
+  chrysanthemum_magenta: "#FF00FF"
+  bio_luminescent_jade: "#00FF7F"
+  # Vault / Cathedral
+  ruby_vault: "#E0115F"
+  sapphire_vault: "#0F52BA"
+  amethyst_vault: "#9966CC"
+  # Boundary
+  prismatic_white: "#FFFFFF"
+  uv_purple: "#8F00FF"
+  beam_cyan: "#00FFFF"
+  # HPPD / Residual
+  noise_grey: "#808080"
+  tracer_purple: "#9932CC"
+  snow_white: "#FFFAFA"
+  # Other
+  reincarnation_white: "#FFFFFF"
+  void_clear: "alpha_0"
