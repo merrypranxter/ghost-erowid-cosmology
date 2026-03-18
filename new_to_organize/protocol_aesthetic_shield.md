@@ -1,0 +1,1 @@
+Placeholder for protocol_aesthetic_shield.md extracted from uploaded docs. No content provided.

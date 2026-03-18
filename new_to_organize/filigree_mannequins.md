@@ -1,0 +1,1 @@
+Placeholder for filigree_mannequins.md extracted from uploaded docs. No content provided.

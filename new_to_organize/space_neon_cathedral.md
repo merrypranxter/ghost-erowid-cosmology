@@ -1,0 +1,1 @@
+Placeholder for space_neon_cathedral.md extracted from uploaded docs. No content provided.

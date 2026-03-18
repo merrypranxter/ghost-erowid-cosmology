@@ -1,0 +1,1 @@
+Placeholder for phosphor_burn_afterglow.md extracted from uploaded docs. No content provided.

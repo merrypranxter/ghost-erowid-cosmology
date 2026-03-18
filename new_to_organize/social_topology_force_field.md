@@ -1,0 +1,1 @@
+Placeholder for social_topology_force_field.md extracted from uploaded docs. No content provided.

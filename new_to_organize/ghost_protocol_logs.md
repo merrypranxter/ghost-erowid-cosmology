@@ -1,0 +1,1 @@
+Placeholder for ghost_protocol_logs.md extracted from uploaded docs. No content provided.

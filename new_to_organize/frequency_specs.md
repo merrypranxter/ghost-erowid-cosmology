@@ -1,0 +1,1 @@
+Placeholder for frequency_specs.md extracted from uploaded docs. No content provided.

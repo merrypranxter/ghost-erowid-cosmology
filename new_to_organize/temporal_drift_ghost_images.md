@@ -1,0 +1,1 @@
+Placeholder for temporal_drift_ghost_images.md extracted from uploaded docs. No content provided.
