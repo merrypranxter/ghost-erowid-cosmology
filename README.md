@@ -104,6 +104,21 @@ All motifs are prefixed by type:
 | [`art/ZINE_OUTLINE_EROWID_KERNEL_DUMP.md`](art/ZINE_OUTLINE_EROWID_KERNEL_DUMP.md) | Zine outline and page plan |
 | [`art/UI_KIT_SPEC.md`](art/UI_KIT_SPEC.md) | Reusable UI components for posters, zines, animations |
 
+### Wiki — Encyclopedic Entries
+
+Detailed entries for every entity, location, phenomenon, cosmological concept, and technical reference. Organized by compound family.
+
+| Folder | Compound | Contents |
+|--------|----------|----------|
+| [`wiki/DMT/`](wiki/DMT/) | N,N-DMT / 5-MeO-DMT / Ayahuasca | Entities, Locations, Phenomena, Technical, Cosmology |
+| [`wiki/LSD/`](wiki/LSD/) | LSD / Lysergamides | Entities, Locations, Phenomena, Technical, Cosmology |
+| [`wiki/2CB/`](wiki/2CB/) | 2C-B / Phenethylamines | Entities, Locations, Phenomena, Technical, Cosmology |
+| [`wiki/DXM/`](wiki/DXM/) | Dextromethorphan / Dissociatives | Entities, Locations, Phenomena, Technical, Cosmology |
+| [`wiki/Deliriants/`](wiki/Deliriants/) | DPH / Anticholinergic Deliriants | Entities, Locations, Phenomena, Technical, Cosmology |
+| [`wiki/Salvia/`](wiki/Salvia/) | Salvia Divinorum | Entities, Locations, Phenomena, Technical, Cosmology |
+
+→ See [`wiki/README.md`](wiki/README.md) for the full index.
+
 ### Reference
 
 | File | Purpose |
