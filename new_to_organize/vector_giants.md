@@ -1,1 +1,0 @@
-Placeholder for vector_giants.md extracted from uploaded docs. No content provided.

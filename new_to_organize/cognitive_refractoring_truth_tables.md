@@ -1,1 +1,0 @@
-Placeholder for cognitive_refractoring_truth_tables.md extracted from uploaded docs. No content provided.

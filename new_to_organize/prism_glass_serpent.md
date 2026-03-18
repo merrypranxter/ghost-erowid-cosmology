@@ -1,1 +1,0 @@
-Placeholder for prism_glass_serpent.md extracted from uploaded docs. No content provided.

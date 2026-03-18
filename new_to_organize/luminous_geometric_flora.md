@@ -1,1 +1,0 @@
-Placeholder for luminous_geometric_flora.md extracted from uploaded docs. No content provided.

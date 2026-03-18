@@ -1,1 +1,0 @@
-Placeholder for ghost_touch_tactile_sync.md extracted from uploaded docs. No content provided.

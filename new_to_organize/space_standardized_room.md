@@ -1,1 +1,0 @@
-Placeholder for space_standardized_room.md extracted from uploaded docs. No content provided.

@@ -1,1 +1,0 @@
-Placeholder for mandala_overseers.md extracted from uploaded docs. No content provided.

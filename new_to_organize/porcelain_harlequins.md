@@ -1,1 +1,0 @@
-Placeholder for porcelain_harlequins.md extracted from uploaded docs. No content provided.

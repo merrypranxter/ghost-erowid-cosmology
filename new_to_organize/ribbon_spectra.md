@@ -1,1 +1,0 @@
-Placeholder for ribbon_spectra.md extracted from uploaded docs. No content provided.

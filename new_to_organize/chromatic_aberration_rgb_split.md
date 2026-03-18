@@ -1,1 +1,0 @@
-Placeholder for chromatic_aberration_rgb_split.md extracted from uploaded docs. No content provided.

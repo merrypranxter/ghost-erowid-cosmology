@@ -1,1 +1,0 @@
-Placeholder for sound_design_guide.md extracted from uploaded docs. No content provided.

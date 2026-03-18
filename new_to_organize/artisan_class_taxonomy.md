@@ -1,1 +1,0 @@
-Placeholder for artisan_class_taxonomy.md extracted from uploaded docs. No content provided.

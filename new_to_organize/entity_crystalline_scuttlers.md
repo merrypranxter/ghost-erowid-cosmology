@@ -1,1 +1,0 @@
-Placeholder for entity_crystalline_scuttlers.md extracted from uploaded docs. No content provided.

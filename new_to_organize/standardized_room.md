@@ -1,1 +1,0 @@
-Placeholder for standardized_room.md extracted from uploaded docs. No content provided.

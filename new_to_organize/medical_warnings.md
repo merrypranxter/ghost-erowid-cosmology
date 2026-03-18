@@ -1,1 +1,0 @@
-Placeholder for medical_warnings.md extracted from uploaded docs. No content provided.

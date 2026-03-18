@@ -1,1 +1,0 @@
-Placeholder for resonance_shadows.md extracted from uploaded docs. No content provided.

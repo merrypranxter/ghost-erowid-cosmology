@@ -1,1 +1,0 @@
-Placeholder for entity_neon_filigre_weaver.md extracted from uploaded docs. No content provided.
