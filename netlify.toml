@@ -1,0 +1,11 @@
+# Ghost x Erowid Cosmology — static site
+# No build step: the site is a single self-contained index.html served from the repo root.
+[build]
+  publish = "."
+  command = ""
+
+# Send unknown paths back to the hub page instead of a bare 404.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
