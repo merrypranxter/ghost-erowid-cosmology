@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GHOST × EROWID · Reality OS Cosmology</title>
+<meta name="description" content="A living world-bible and taxonomy of recurring psychedelic phenomenology — entities, locations, geometries, thresholds, messages and emotions, reframed as a fictional operating-system cosmology." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#070a11;
+    --bg-2:#0b1020;
+    --panel:rgba(13,18,32,0.72);
+    --panel-solid:#0d1220;
+    --line:rgba(120,140,180,0.16);
+    --ink:#d3dcef;
+    --muted:#727f9a;
+    --faint:#4a5570;
+    --entity:#00e5ff;
+    --location:#7c4dff;
+    --geometry:#b8ff00;
+    --threshold:#ffb000;
+    --message:#ff2eea;
+    --emotion:#ff3d81;
+    --alarm:#ff003c;
+    --white:#f4f7ff;
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+    font-weight:300;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+
+  /* ---- background layers ---- */
+  #glcanvas{
+    position:fixed;inset:0;width:100%;height:100%;
+    z-index:-3;opacity:0.38;filter:saturate(1.1);
+  }
+  .bg-wash{
+    position:fixed;inset:0;z-index:-2;pointer-events:none;
+    background:
+      radial-gradient(1200px 800px at 80% -10%, rgba(124,77,255,0.20), transparent 60%),
+      radial-gradient(1000px 700px at -10% 110%, rgba(0,229,255,0.16), transparent 55%),
+      linear-gradient(180deg, rgba(7,10,17,0.35), rgba(7,10,17,0.86) 60%, var(--bg));
+  }
+  .bg-grain{
+    position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:0.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode:overlay;
+  }
+  .scanlines{
+    position:fixed;inset:0;z-index:1000;pointer-events:none;opacity:0.35;
+    background:repeating-linear-gradient(180deg,rgba(0,0,0,0) 0 2px,rgba(0,0,0,0.22) 3px 4px);
+    mix-blend-mode:multiply;
+  }
+
+  /* ---- layout ---- */
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  section{position:relative;z-index:2}
+
+  /* ---- nav ---- */
+  nav{
+    position:sticky;top:0;z-index:900;
+    backdrop-filter:blur(10px);
+    background:linear-gradient(180deg,rgba(7,10,17,0.92),rgba(7,10,17,0.55));
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{display:flex;align-items:center;gap:18px;height:60px}
+  .wordmark{font-family:"Major Mono Display",monospace;font-size:16px;letter-spacing:1px;color:var(--white);white-space:nowrap}
+  .wordmark b{color:var(--entity);font-weight:400}
+  .status{
+    display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:1.5px;
+    color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:5px 12px;text-transform:uppercase;
+  }
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--geometry);box-shadow:0 0 10px var(--geometry);animation:blink 2.4s infinite}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+  .nav-links{margin-left:auto;display:flex;gap:22px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+  .nav-links a{transition:color .2s}
+  .nav-links a:hover{color:var(--entity)}
+  @media(max-width:720px){.nav-links,.status{display:none}}
+
+  /* ---- hero ---- */
+  header.hero{padding:88px 0 64px;overflow:hidden}
+  .kicker{font-size:12px;letter-spacing:6px;text-transform:uppercase;color:var(--message);margin-bottom:22px}
+  h1{
+    font-family:"Major Mono Display",monospace;
+    font-weight:400;
+    font-size:clamp(38px,8.2vw,104px);
+    line-height:0.95;letter-spacing:-1px;margin:0 0 6px;color:var(--white);
+    text-shadow:0 0 40px rgba(0,229,255,0.18);
+  }
+  h1 .l2{display:block;color:var(--entity);text-shadow:0 0 46px rgba(0,229,255,0.35)}
+  .lede{max-width:640px;margin:26px 0 0;font-size:clamp(15px,1.8vw,18px);color:var(--ink);font-weight:300}
+  .lede em{color:var(--geometry);font-style:normal}
+
+  .boot{
+    margin-top:34px;max-width:660px;border:1px solid var(--line);border-radius:10px;
+    background:var(--panel);backdrop-filter:blur(6px);padding:18px 20px;font-size:13px;color:var(--muted);
+    box-shadow:0 24px 60px -30px rgba(0,0,0,0.8);
+  }
+  .boot .row{display:flex;gap:10px;white-space:nowrap;overflow:hidden}
+  .boot .ok{color:var(--geometry)}
+  .boot .warn{color:var(--threshold)}
+  .boot .k{color:var(--entity)}
+  .cta{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:2px;text-transform:uppercase;
+    padding:13px 22px;border-radius:8px;border:1px solid var(--line);color:var(--ink);transition:.2s;cursor:pointer;background:transparent;
+    font-family:inherit;
+  }
+  .btn:hover{transform:translateY(-2px)}
+  .btn.primary{background:var(--entity);color:#04121a;border-color:var(--entity);box-shadow:0 0 30px -6px var(--entity)}
+  .btn.primary:hover{box-shadow:0 0 44px -4px var(--entity)}
+  .btn.ghost:hover{border-color:var(--message);color:var(--message)}
+
+  /* ---- stats ---- */
+  .stats{border-block:1px solid var(--line);margin-top:20px}
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+  .stat{padding:26px 22px;border-left:1px solid var(--line)}
+  .stat:first-child{border-left:none}
+  .stat .num{font-size:clamp(28px,4vw,44px);color:var(--white);font-weight:400;line-height:1}
+  .stat .lbl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:8px}
+  @media(max-width:720px){.stats-grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(3){border-left:none}}
+
+  /* ---- section heads ---- */
+  .sec{padding:80px 0}
+  .sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:34px}
+  .sec-title{font-size:12px;letter-spacing:5px;text-transform:uppercase;color:var(--muted)}
+  .sec-title b{color:var(--white);font-weight:500}
+  h2{font-family:"Major Mono Display",monospace;font-weight:400;font-size:clamp(26px,4.4vw,46px);margin:6px 0 0;color:var(--white);letter-spacing:-.5px}
+  .sec-desc{max-width:520px;color:var(--muted);font-size:14px}
+
+  /* ---- atlas controls ---- */
+  .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:26px}
+  .chip{
+    font-family:inherit;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;
+    padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;transition:.18s;
+  }
+  .chip:hover{color:var(--ink);border-color:var(--muted)}
+  .chip.active{color:#05080f;font-weight:500}
+  .chip[data-type="all"].active{background:var(--white);border-color:var(--white)}
+  .chip[data-type="entity"].active{background:var(--entity);border-color:var(--entity)}
+  .chip[data-type="location"].active{background:var(--location);border-color:var(--location);color:var(--white)}
+  .chip[data-type="geometry"].active{background:var(--geometry);border-color:var(--geometry)}
+  .chip[data-type="threshold"].active{background:var(--threshold);border-color:var(--threshold)}
+  .chip[data-type="message"].active{background:var(--message);border-color:var(--message)}
+  .chip[data-type="emotion"].active{background:var(--emotion);border-color:var(--emotion)}
+  .search{
+    margin-left:auto;font-family:inherit;font-size:13px;color:var(--ink);background:var(--panel);
+    border:1px solid var(--line);border-radius:8px;padding:9px 14px;min-width:210px;outline:none;transition:.2s;
+  }
+  .search:focus{border-color:var(--entity);box-shadow:0 0 0 3px rgba(0,229,255,0.12)}
+  .search::placeholder{color:var(--faint)}
+  @media(max-width:560px){.search{margin-left:0;width:100%}}
+
+  /* ---- atlas grid ---- */
+  .atlas{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+  .card{
+    position:relative;border:1px solid var(--line);border-radius:12px;padding:20px 20px 18px;
+    background:var(--panel);backdrop-filter:blur(6px);overflow:hidden;
+    transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease;
+    animation:rise .5s both;
+  }
+  .card::before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:var(--c)}
+  .card::after{content:"";position:absolute;inset:0;background:radial-gradient(400px 200px at 100% 0,var(--glow),transparent 70%);opacity:0;transition:opacity .25s}
+  .card:hover{transform:translateY(-4px);border-color:var(--c);box-shadow:0 26px 50px -30px var(--c)}
+  .card:hover::after{opacity:.10}
+  .card .id{font-size:10px;letter-spacing:2px;color:var(--c);text-transform:uppercase}
+  .card .name{font-size:18px;color:var(--white);margin:6px 0 2px;font-weight:500;line-height:1.2}
+  .card .meta{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 12px}
+  .badge{font-size:10px;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;border-radius:5px;border:1px solid var(--line);color:var(--muted)}
+  .badge.v-ominous{color:var(--alarm);border-color:rgba(255,0,60,.4)}
+  .badge.v-benign{color:var(--geometry);border-color:rgba(184,255,0,.4)}
+  .badge.v-mixed{color:var(--threshold);border-color:rgba(255,176,0,.4)}
+  .card .notes{font-size:13px;color:var(--muted);line-height:1.5}
+  .card .tags{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px}
+  .tag{font-size:10px;color:var(--faint);letter-spacing:.5px}
+  .tag::before{content:"#";opacity:.6}
+  .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:60px 0;border:1px dashed var(--line);border-radius:12px}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+
+  /* ---- palettes ---- */
+  .palettes{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+  .pal{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel);backdrop-filter:blur(6px);transition:transform .2s,border-color .2s}
+  .pal:hover{transform:translateY(-3px);border-color:var(--muted)}
+  .pal .swatches{display:flex;height:72px}
+  .pal .swatches span{flex:1;transition:flex .3s}
+  .pal .swatches span:hover{flex:2.4}
+  .pal .pbody{padding:14px 16px 16px}
+  .pal .pname{font-size:15px;color:var(--white);font-weight:500}
+  .pal .pid{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-top:3px}
+  .pal .pnote{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.45}
+
+  /* ---- archive directory ---- */
+  .dir{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+  .node{
+    display:block;border:1px solid var(--line);border-radius:10px;padding:18px;background:var(--panel);
+    backdrop-filter:blur(6px);transition:.2s;position:relative;
+  }
+  .node:hover{transform:translateY(-3px);border-color:var(--entity)}
+  .node .path{font-size:12px;color:var(--entity);letter-spacing:1px}
+  .node .path .arrow{opacity:0;margin-left:6px;transition:.2s}
+  .node:hover .path .arrow{opacity:1;margin-left:10px}
+  .node .desc{font-size:13px;color:var(--muted);margin-top:8px}
+
+  /* ---- footer ---- */
+  footer{border-top:1px solid var(--line);padding:44px 0 60px;margin-top:40px;color:var(--muted);font-size:12px}
+  .foot-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+  footer .disc{max-width:560px;line-height:1.6}
+  footer .disc b{color:var(--threshold);font-weight:500}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<canvas id="glcanvas"></canvas>
+<div class="bg-wash"></div>
+<div class="bg-grain"></div>
+<div class="scanlines"></div>
+
+<nav>
+  <div class="wrap nav-inner">
+    <div class="wordmark">ghost<b>×</b>erowid</div>
+    <span class="status"><span class="dot"></span>Reality OS · booted</span>
+    <div class="nav-links">
+      <a href="#atlas">Atlas</a>
+      <a href="#palettes">Palettes</a>
+      <a href="#archive">Archive</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">world-bible · taxonomy · art system</div>
+    <h1>ghost erowid<span class="l2">cosmology</span></h1>
+    <p class="lede">A living taxonomy of recurring psychedelic phenomenology — <em>entities, locations, geometries, thresholds, messages and emotions</em> — reframed as the interface layer of a fictional operating system for reality.</p>
+
+    <div class="boot" id="boot" aria-hidden="true"></div>
+
+    <div class="cta">
+      <a class="btn primary" href="#atlas">Open the Atlas</a>
+      <a class="btn ghost" href="README.md">Read the source</a>
+    </div>
+  </div>
+</header>
+
+<section class="stats reveal">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat"><div class="num" data-count="52">0</div><div class="lbl">Catalogued motifs</div></div>
+      <div class="stat"><div class="num" data-count="6">0</div><div class="lbl">Compound families</div></div>
+      <div class="stat"><div class="num" data-count="18">0</div><div class="lbl">GLSL shaders</div></div>
+      <div class="stat"><div class="num" data-count="137">0</div><div class="lbl">Canon documents</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="atlas">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <div class="sec-title">01 — <b>Motif Atlas</b></div>
+        <h2>the registry</h2>
+      </div>
+      <p class="sec-desc">Every motif carries a type prefix — <b style="color:var(--entity)">ENT</b> · <b style="color:var(--location)">LOC</b> · <b style="color:var(--geometry)">GEO</b> · <b style="color:var(--threshold)">THR</b> · <b style="color:var(--message)">MSG</b> · <b style="color:var(--emotion)">EMO</b>. Filter or search the field guide below.</p>
+    </div>
+
+    <div class="controls reveal">
+      <button class="chip active" data-type="all">All</button>
+      <button class="chip" data-type="entity">Entities</button>
+      <button class="chip" data-type="location">Locations</button>
+      <button class="chip" data-type="geometry">Geometry</button>
+      <button class="chip" data-type="threshold">Thresholds</button>
+      <button class="chip" data-type="message">Messages</button>
+      <button class="chip" data-type="emotion">Emotions</button>
+      <input class="search" id="search" type="search" placeholder="search motifs / tags…" />
+    </div>
+
+    <div class="atlas" id="atlas-grid"></div>
+  </div>
+</section>
+
+<section class="sec" id="palettes">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <div class="sec-title">02 — <b>Palette Library</b></div>
+        <h2>color grades</h2>
+      </div>
+      <p class="sec-desc">Maximalist, mostly-bright palettes keyed to motifs — the color logic that drives every poster, sticker and shader. Hover a band to expand it.</p>
+    </div>
+    <div class="palettes" id="palettes-grid"></div>
+  </div>
+</section>
+
+<section class="sec" id="archive">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <div class="sec-title">03 — <b>The Archive</b></div>
+        <h2>directory</h2>
+      </div>
+      <p class="sec-desc">The full canon lives as YAML, CSV, GLSL and Markdown. Jump straight into any wing of the repository.</p>
+    </div>
+    <div class="dir" id="dir"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div class="disc">
+      <b>A note:</b> this is a fictional, artistic OS-cosmology — a creative reframing of subjective trip-report phenomenology into a world-bible for art, prompts and video. It is not medical, scientific, or harm-reduction advice.
+    </div>
+    <div style="text-align:right">
+      <div class="wordmark" style="font-size:13px">ghost<b>×</b>erowid</div>
+      <div style="margin-top:6px;color:var(--faint)">reality-os // static build</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============ DATA ============ */
+const MOTIFS = [{"id":"ENT_ELVES","type":"entity","name":"Machine Elves","tier":"common","valence":"mixed","intensity":"high","family":"psychedelic","tags":["builder","hyperactive","language-like","procedural","dmt-adjacent"],"notes":"Small/fast entities that 'construct' or manipulate reality."},{"id":"ENT_MANTIS","type":"entity","name":"Mantis / Insectoid Clinicians","tier":"common","valence":"mixed","intensity":"high","family":"psychedelic","tags":["surgery","clinical","technician","body-work","detached"],"notes":"Insectoid beings performing 'adjustments' or examinations."},{"id":"ENT_JESTER","type":"entity","name":"Jester / Trickster","tier":"common","valence":"mixed","intensity":"medium","family":"unknown","tags":["gatekeeper","mockery","paradox","humor","ego-check"],"notes":"Comedic/taunting presence that destabilizes certainty."},{"id":"ENT_HATMAN","type":"entity","name":"Hat Man / Shadow Watcher","tier":"common","valence":"ominous","intensity":"high","family":"deliriant","tags":["shadow-people","peripheral","watcher","sleep-paralysis-adjacent"],"notes":"Dark silhouette watcher; overlaps sleep-paralysis folklore."},{"id":"ENT_GAIA","type":"entity","name":"Mother Gaia","tier":"rare","valence":"benign","intensity":"extreme","family":"psychedelic","tags":["mother","unconditional-love","nurture","overwhelming-benevolence"],"notes":"Singular-feeling nurturing presence; total compassion."},{"id":"LOC_WAITING_ROOM","type":"location","name":"The Waiting Room / Antechamber","tier":"common","valence":"neutral","intensity":"medium","family":"psychedelic","tags":["threshold","chrysanthemum","pre-breakthrough","liminal"],"notes":"Transitional staging space before breakthrough."},{"id":"LOC_PALACE_UI","type":"location","name":"Palace / Cathedral UI","tier":"common","valence":"mixed","intensity":"high","family":"psychedelic","tags":["cathedral","vast-architecture","jewel-light","sacred-geometry"],"notes":"Vast ornate non-euclidean architecture; awe-heavy."},{"id":"LOC_VOID","type":"location","name":"The Void / White Light","tier":"common","valence":"mixed","intensity":"extreme","family":"unknown","tags":["whiteout","nothingness","total-field","ego-dissolution"],"notes":"Objectless state: pure being / blank infinity."},{"id":"LOC_NURSERY","type":"location","name":"The Nursery","tier":"uncommon","valence":"mixed","intensity":"high","family":"psychedelic","tags":["toys","impossible-objects","playful","dmt-adjacent"],"notes":"Playful room with impossible objects; shown to the traveler."},{"id":"GEO_FRACTAL_UI","type":"geometry","name":"Fractal UI / Infinite Recursion","tier":"common","valence":"neutral","intensity":"high","family":"psychedelic","tags":["mandelbrot","recursion","infinite-zoom","self-similar"],"notes":"Recurring visual substrate; 'code-like' recursive structure."},{"id":"GEO_HONEYCOMB","type":"geometry","name":"Honeycomb / Hex Grid Overlay","tier":"common","valence":"neutral","intensity":"medium","family":"psychedelic","tags":["hexagons","lattice","tiling","grid"],"notes":"Hexagonal tiling overlay perceived as structural layer."},{"id":"GEO_TUNNEL","type":"geometry","name":"Tunnel Vortex","tier":"common","valence":"mixed","intensity":"extreme","family":"psychedelic","tags":["vortex","transit","acceleration","breakthrough"],"notes":"High-speed transition geometry; travel effect."},{"id":"THR_POP","type":"threshold","name":"The Pop / Snap","tier":"common","valence":"neutral","intensity":"high","family":"psychedelic","tags":["breakthrough","click","transition","threshold-event"],"notes":"Sudden click that marks a mode switch."},{"id":"THR_CARRIER_WAVE","type":"threshold","name":"Carrier Wave (Audio Rise)","tier":"common","valence":"mixed","intensity":"high","family":"psychedelic","tags":["tone","vibration","rising-frequency","pre-breakthrough"],"notes":"Rising tone/vibration preceding transition; Round 2 will test correlations."},{"id":"THR_ZIPPER","type":"threshold","name":"Zipper / Fold / Peel","tier":"uncommon","valence":"mixed","intensity":"extreme","family":"psychedelic","tags":["unzip","fold","peel","behind-the-wall"],"notes":"Reality unzips/peels; Round 2 will categorize what's behind it."},{"id":"MSG_ONE","type":"message","name":"It is all one","tier":"common","valence":"neutral","intensity":"high","family":"unknown","tags":["unity","nonduality","collapse"],"notes":"Nondual framing: subject/object collapse."},{"id":"MSG_REALER","type":"message","name":"More real than real","tier":"common","valence":"mixed","intensity":"high","family":"unknown","tags":["hyperreality","higher-resolution","ontological-shock"],"notes":"Underlayer felt higher fidelity than baseline."},{"id":"MSG_NO_FEAR","type":"message","name":"Do not be afraid","tier":"common","valence":"benign","intensity":"high","family":"unknown","tags":["reassurance","instruction","threshold"],"notes":"Often heard/felt at the gate."},{"id":"MSG_LOOK","type":"message","name":"Just look","tier":"uncommon","valence":"neutral","intensity":"medium","family":"unknown","tags":["attention","instruction","gate"],"notes":"Attention is the key."},{"id":"EMO_NOSTALGIA","type":"emotion","name":"Cosmic Nostalgia","tier":"common","valence":"mixed","intensity":"medium","family":"unknown","tags":["homecoming","remembering","longing"],"notes":"Recognition / returning vibe."},{"id":"EMO_TERROR_EDGE","type":"emotion","name":"Ego Dissolution Terror","tier":"common","valence":"ominous","intensity":"extreme","family":"unknown","tags":["panic","threshold-fear","dying-feeling"],"notes":"Fear spike at boundary crossings."},{"id":"EMO_BENEVOLENCE","type":"emotion","name":"Unconditional Benevolence","tier":"uncommon","valence":"benign","intensity":"high","family":"psychedelic","tags":["love-field","compassion","embrace"],"notes":"Love perceived as an ambient field."},{"id":"ENT_ADMINS","type":"entity","name":"Admins / Maintenance Subroutines","tier":"uncommon","valence":"mixed","intensity":"high","family":"unknown","tags":["admin","maintenance","simulation","back-end"],"notes":"Entities framed as autonomous agents maintaining the simulation; react with surprise/annoyance/clinical interest."},{"id":"ENT_JANITOR_VOID","type":"entity","name":"Janitor of the Void","tier":"rare","valence":"ominous","intensity":"high","family":"deliriant","tags":["hatman","janitor","dead-space","monitor"],"notes":"Hat Man interpreted as a janitor/monitor of dead-space or void state."},{"id":"ENT_COLONEL_PANIC","type":"entity","name":"Colonel Panic Supervisor","tier":"rare","valence":"ominous","intensity":"high","family":"deliriant","tags":["sentinel","supervisor","crash-monitor","placeholder"],"notes":"Hat Man reinterpreted as a system-inserted supervisor during rendering crashes."},{"id":"ENT_MICRODEMONS","type":"entity","name":"Microdemons of Pattern Recognition","tier":"uncommon","valence":"ominous","intensity":"medium","family":"other","tags":["threat-detection","pareidolia","security-protocol"],"notes":"Small threat-archetypes generated by overclocked threat detection."},{"id":"ENT_SHADOW_SPIDERS","type":"entity","name":"Shadow Spiders","tier":"common","valence":"ominous","intensity":"high","family":"other","tags":["spiders","periphery","dph","stimulant-psychosis","sleep-deprivation"],"notes":"Translucent or shadow-black spiders crawling on walls/skin/periphery across deliriance/stimulant psychosis/sleep loss."},{"id":"LOC_LIBRARY_LIVES","type":"location","name":"Library of Lives","tier":"uncommon","valence":"mixed","intensity":"high","family":"unknown","tags":["library","alternate-timelines","browse","life-review"],"notes":"A space where users 'browse' alternate versions of their own history; tied to temporal anomalies."},{"id":"LOC_DELIRIANT_BASEMENT","type":"location","name":"Deliriant Basement / Forbidden Zones","tier":"common","valence":"ominous","intensity":"high","family":"deliriant","tags":["basement","forbidden-zones","low-layer","trash-cache"],"notes":"Low, heavy layer accessed via deliriants; malevolent architecture and decay-fragments."},{"id":"LOC_TRASH_CACHE","type":"location","name":"Trash Cache Directory","tier":"uncommon","valence":"ominous","intensity":"medium","family":"deliriant","tags":["cache","discarded","fragments","collective-psyche"],"notes":"Metaphor-space for discarded/decaying fragments of the collective psyche."},{"id":"LOC_BUFFER_VOID","type":"location","name":"Buffer Between States","tier":"uncommon","valence":"neutral","intensity":"high","family":"dissociative","tags":["buffer","between-states","hibernation","gray-void"],"notes":"Dissociative buffer-space when physical sensor I/O is cut; gray industrial/cosmic void."},{"id":"LOC_K_HOLE_VOID","type":"location","name":"K-Hole Kernel Void","tier":"common","valence":"mixed","intensity":"extreme","family":"dissociative","tags":["k-hole","kernel","no-return","discard-body"],"notes":"Point-of-no-return dissociative space: awareness without body, in vast gray/industrial/cosmic void."},{"id":"LOC_BIOS_LAYER","type":"location","name":"BIOS / Power Layer (5-MeO)","tier":"uncommon","valence":"neutral","intensity":"extreme","family":"psychedelic","tags":["bios","power-layer","whiteout","reset"],"notes":"5-MeO-DMT framed as BIOS/power layer: whiteout, nonduality, total reset, no entities."},{"id":"LOC_DESKTOP_ENV","type":"location","name":"Desktop Environment (N,N-DMT)","tier":"uncommon","valence":"mixed","intensity":"high","family":"psychedelic","tags":["desktop","applications","waiting-room","palace"],"notes":"N,N-DMT framed as the applications/desktop layer: visuals, entities, messages, waiting room."},{"id":"GEO_3D_LANGUAGE","type":"geometry","name":"3D Language Objects","tier":"uncommon","valence":"neutral","intensity":"high","family":"psychedelic","tags":["language","3d","vibrating","objects"],"notes":"Users see language as three-dimensional vibrating objects."},{"id":"GEO_SYNESTHETIC_SYNTAX","type":"geometry","name":"Synesthetic Syntax","tier":"uncommon","valence":"neutral","intensity":"high","family":"psychedelic","tags":["speak-colors","sing-structures","syntax"],"notes":"Speaking in colors or 'singing structures' into existence."},{"id":"GEO_RAW_DATA_TRANSFER","type":"geometry","name":"Raw Data Transfer (Pre-speech)","tier":"uncommon","valence":"neutral","intensity":"medium","family":"psychedelic","tags":["neural-nodes","pre-translation","packet"],"notes":"Witnessing data transfer between neural nodes before translation into human speech."},{"id":"GEO_MACHINE_CODE_COGNITION","type":"geometry","name":"Machine Code of Cognition","tier":"uncommon","valence":"neutral","intensity":"high","family":"psychedelic","tags":["machine-code","cognition","underlayer"],"notes":"Interpretive geometry: cognition perceived as executable code."},{"id":"GEO_ARCHITECTURE_DARK","type":"geometry","name":"Dark Ghoul Architecture","tier":"uncommon","valence":"ominous","intensity":"high","family":"deliriant","tags":["ghoul","architecture","forbidden","basement"],"notes":"Malevolent, heavy architectural motifs in low-layer deliriant states."},{"id":"THR_GLOSSOLALIA","type":"threshold","name":"Glossolalia Burst","tier":"uncommon","valence":"mixed","intensity":"high","family":"psychedelic","tags":["glossolalia","tongues","vocal","synesthetic"],"notes":"Speaking/chanting in 'tongues' or nonhuman phonemes as a transition marker."},{"id":"THR_FORGOTTEN_TONGUE","type":"threshold","name":"Forgotten Tongue Recall","tier":"uncommon","valence":"mixed","intensity":"medium","family":"psychedelic","tags":["remember-language","clicking","chirping","liquid-telepathy"],"notes":"Remembering a language never learned; clicking/chirping/liquid telepathy."},{"id":"THR_CHRONOS_COLLAPSE","type":"threshold","name":"Chronos Collapse (Eternal Now)","tier":"common","valence":"mixed","intensity":"extreme","family":"psychedelic","tags":["time-stop","eternal-now","chronos-collapse"],"notes":"Total cessation of linear time; 'eternal now' state."},{"id":"THR_LIFETIME_COMPRESSION","type":"threshold","name":"Lifetime Compression","tier":"uncommon","valence":"mixed","intensity":"extreme","family":"psychedelic","tags":["live-lifetimes","eons","compression"],"notes":"Subjective centuries/eons within minutes; whole lives/civilizations experienced."},{"id":"THR_HARD_REBOOT","type":"threshold","name":"Hard Reboot (Zap/Brain Shivers)","tier":"common","valence":"mixed","intensity":"high","family":"psychedelic","tags":["zap","shivers","reboot","handshake"],"notes":"Electrical discharges/shivers during onset/offset; baseline handshake re-establishing."},{"id":"THR_CACHE_OVERFLOW","type":"threshold","name":"Cache Overflow Episode","tier":"uncommon","valence":"ominous","intensity":"medium","family":"deliriant","tags":["cache-overflow","muscle-memory","phantom-actions"],"notes":"Muscle-memory scripts execute without physical hardware; produces phantom interactions."},{"id":"THR_PHANTOM_OBJECT","type":"threshold","name":"Phantom Object Loop","tier":"common","valence":"ominous","intensity":"high","family":"deliriant","tags":["phantom-object","empty-hands","false-matter"],"notes":"Looping interaction with objects that aren’t there (e.g., cigarettes)."},{"id":"THR_FOREIGN_OBJECT","type":"threshold","name":"Foreign Object Sensation","tier":"uncommon","valence":"mixed","intensity":"medium","family":"psychedelic","tags":["implant","chip","parasite","patching"],"notes":"Feeling of a chip/implant/parasite inserted or removed (often with mantis clinicians)."},{"id":"MSG_INFO_IS_MATTER","type":"message","name":"Information = Matter","tier":"uncommon","valence":"neutral","intensity":"high","family":"psychedelic","tags":["info=matter","identity","underlayer"],"notes":"In the underlayer, information and matter are identical."},{"id":"MSG_COMM_IS_THE_THING","type":"message","name":"Communication Is The Thing","tier":"uncommon","valence":"neutral","intensity":"high","family":"psychedelic","tags":["communication","not-representation","is-itself"],"notes":"Communication is not representation; it is the thing."},{"id":"MSG_BRAIN_TERMINAL","type":"message","name":"The Brain Is a Terminal","tier":"uncommon","valence":"mixed","intensity":"high","family":"unknown","tags":["terminal","access","underlayer"],"notes":"Reframe: the underlayer is not inside the head; the brain is a terminal."},{"id":"MSG_MOLECULE_LOGIN","type":"message","name":"Molecule = Login Credential","tier":"uncommon","valence":"neutral","intensity":"high","family":"unknown","tags":["credential","access-levels","login"],"notes":"Different substances grant different access levels (UI vs root vs trash)."},{"id":"MSG_UNAUTHORIZED_INTRUDER","type":"message","name":"Unauthorized Intruder","tier":"uncommon","valence":"mixed","intensity":"medium","family":"unknown","tags":["intruder","back-end","admins"],"notes":"User presence in back-end framed as unauthorized access; admins respond accordingly."}];
+const PALETTES = [
+  {id:"ENT_MANTIS",name:"Surgical Mint Plasma",note:"Clinical teal + bio-lime + shocking magenta for tools / alerts.",hex:["#00FFC8","#2AFF7A","#00A3FF","#B6FFFA","#F7FF00","#FF3D81"]},
+  {id:"ENT_HATMAN",name:"Noir Glitch Siren",note:"Mostly dark; neon edges feel like security UI bleeding in.",hex:["#0B0F19","#111827","#FF003C","#00E5FF","#B8FF00","#7C4DFF"]},
+  {id:"LOC_PALACE_UI",name:"Stained Glass Interface",note:"Jewel tones + bright gold like a cathedral UI.",hex:["#7C4DFF","#00A3FF","#00FFC8","#FFD400","#FF2EEA","#FF7A00"]},
+  {id:"LOC_VOID",name:"Whiteout Infinity Prism",note:"Mostly white with thin spectral edges — prismatic fringe.",hex:["#FFFFFF","#F8FAFC","#E5E7EB","#00E5FF","#FF2EEA","#FFD400"]},
+  {id:"GEO_FRACTAL_UI",name:"Infinite Zoom Candy Lace",note:"Maximal fractal lace: purple / cyan / magenta / gold.",hex:["#7C4DFF","#00E5FF","#FF2EEA","#FFD400","#B8FF00","#00FFC8"]},
+  {id:"GEO_TUNNEL",name:"Transit Vortex Firehose",note:"Acceleration colors; bright streaks + ring gradients.",hex:["#00E5FF","#FF2EEA","#FFD400","#FF7A00","#7C4DFF","#B8FF00"]},
+  {id:"THR_ZIPPER",name:"Seam Tear Neon",note:"Peel / reveal: hot pink-red seam + toxic neon edges.",hex:["#FF003C","#FF2EEA","#00E5FF","#B8FF00","#FFD400","#111827"]},
+  {id:"EMO_TERROR_EDGE",name:"Panic Strobe",note:"Hazard neon against dark; strobe-friendly.",hex:["#0A0A0A","#111827","#FF003C","#FFB000","#B8FF00","#00E5FF"]}
+];
+const DIR = [
+  {path:"canon/",href:"canon/motifs.csv",desc:"Source of truth — the sortable table of all 52 motifs."},
+  {path:"shaders/",href:"shaders/README.md",desc:"18 GLSL shaders, one per cosmological concept, plus the Shader Bible."},
+  {path:"art/",href:"art/PALETTES.yaml",desc:"Palettes, textures, typography skins, composition templates, entity codex."},
+  {path:"prompts/",href:"prompts/AI_ART_QUICK_START.md",desc:"Pre-built AI-art prompt packs, matrices and vocabulary hoard."},
+  {path:"wiki/",href:"wiki/README.md",desc:"Encyclopedic entries organized by compound family."},
+  {path:"docs/",href:"docs/MOTIF_CARDS.md",desc:"Motif cards, system architecture, cosmological layers."},
+  {path:"tiktok/",href:"tiktok/VIDEO_SERIES_PLAN.md",desc:"Episode scripts, caption banks and on-screen text for video."},
+  {path:"README.md",href:"README.md",desc:"Full repository map and the AI-art workflow overview."}
+];
+
+const TYPE_C = {entity:"--entity",location:"--location",geometry:"--geometry",threshold:"--threshold",message:"--message",emotion:"--emotion"};
+
+/* ============ ATLAS ============ */
+const grid = document.getElementById("atlas-grid");
+let activeType = "all", query = "";
+
+function esc(s){return (s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+
+function render(){
+  const q = query.trim().toLowerCase();
+  const list = MOTIFS.filter(m=>{
+    if(activeType!=="all" && m.type!==activeType) return false;
+    if(!q) return true;
+    const hay = (m.name+" "+m.id+" "+m.notes+" "+m.tags.join(" ")+" "+m.family).toLowerCase();
+    return hay.includes(q);
+  });
+  if(!list.length){grid.innerHTML='<div class="empty">No motifs match that query.</div>';return;}
+  grid.innerHTML = list.map((m,i)=>{
+    const cvar = TYPE_C[m.type]||"--muted";
+    const tags = m.tags.slice(0,5).map(t=>`<span class="tag">${esc(t)}</span>`).join("");
+    return `<article class="card" style="--c:var(${cvar});--glow:var(${cvar});animation-delay:${Math.min(i*28,360)}ms">
+      <div class="id">${esc(m.id)}</div>
+      <div class="name">${esc(m.name)}</div>
+      <div class="meta">
+        <span class="badge v-${esc(m.valence)}">${esc(m.valence)}</span>
+        <span class="badge">${esc(m.intensity)} intensity</span>
+        <span class="badge">${esc(m.tier)}</span>
+      </div>
+      <div class="notes">${esc(m.notes)}</div>
+      <div class="tags">${tags}</div>
+    </article>`;
+  }).join("");
+}
+
+document.querySelectorAll(".chip").forEach(chip=>{
+  chip.addEventListener("click",()=>{
+    document.querySelectorAll(".chip").forEach(c=>c.classList.remove("active"));
+    chip.classList.add("active");
+    activeType = chip.dataset.type;
+    render();
+  });
+});
+document.getElementById("search").addEventListener("input",e=>{query=e.target.value;render();});
+render();
+
+/* ============ PALETTES ============ */
+document.getElementById("palettes-grid").innerHTML = PALETTES.map(p=>`
+  <div class="pal">
+    <div class="swatches">${p.hex.map(h=>`<span style="background:${h}" title="${h}"></span>`).join("")}</div>
+    <div class="pbody">
+      <div class="pname">${p.name}</div>
+      <div class="pid">${p.id}</div>
+      <div class="pnote">${p.note}</div>
+    </div>
+  </div>`).join("");
+
+/* ============ DIRECTORY ============ */
+document.getElementById("dir").innerHTML = DIR.map(d=>`
+  <a class="node" href="${d.href}">
+    <div class="path">${d.path}<span class="arrow">→</span></div>
+    <div class="desc">${d.desc}</div>
+  </a>`).join("");
+
+/* ============ BOOT LOG (typing) ============ */
+const bootLines = [
+  '<span class="k">reality.kernel</span> mounting underlayer ................. <span class="ok">[ ok ]</span>',
+  '<span class="k">canon</span> loaded 52 motifs across 6 families ....... <span class="ok">[ ok ]</span>',
+  '<span class="k">shaders</span> compiled hex_substrate.glsl ........... <span class="ok">[ ok ]</span>',
+  '<span class="k">ego</span> dissolution handler ...................... <span class="warn">[ hold ]</span>',
+  '<span class="k">gateway</span> chrysanthemum open — do not be afraid'
+];
+const boot = document.getElementById("boot");
+let bl=0;
+(function typeLines(){
+  if(bl>=bootLines.length) return;
+  const row=document.createElement("div");
+  row.className="row";row.innerHTML=bootLines[bl];
+  row.style.opacity=0;boot.appendChild(row);
+  requestAnimationFrame(()=>{row.style.transition="opacity .4s";row.style.opacity=1;});
+  bl++;
+  setTimeout(typeLines,520);
+})();
+
+/* ============ COUNT-UP ============ */
+function countUp(el){
+  const target=+el.dataset.count;let cur=0;const step=Math.max(1,Math.round(target/38));
+  const t=setInterval(()=>{cur+=step;if(cur>=target){cur=target;clearInterval(t);}el.textContent=cur;},22);
+}
+/* ============ REVEAL + counters ============ */
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add("in");
+      e.target.querySelectorAll?.("[data-count]").forEach(countUp);
+      io.unobserve(e.target);
+    }
+  });
+},{threshold:0.2});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+
+/* ============ WEBGL — hex substrate (adapted from shaders/hex_substrate.glsl) ============ */
+(function(){
+  const canvas=document.getElementById("glcanvas");
+  const gl=canvas.getContext("webgl",{antialias:false,alpha:true});
+  if(!gl){canvas.style.display="none";return;}
+  const vs=`attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}`;
+  const fs=`
+  precision highp float;
+  uniform float u_time;uniform vec2 u_resolution;
+  vec2 hex_uv(vec2 uv){
+    vec2 r=vec2(1.0,1.73205080757);vec2 h=r*0.5;
+    vec2 a=mod(uv,r)-h;vec2 b=mod(uv-h,r)-h;
+    return length(a)<length(b)?a:b;
+  }
+  void main(){
+    vec2 uv=gl_FragCoord.xy/u_resolution.xy;
+    vec2 guv=uv*16.0;
+    vec2 hex=hex_uv(guv);
+    float dist=length(hex);
+    float pulse=sin(u_time*1.3+guv.x*0.7+guv.y*0.7)*0.5+0.5;
+    pulse=mix(0.25,1.0,pulse);
+    float glow=smoothstep(0.5,0.0,dist)*pulse;
+    // travel between cyan and violet across the field
+    vec3 cA=vec3(0.0,0.9,1.0);
+    vec3 cB=vec3(0.49,0.30,1.0);
+    vec3 tint=mix(cA,cB,uv.y*0.7+0.15*sin(u_time*0.4));
+    vec3 color=tint*glow*1.6;
+    float lines=smoothstep(0.46,0.5,dist)*0.4;
+    color+=vec3(0.0,0.4,0.7)*lines;
+    float vig=1.0-length(uv-0.5)*0.9;
+    color*=clamp(vig,0.0,1.0);
+    gl_FragColor=vec4(color,1.0);
+  }`;
+  function sh(type,src){const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);return s;}
+  const prog=gl.createProgram();
+  gl.attachShader(prog,sh(gl.VERTEX_SHADER,vs));
+  gl.attachShader(prog,sh(gl.FRAGMENT_SHADER,fs));
+  gl.linkProgram(prog);gl.useProgram(prog);
+  const buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);
+  gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+  const loc=gl.getAttribLocation(prog,"p");gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
+  const uT=gl.getUniformLocation(prog,"u_time"),uR=gl.getUniformLocation(prog,"u_resolution");
+  function resize(){const d=Math.min(window.devicePixelRatio||1,1.5);canvas.width=innerWidth*d;canvas.height=innerHeight*d;gl.viewport(0,0,canvas.width,canvas.height);}
+  addEventListener("resize",resize);resize();
+  const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+  let start=null;
+  function frame(ts){
+    if(start===null)start=ts;
+    const t=reduce?6.0:(ts-start)/1000;
+    gl.uniform1f(uT,t);gl.uniform2f(uR,canvas.width,canvas.height);
+    gl.drawArrays(gl.TRIANGLES,0,3);
+    if(!reduce)requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
